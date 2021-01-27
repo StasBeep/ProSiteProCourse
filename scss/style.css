@@ -1,10 +1,20 @@
 @charset "UTF-8";
 /* === Переменные стилей === */
 /* === common styles === */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* end === common styles === end*/
 /* === wrapper === */
 /* Обёртки - отдельный блок */
 .wrapper {
+  /* Контейнер для равных отступов от краёв контента*/
+  padding: 0 230px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 0 0 0;
   /* Обёртка для прижатия подвала к нижней части */
 }
 
