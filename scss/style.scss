@@ -5,6 +5,11 @@
 
 /* end === common styles === end*/
 
+.wrapper-forcontent{
+    min-height: 100vh; /* 100 видимых высот */
+        display: flex;
+        flex-direction: column;
+}
 
 
 /* === wrapper === */
