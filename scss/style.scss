@@ -47,6 +47,13 @@ $fillmenusvg:#E8E8E8;
     background-color: $bgcolor;
 }
 
+/*Фиксирование меню поверх блоков*/
+.fixed-menu{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
 .padd-container{
     padding: 18px 0;
 }
