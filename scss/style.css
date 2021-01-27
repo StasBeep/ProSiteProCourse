@@ -10,11 +10,11 @@
 /* === wrapper === */
 /* Обёртки - отдельный блок */
 .wrapper {
-  /* Контейнер для равных отступов от краёв контента*/
-  padding: 0 230px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0 0 0 0;
+  /* Контейнер для страницы определение 
+    максимальной ширины содержимого + обнуление 
+    margin*/
+  max-width: 1600px;
+  margin: 0 auto;
   /* Обёртка для прижатия подвала к нижней части */
 }
 
@@ -28,11 +28,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* Контейнер для страницы определение 
-        максимальной ширины содержимого + обнуление 
-        margin*/
+}
+
+.wrapper-container {
+  /* Контейнер для равных отступов от краёв контента*/
+  padding: 0 230px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 1600px;
-  margin: 0 auto;
 }
 
 /* end === wrapper === end */
@@ -43,6 +46,46 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   /* Отношение блоков */
+}
+
+.bgcolor {
+  background-color: #222222;
+}
+
+.padd-container {
+  padding: 18px 0;
+}
+
+.left-side {
+  /*Расположение по горизонтали*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*Движение вправо margin*/
+  /*движение вниз margin*/
+  /*Задание цвета декоративному изображению*/
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.left-side-marg-cont {
+  margin-right: 41px;
+}
+
+.left-side-marg-cont-svg {
+  margin-top: 10px;
+}
+
+.left-side-seach-svg {
+  fill: #E8E8E8;
+}
+
+.left-side-seach-svg:hover {
+  fill: red;
+}
+
+.left-side-seach-svg:active {
+  fill: #0f2999;
 }
 
 /* end === content-without-footer === end */

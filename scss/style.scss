@@ -1,5 +1,5 @@
 /* === Переменные стилей === */
-
+$bgcolor:#222222;
 
 /* === common styles === */
 *{
@@ -12,22 +12,24 @@
 /* === wrapper === */
 /* Обёртки - отдельный блок */
 .wrapper{
-    /* Контейнер для равных отступов от краёв контента*/
-    padding: 0 230px;
-    box-sizing: border-box;
-    margin: 0 0 0 0;
+    /* Контейнер для страницы определение 
+    максимальной ширины содержимого + обнуление 
+    margin*/
+    max-width: 1600px;
+    margin: 0 auto;
     
     /* Обёртка для прижатия подвала к нижней части */
     &-forcontent{
         min-height: 100vh; /* 100 видимых высот */
         display: flex;
         flex-direction: column;
+    }
 
-        /* Контейнер для страницы определение 
-        максимальной ширины содержимого + обнуление 
-        margin*/
+    &-container{
+        /* Контейнер для равных отступов от краёв контента*/
+        padding: 0 230px;
+        box-sizing: border-box;
         max-width: 1600px;
-        margin: 0 auto;
     }
 }
 /* end === wrapper === end */
@@ -38,6 +40,46 @@
 /* Основная часть без footer */
 .content-without-footer{
     flex-grow:1; /* Отношение блоков */
+}
+
+.bgcolor{
+    background-color: $bgcolor;
+}
+
+.padd-container{
+    padding: 18px 0;
+}
+
+.left-side{
+
+    /*Расположение по горизонтали*/
+    display: flex;
+
+    /*Движение вправо margin*/
+    &-marg-cont{
+        margin-right: 41px;
+    }
+
+    /*движение вниз margin*/
+    &-marg-cont-svg{
+        margin-top: 10px;
+    }
+
+
+    /*Задание цвета декоративному изображению*/
+    &-seach-svg{
+        fill:#E8E8E8;
+    }
+
+    /*Эффект наведения*/
+    &-seach-svg:hover{
+        fill:red;
+    }
+
+    /*Эффект нажатия*/
+    &-seach-svg:active{
+        fill:rgb(15, 41, 153);
+    }
 }
 /* end === content-without-footer === end */
 
