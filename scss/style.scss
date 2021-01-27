@@ -1,5 +1,6 @@
 /* === Переменные стилей === */
 $bgcolor:#222222;
+$fillmenusvg:#E8E8E8;
 
 /* === common styles === */
 *{
@@ -50,6 +51,11 @@ $bgcolor:#222222;
     padding: 18px 0;
 }
 
+.disp-fl{
+    display: flex;
+    justify-content: space-between; /*Положение по краям*/
+}
+
 .left-side{
 
     /*Расположение по горизонтали*/
@@ -68,7 +74,7 @@ $bgcolor:#222222;
 
     /*Задание цвета декоративному изображению*/
     &-seach-svg{
-        fill:#E8E8E8;
+        fill:$fillmenusvg;
     }
 
     /*Эффект наведения*/
@@ -81,6 +87,65 @@ $bgcolor:#222222;
         fill:rgb(15, 41, 153);
     }
 }
+
+.right-side{
+    
+    /*Рассположение по горизонтали*/
+    display: flex;
+
+    
+    &-crawling-menu{
+        margin-top: 12px;
+        margin-right: 33px;
+    } 
+    
+    
+    &-account{
+        background: transparent;  /*Прозрачный задний фон*/
+        border: none; /* Убирает рамку у button*/
+
+        margin-top: 8px;
+        margin-right: 33px;
+
+
+        /*Задание цвета декоративному изображению*/
+        &-svg{
+            fill:$fillmenusvg;
+        }
+        /*Эффект наведения*/
+        &-svg:hover{
+            fill:red;
+        }
+
+        /*Эффект нажатия*/
+        &-svg:active{
+            fill:rgb(15, 41, 153);
+        }
+    }
+
+    
+    &-cart{
+        background: transparent;  /*Прозрачный задний фон*/
+        border: none; /* Убирает рамку у button*/
+
+        margin-top: 8px;
+
+        /*Задание цвета декоративному изображению*/
+        &-svg{
+            fill:$fillmenusvg;
+        }
+        /*Эффект наведения*/
+        &-svg:hover{
+            fill:red;
+        }
+
+        /*Эффект нажатия*/
+        &-svg:active{
+            fill:rgb(15, 41, 153);
+        }
+    }
+}
+
 /* end === content-without-footer === end */
 
 

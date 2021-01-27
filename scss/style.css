@@ -56,6 +56,16 @@
   padding: 18px 0;
 }
 
+.disp-fl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*Положение по краям*/
+}
+
 .left-side {
   /*Расположение по горизонтали*/
   display: -webkit-box;
@@ -85,6 +95,65 @@
 }
 
 .left-side-seach-svg:active {
+  fill: #0f2999;
+}
+
+.right-side {
+  /*Рассположение по горизонтали*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-side-crawling-menu {
+  margin-top: 12px;
+  margin-right: 33px;
+}
+
+.right-side-account {
+  background: transparent;
+  /*Прозрачный задний фон*/
+  border: none;
+  /* Убирает рамку у button*/
+  margin-top: 8px;
+  margin-right: 33px;
+  /*Задание цвета декоративному изображению*/
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.right-side-account-svg {
+  fill: #E8E8E8;
+}
+
+.right-side-account-svg:hover {
+  fill: red;
+}
+
+.right-side-account-svg:active {
+  fill: #0f2999;
+}
+
+.right-side-cart {
+  background: transparent;
+  /*Прозрачный задний фон*/
+  border: none;
+  /* Убирает рамку у button*/
+  margin-top: 8px;
+  /*Задание цвета декоративному изображению*/
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.right-side-cart-svg {
+  fill: #E8E8E8;
+}
+
+.right-side-cart-svg:hover {
+  fill: red;
+}
+
+.right-side-cart-svg:active {
   fill: #0f2999;
 }
 
