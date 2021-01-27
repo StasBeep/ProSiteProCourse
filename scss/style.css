@@ -2,18 +2,6 @@
 /* === Переменные стилей === */
 /* === common styles === */
 /* end === common styles === end*/
-.wrapper-forcontent {
-  min-height: 100vh;
-  /* 100 видимых высот */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 /* === wrapper === */
 /* Обёртки - отдельный блок */
 .wrapper {
