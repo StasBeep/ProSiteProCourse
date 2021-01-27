@@ -14,6 +14,12 @@
         min-height: 100vh; /* 100 видимых высот */
         display: flex;
         flex-direction: column;
+
+        /* Контейнер для страницы определение 
+        максимальной ширины содержимого + обнуление 
+        margin*/
+        max-width: 1600px;
+        margin: 0 auto;
     }
 }
 /* end === wrapper === end */

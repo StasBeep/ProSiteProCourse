@@ -18,6 +18,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* Контейнер для страницы определение 
+        максимальной ширины содержимого + обнуление 
+        margin*/
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /* end === wrapper === end */
