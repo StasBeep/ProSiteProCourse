@@ -193,6 +193,13 @@
 
 /*end header end*/
 /* main */
+.additional-content {
+  /*секция 1*/
+  /*end Секция 1 end*/
+  /*Секция 2*/
+  /*end Секция 2 end*/
+}
+
 .additional-content-first {
   padding-top: 65px;
   padding-bottom: 96px;
@@ -288,6 +295,23 @@
   line-height: 19px;
   text-align: center;
   color: pink;
+}
+
+.additional-content-titlesec {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+.additional-content-parsec {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  margin-bottom: 58px;
 }
 
 /*end main end*/

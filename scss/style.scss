@@ -182,9 +182,9 @@ $fillmenusvg:#E8E8E8;
 
     /*end header end*/
 
-    /* main */
+    /* main */  
 .additional-content{
-
+    /*секция 1*/
     &-first{
         padding-top: 65px;
         padding-bottom: 96px;
@@ -280,9 +280,29 @@ $fillmenusvg:#E8E8E8;
             text-align: center;
             color: pink;
         }
-      }
-}
+    }
+    /*end Секция 1 end*/
 
+
+    /*Секция 2*/
+    &-titlesec{
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+        margin-bottom: 8px;
+    }
+
+    &-parsec{
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        margin-bottom: 58px;
+    }
+    /*end Секция 2 end*/
+}
     /*end main end*/
 /* end === content-without-footer === end */
 
