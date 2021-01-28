@@ -191,12 +191,14 @@ $fillmenusvg:#E8E8E8;
         box-sizing: border-box;
     }
 
-    &-cardsup{
-        display: flex;
-        justify-content: space-between;
-    }
 
     &-card{
+
+        &-up{
+            display: flex;
+            justify-content: space-between;
+        }
+
         /*Размеры карточек*/
         min-height: 260px;
         min-width: 360px;
@@ -235,6 +237,26 @@ $fillmenusvg:#E8E8E8;
         &:hover{
             content:"";
             background-color: #fff;
+        }
+
+        &-down{
+            margin-top: 30px;
+        }
+
+        &-under{
+            content: "";
+            min-height: 180px;
+            padding-top: 65px;
+            box-sizing: border-box;
+            background-size: cover;
+            background: rgba(0, 0, 0, .65) url(../img/things-card.png);
+            background-blend-mode: darken;
+            background-repeat: no-repeat;
+
+            &:hover{
+                content:"";
+                background-color: #fff;
+            }
         }
     }
 

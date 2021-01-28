@@ -200,15 +200,6 @@
           box-sizing: border-box;
 }
 
-.additional-content-cardsup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .additional-content-card {
   /*Размеры карточек*/
   min-height: 260px;
@@ -220,6 +211,15 @@
   /*Обращение к первому элементу карточек!
          Обращение к карточкам*/
   /*Эффект наведения с осветвлением*/
+}
+
+.additional-content-card-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .additional-content-card:first-child {
@@ -247,6 +247,27 @@
 }
 
 .additional-content-card:hover {
+  content: "";
+  background-color: #fff;
+}
+
+.additional-content-card-down {
+  margin-top: 30px;
+}
+
+.additional-content-card-under {
+  content: "";
+  min-height: 180px;
+  padding-top: 65px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.65) url(../img/things-card.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+.additional-content-card-under:hover {
   content: "";
   background-color: #fff;
 }
