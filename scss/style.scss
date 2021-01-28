@@ -399,6 +399,48 @@ $fillmenusvg:#E8E8E8;
         }
     }
     /*end Секция 2 end*/
+
+    /*Секция 3*/
+    &-third{
+        min-height: 341px;
+        
+        &-contents{
+            padding: 103px 0 104px 0;
+        }
+
+        &-svg{
+            display: block;
+            margin: 0 auto;
+            fill: #F16D7F;
+            margin-bottom: 28px;
+
+            &:hover{
+                fill: #1c0863;
+            }
+
+            &:active{
+                fill: #ad1010;
+            }
+        }
+
+        &-title{
+            display: block;
+            text-align: center;
+            font-size: 19.96px;
+            line-height: 24px;
+            color: #FBFBFB;
+            margin-bottom: 16px;
+        }
+
+        &-txt{
+            font-weight: 300;
+            font-size: 13.972px;
+            line-height: 17px;
+            text-align: center;
+            color: #FBFBFB;
+        }
+    }
+    /*end Секция 3 end*/
 }
     /*end main end*/
 /* end === content-without-footer === end */
