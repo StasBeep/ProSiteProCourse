@@ -301,6 +301,75 @@ $fillmenusvg:#E8E8E8;
         color: #9F9F9F;
         margin-bottom: 58px;
     }
+
+    &-sec{
+
+        &-cards{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        &-card{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            background: #F8F8F8;
+
+            &:first-child{
+                margin-right: 30px;
+            }
+
+            &:last-child{
+                margin-left: 30px;
+            }
+
+            /*Эффект наведения на всю карточку*/
+            &:hover{
+                content:"";
+                background-color: rgb(196, 168, 168);
+            }
+        }
+
+        &-img{
+            /*Для того, чтобы фотографии сужались, а не закрывались*/
+            width: 100%;
+
+            &-edit{
+                width: 141.94px;
+                height: 400px;
+                background-color: #F7E4E2;
+                padding: 9px 110px 11px 108px;
+            }
+        }
+
+        &-contentcard{
+            padding: 25px 28px 20px 16px;
+        }
+
+        &-name{
+            display: block;
+            text-transform: uppercase;
+            font-size: 13px;
+            line-height: 16px;
+            color: #000000;
+            margin-bottom: 12px;
+        }
+
+        &-description{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5D5D5D;
+            margin-bottom: 18px;
+        }
+
+        &-price{
+            font-size: 16px;
+            line-height: 19px;
+            color: #F16D7F;
+        }
+    }
     /*end Секция 2 end*/
 }
     /*end main end*/
