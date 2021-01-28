@@ -314,6 +314,10 @@
   margin-bottom: 58px;
 }
 
+.additional-content-sec {
+  /*Кнопка - это строчный элемент*/
+}
+
 .additional-content-sec-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,6 +392,34 @@
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+
+.additional-content-sec-button {
+  display: block;
+  /*Выравнивание по центру*/
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  background: white;
+  border: 1px solid  #F26376;
+  padding: 14.5px 38.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 18.5px;
+  margin-bottom: 95.5px;
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.additional-content-sec-button:hover {
+  content: "";
+  background: #f7e9e9;
+}
+
+.additional-content-sec-button:active {
+  content: "";
+  background: #4823af;
 }
 
 /*end main end*/

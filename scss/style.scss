@@ -369,6 +369,34 @@ $fillmenusvg:#E8E8E8;
             line-height: 19px;
             color: #F16D7F;
         }
+
+        /*Кнопка - это строчный элемент*/
+        &-button{
+            display: block;
+            /*Выравнивание по центру*/
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 19px;
+            color: #F26376;
+            background: white;
+            border: 1px solid  #F26376;
+            padding: 14.5px 38.5px;
+            box-sizing: border-box;
+            margin-top: 18.5px;
+            margin-bottom: 95.5px;
+
+            /*Эффект наведения*/
+            &:hover{
+                content: "";
+                background: #f7e9e9;
+            }
+
+            /*Эффект нажатия*/
+            &:active{
+                content: "";
+                background: #4823af;
+            }
+        }
     }
     /*end Секция 2 end*/
 }
