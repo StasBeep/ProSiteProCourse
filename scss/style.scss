@@ -42,6 +42,8 @@ $fillmenusvg:#E8E8E8;
 .content-without-footer{
     flex-grow:1; /* Отношение блоков */
 }
+     
+    /*header*/
 
 .bgcolor{
     background-color: $bgcolor;
@@ -152,6 +154,33 @@ $fillmenusvg:#E8E8E8;
         }
     }
 }
+
+.bgcolorp{
+    background:  #F1E4E6;
+}
+
+.padd-title{
+    padding: 374px 280px 381px 728px;
+    box-sizing: border-box;
+    background-image: url(../img/header-men.png);
+    background-repeat: no-repeat;
+    background-position-y: 107px;
+}
+
+.title-line {
+    display:block;
+    border-left: 12px solid #f16d7f;
+    padding-left: 16px;
+    line-height: 58px;
+    text-transform:uppercase;
+    font-size: 48px;
+}
+  
+.color-pink{
+    color:pink;
+}
+
+    /*end header end*/
 
 /* end === content-without-footer === end */
 
