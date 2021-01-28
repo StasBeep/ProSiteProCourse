@@ -1,5 +1,6 @@
 /* === Переменные стилей === */
-
+$bgcolor:#222222;
+$fillmenusvg:#E8E8E8;
 
 /* === common styles === */
 *{
@@ -8,25 +9,28 @@
 }
 /* end === common styles === end*/
 
+
 /* === wrapper === */
 /* Обёртки - отдельный блок */
 .wrapper{
-    /* Контейнер для равных отступов от краёв контента*/
-    padding: 0 230px;
-    box-sizing: border-box;
-    margin: 0 0 0 0;
+    /* Контейнер для страницы определение 
+    максимальной ширины содержимого + обнуление 
+    margin*/
+    max-width: 1600px;
+    margin: 0 auto;
     
     /* Обёртка для прижатия подвала к нижней части */
     &-forcontent{
         min-height: 100vh; /* 100 видимых высот */
         display: flex;
         flex-direction: column;
+    }
 
-        /* Контейнер для страницы определение 
-        максимальной ширины содержимого + обнуление 
-        margin*/
+    &-container{
+        /* Контейнер для равных отступов от краёв контента*/
+        padding: 0 230px;
+        box-sizing: border-box;
         max-width: 1600px;
-        margin: 0 auto;
     }
 }
 /* end === wrapper === end */
@@ -38,6 +42,146 @@
 .content-without-footer{
     flex-grow:1; /* Отношение блоков */
 }
+     
+    /*header*/
+
+.bgcolor{
+    background-color: $bgcolor;
+}
+
+/*Фиксирование меню поверх блоков*/
+.fixed-menu{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.padd-container{
+    padding: 18px 0;
+}
+
+.disp-fl{
+    display: flex;
+    justify-content: space-between; /*Положение по краям*/
+}
+
+.left-side{
+
+    /*Расположение по горизонтали*/
+    display: flex;
+
+    /*Движение вправо margin*/
+    &-marg-cont{
+        margin-right: 41px;
+    }
+
+    /*движение вниз margin*/
+    &-marg-cont-svg{
+        margin-top: 10px;
+    }
+
+
+    /*Задание цвета декоративному изображению*/
+    &-seach-svg{
+        fill:$fillmenusvg;
+    }
+
+    /*Эффект наведения*/
+    &-seach-svg:hover{
+        fill:red;
+    }
+
+    /*Эффект нажатия*/
+    &-seach-svg:active{
+        fill:rgb(15, 41, 153);
+    }
+}
+
+.right-side{
+    
+    /*Рассположение по горизонтали*/
+    display: flex;
+
+    
+    &-crawling-menu{
+        margin-top: 12px;
+        margin-right: 33px;
+    } 
+    
+    
+    &-account{
+        background: transparent;  /*Прозрачный задний фон*/
+        border: none; /* Убирает рамку у button*/
+
+        margin-top: 8px;
+        margin-right: 33px;
+
+
+        /*Задание цвета декоративному изображению*/
+        &-svg{
+            fill:$fillmenusvg;
+        }
+        /*Эффект наведения*/
+        &-svg:hover{
+            fill:red;
+        }
+
+        /*Эффект нажатия*/
+        &-svg:active{
+            fill:rgb(15, 41, 153);
+        }
+    }
+
+    
+    &-cart{
+        background: transparent;  /*Прозрачный задний фон*/
+        border: none; /* Убирает рамку у button*/
+
+        margin-top: 8px;
+
+        /*Задание цвета декоративному изображению*/
+        &-svg{
+            fill:$fillmenusvg;
+        }
+        /*Эффект наведения*/
+        &-svg:hover{
+            fill:red;
+        }
+
+        /*Эффект нажатия*/
+        &-svg:active{
+            fill:rgb(15, 41, 153);
+        }
+    }
+}
+
+.bgcolorp{
+    background:  #F1E4E6;
+}
+
+.padd-title{
+    padding: 374px 280px 381px 728px;
+    box-sizing: border-box;
+    background-image: url(../img/header-men.png);
+    background-repeat: no-repeat;
+    background-position-y: 107px;
+}
+
+.title-line {
+    display:block;
+    border-left: 12px solid #f16d7f;
+    padding-left: 16px;
+    line-height: 58px;
+    text-transform:uppercase;
+    font-size: 48px;
+}
+  
+.color-pink{
+    color:pink;
+}
+
+    /*end header end*/
+
 /* end === content-without-footer === end */
 
 

@@ -10,11 +10,11 @@
 /* === wrapper === */
 /* Обёртки - отдельный блок */
 .wrapper {
-  /* Контейнер для равных отступов от краёв контента*/
-  padding: 0 230px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0 0 0 0;
+  /* Контейнер для страницы определение 
+    максимальной ширины содержимого + обнуление 
+    margin*/
+  max-width: 1600px;
+  margin: 0 auto;
   /* Обёртка для прижатия подвала к нижней части */
 }
 
@@ -28,11 +28,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* Контейнер для страницы определение 
-        максимальной ширины содержимого + обнуление 
-        margin*/
+}
+
+.wrapper-container {
+  /* Контейнер для равных отступов от краёв контента*/
+  padding: 0 230px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 1600px;
-  margin: 0 auto;
 }
 
 /* end === wrapper === end */
@@ -45,6 +48,150 @@
   /* Отношение блоков */
 }
 
+/*header*/
+.bgcolor {
+  background-color: #222222;
+}
+
+/*Фиксирование меню поверх блоков*/
+.fixed-menu {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.padd-container {
+  padding: 18px 0;
+}
+
+.disp-fl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*Положение по краям*/
+}
+
+.left-side {
+  /*Расположение по горизонтали*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*Движение вправо margin*/
+  /*движение вниз margin*/
+  /*Задание цвета декоративному изображению*/
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.left-side-marg-cont {
+  margin-right: 41px;
+}
+
+.left-side-marg-cont-svg {
+  margin-top: 10px;
+}
+
+.left-side-seach-svg {
+  fill: #E8E8E8;
+}
+
+.left-side-seach-svg:hover {
+  fill: red;
+}
+
+.left-side-seach-svg:active {
+  fill: #0f2999;
+}
+
+.right-side {
+  /*Рассположение по горизонтали*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-side-crawling-menu {
+  margin-top: 12px;
+  margin-right: 33px;
+}
+
+.right-side-account {
+  background: transparent;
+  /*Прозрачный задний фон*/
+  border: none;
+  /* Убирает рамку у button*/
+  margin-top: 8px;
+  margin-right: 33px;
+  /*Задание цвета декоративному изображению*/
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.right-side-account-svg {
+  fill: #E8E8E8;
+}
+
+.right-side-account-svg:hover {
+  fill: red;
+}
+
+.right-side-account-svg:active {
+  fill: #0f2999;
+}
+
+.right-side-cart {
+  background: transparent;
+  /*Прозрачный задний фон*/
+  border: none;
+  /* Убирает рамку у button*/
+  margin-top: 8px;
+  /*Задание цвета декоративному изображению*/
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.right-side-cart-svg {
+  fill: #E8E8E8;
+}
+
+.right-side-cart-svg:hover {
+  fill: red;
+}
+
+.right-side-cart-svg:active {
+  fill: #0f2999;
+}
+
+.bgcolorp {
+  background: #F1E4E6;
+}
+
+.padd-title {
+  padding: 374px 280px 381px 728px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../img/header-men.png);
+  background-repeat: no-repeat;
+  background-position-y: 107px;
+}
+
+.title-line {
+  display: block;
+  border-left: 12px solid #f16d7f;
+  padding-left: 16px;
+  line-height: 58px;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.color-pink {
+  color: pink;
+}
+
+/*end header end*/
 /* end === content-without-footer === end */
 /* === footer === */
 /* Подвал */
