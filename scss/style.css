@@ -314,6 +314,57 @@
   margin-bottom: 58px;
 }
 
+.additional-content-sec-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #F8F8F8;
+  /*Эффект наведения на всю карточку*/
+}
+
+.additional-content-sec-card:hover {
+  content: "";
+  background-color: #c4a8a8;
+}
+
+.additional-content-sec-img {
+  /*Для того, чтобы фотографии сужались, а не закрывались*/
+  width: 100%;
+}
+
+.additional-content-sec-contentcard {
+  padding: 25px 28px 20px 16px;
+}
+
+.additional-content-sec-name {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.additional-content-sec-description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin-bottom: 18px;
+}
+
+.additional-content-sec-price {
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
 /*end main end*/
 /* end === content-without-footer === end */
 /* === footer === */
