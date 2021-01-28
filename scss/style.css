@@ -200,6 +200,75 @@
           box-sizing: border-box;
 }
 
+.additional-content-cardsup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.additional-content-card {
+  /*Размеры карточек*/
+  min-height: 260px;
+  min-width: 360px;
+  padding-top: 105px;
+  padding-bottom: 105px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*Обращение к первому элементу карточек!
+         Обращение к карточкам*/
+  /*Эффект наведения с осветвлением*/
+}
+
+.additional-content-card:first-child {
+  content: "";
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.65) url(../img/wooman-card.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+.additional-content-card:nth-child(2) {
+  content: "";
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.65) url(../img/men-card.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+.additional-content-card:last-child {
+  content: "";
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.65) url(../img/child-card.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+.additional-content-card:hover {
+  content: "";
+  background-color: #fff;
+}
+
+.additional-content-txt:first-child {
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.additional-content-txt:last-child {
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: pink;
+}
+
 /*end main end*/
 /* end === content-without-footer === end */
 /* === footer === */
