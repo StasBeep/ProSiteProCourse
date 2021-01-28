@@ -304,11 +304,24 @@ $fillmenusvg:#E8E8E8;
 
     &-sec{
 
+        &-cards{
+            display: flex;
+            justify-content: space-between;
+        }
+
         &-card{
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
             background: #F8F8F8;
+
+            &:first-child{
+                margin-right: 30px;
+            }
+
+            &:last-child{
+                margin-left: 30px;
+            }
 
             /*Эффект наведения на всю карточку*/
             &:hover{

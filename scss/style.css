@@ -314,6 +314,15 @@
   margin-bottom: 58px;
 }
 
+.additional-content-sec-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .additional-content-sec-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,6 +335,14 @@
           box-sizing: border-box;
   background: #F8F8F8;
   /*Эффект наведения на всю карточку*/
+}
+
+.additional-content-sec-card:first-child {
+  margin-right: 30px;
+}
+
+.additional-content-sec-card:last-child {
+  margin-left: 30px;
 }
 
 .additional-content-sec-card:hover {
