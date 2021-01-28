@@ -402,12 +402,25 @@ $fillmenusvg:#E8E8E8;
 
     /*Секция 3*/
     &-third{
-        min-height: 341px;
         
         &-contents{
-            padding: 103px 0 104px 0;
+            padding: 102px 0 104px 0;
+            display: flex;
+            justify-content: space-between;
         }
 
+        &-content{
+            &:first-child{
+                margin-right: 30px;
+                margin-top: 7px;
+            }
+
+            &:last-child{
+                margin-left: 30px;
+                margin-top: 3px;
+            }
+        }
+        
         &-svg{
             display: block;
             margin: 0 auto;

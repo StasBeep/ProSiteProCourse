@@ -424,12 +424,24 @@
   background: #4823af;
 }
 
-.additional-content-third {
-  min-height: 341px;
+.additional-content-third-contents {
+  padding: 102px 0 104px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.additional-content-third-contents {
-  padding: 103px 0 104px 0;
+.additional-content-third-content:first-child {
+  margin-right: 30px;
+  margin-top: 7px;
+}
+
+.additional-content-third-content:last-child {
+  margin-left: 30px;
+  margin-top: 3px;
 }
 
 .additional-content-third-svg {
