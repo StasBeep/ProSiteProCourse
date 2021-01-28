@@ -198,6 +198,8 @@
   /*end Секция 1 end*/
   /*Секция 2*/
   /*end Секция 2 end*/
+  /*Секция 3*/
+  /*end Секция 3 end*/
 }
 
 .additional-content-first {
@@ -420,6 +422,58 @@
 .additional-content-sec-button:active {
   content: "";
   background: #4823af;
+}
+
+.additional-content-third-contents {
+  padding: 102px 0 104px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.additional-content-third-content:first-child {
+  margin-right: 30px;
+  margin-top: 7px;
+}
+
+.additional-content-third-content:last-child {
+  margin-left: 30px;
+  margin-top: 3px;
+}
+
+.additional-content-third-svg {
+  display: block;
+  margin: 0 auto;
+  fill: #F16D7F;
+  margin-bottom: 28px;
+}
+
+.additional-content-third-svg:hover {
+  fill: #1c0863;
+}
+
+.additional-content-third-svg:active {
+  fill: #ad1010;
+}
+
+.additional-content-third-title {
+  display: block;
+  text-align: center;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+  margin-bottom: 16px;
+}
+
+.additional-content-third-txt {
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
 }
 
 /*end main end*/
