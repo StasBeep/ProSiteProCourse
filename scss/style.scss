@@ -307,6 +307,7 @@ $fillmenusvg:#E8E8E8;
         &-cards{
             display: flex;
             justify-content: space-between;
+            margin-bottom: 30px;
         }
 
         &-card{
@@ -333,6 +334,13 @@ $fillmenusvg:#E8E8E8;
         &-img{
             /*Для того, чтобы фотографии сужались, а не закрывались*/
             width: 100%;
+
+            &-edit{
+                width: 141.94px;
+                height: 400px;
+                background-color: #F7E4E2;
+                padding: 9px 110px 11px 108px;
+            }
         }
 
         &-contentcard{

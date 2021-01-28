@@ -321,6 +321,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .additional-content-sec-card {
@@ -353,6 +354,13 @@
 .additional-content-sec-img {
   /*Для того, чтобы фотографии сужались, а не закрывались*/
   width: 100%;
+}
+
+.additional-content-sec-img-edit {
+  width: 141.94px;
+  height: 400px;
+  background-color: #F7E4E2;
+  padding: 9px 110px 11px 108px;
 }
 
 .additional-content-sec-contentcard {
