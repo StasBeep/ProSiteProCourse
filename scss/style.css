@@ -192,6 +192,15 @@
 }
 
 /*end header end*/
+/* main */
+.additional-content-first {
+  padding-top: 65px;
+  padding-bottom: 96px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*end main end*/
 /* end === content-without-footer === end */
 /* === footer === */
 /* Подвал */

@@ -182,6 +182,17 @@ $fillmenusvg:#E8E8E8;
 
     /*end header end*/
 
+    /* main */
+.additional-content{
+
+    &-first{
+        padding-top: 65px;
+        padding-bottom: 96px;
+        box-sizing: border-box;
+    }
+}
+
+    /*end main end*/
 /* end === content-without-footer === end */
 
 
