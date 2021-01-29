@@ -200,6 +200,8 @@
   /*end Секция 2 end*/
   /*Секция 3*/
   /*end Секция 3 end*/
+  /*Секция 4*/
+  /*end Секция 4 end*/
 }
 
 .additional-content-first {
@@ -474,6 +476,118 @@
   line-height: 17px;
   text-align: center;
   color: #FBFBFB;
+}
+
+.additional-content-fourth {
+  min-height: 448px;
+  background: rgba(244, 244, 244, 0.7) url(../img/background-account.png);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
+
+.additional-content-fourth-fl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.additional-content-fourth-wrp:first-child {
+  max-width: 50%;
+  padding: 120px 200px 126px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 1px;
+}
+
+.additional-content-fourth-wrp:last-child {
+  padding: 150px 0px 156px 120px;
+  margin-left: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.additional-content-fourth-avatar {
+  width: 96px;
+  min-height: 120px;
+  background-image: url(../img/background-woman-account.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.additional-content-fourth-txt {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.additional-content-fourth-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+}
+
+.additional-content-fourth-title:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+.additional-content-fourth-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.additional-content-fourth-email {
+  display: block;
+  background: #E1E1E1;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #222224;
+  opacity: 0.67;
+  padding: 15px 105px 15px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: none;
+}
+
+.additional-content-fourth-btn {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F16D7F;
+  padding: 10px 30px 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: none;
+}
+
+.additional-content-fourth-btn:hover {
+  color: #1c0863;
+}
+
+.additional-content-fourth-btn:active {
+  color: aquamarine;
 }
 
 /*end main end*/
