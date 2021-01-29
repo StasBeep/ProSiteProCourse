@@ -182,6 +182,383 @@ $fillmenusvg:#E8E8E8;
 
     /*end header end*/
 
+    /* main */  
+.additional-content{
+    /*секция 1*/
+    &-first{
+        padding-top: 65px;
+        padding-bottom: 96px;
+        box-sizing: border-box;
+    }
+
+
+    &-card{
+
+        &-up{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /*Размеры карточек*/
+        min-height: 260px;
+        min-width: 360px;
+
+        padding-top: 105px;
+        padding-bottom: 105px;
+        box-sizing: border-box;
+
+        /*Обращение к первому элементу карточек!
+         Обращение к карточкам*/
+        &:first-child{
+            content: "";
+            background-size: cover;
+            background: rgba(0, 0, 0, .65) url(../img/wooman-card.png);
+            background-blend-mode: darken;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(2){
+            content: "";
+            background-size: cover;
+            background: rgba(0, 0, 0, .65) url(../img/men-card.png);
+            background-blend-mode: darken;
+            background-repeat: no-repeat;
+        }
+    
+        &:last-child{
+            content: "";
+            background-size: cover;
+            background: rgba(0, 0, 0, .65) url(../img/child-card.png);
+            background-blend-mode: darken;
+            background-repeat: no-repeat;
+        }
+        
+        /*Эффект наведения с осветвлением*/
+        &:hover{
+            content:"";
+            background-color: #fff;
+        }
+
+        &-down{
+            margin-top: 30px;
+        }
+
+        &-under{
+            content: "";
+            min-height: 180px;
+            padding-top: 65px;
+            box-sizing: border-box;
+            background-size: cover;
+            background: rgba(0, 0, 0, .65) url(../img/things-card.png);
+            background-blend-mode: darken;
+            background-repeat: no-repeat;
+
+            &:hover{
+                content:"";
+                background-color: #fff;
+            }
+        }
+    }
+
+    
+    &-txt{
+
+        &:first-child{
+            display: block;
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        &:last-child{
+            display: block;
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: pink;
+        }
+    }
+    /*end Секция 1 end*/
+
+
+    /*Секция 2*/
+    &-titlesec{
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+        margin-bottom: 8px;
+    }
+
+    &-parsec{
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        margin-bottom: 58px;
+    }
+
+    &-sec{
+
+        &-cards{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        &-card{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            background: #F8F8F8;
+
+            &:first-child{
+                margin-right: 30px;
+            }
+
+            &:last-child{
+                margin-left: 30px;
+            }
+
+            /*Эффект наведения на всю карточку*/
+            &:hover{
+                content:"";
+                background-color: rgb(196, 168, 168);
+            }
+        }
+
+        &-img{
+            /*Для того, чтобы фотографии сужались, а не закрывались*/
+            width: 100%;
+
+            &-edit{
+                width: 141.94px;
+                height: 400px;
+                background-color: #F7E4E2;
+                padding: 9px 110px 11px 108px;
+            }
+        }
+
+        &-contentcard{
+            padding: 25px 28px 20px 16px;
+        }
+
+        &-name{
+            display: block;
+            text-transform: uppercase;
+            font-size: 13px;
+            line-height: 16px;
+            color: #000000;
+            margin-bottom: 12px;
+        }
+
+        &-description{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5D5D5D;
+            margin-bottom: 18px;
+        }
+
+        &-price{
+            font-size: 16px;
+            line-height: 19px;
+            color: #F16D7F;
+        }
+
+        /*Кнопка - это строчный элемент*/
+        &-button{
+            display: block;
+            /*Выравнивание по центру*/
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 19px;
+            color: #F26376;
+            background: white;
+            border: 1px solid  #F26376;
+            padding: 14.5px 38.5px;
+            box-sizing: border-box;
+            margin-top: 18.5px;
+            margin-bottom: 95.5px;
+
+            /*Эффект наведения*/
+            &:hover{
+                content: "";
+                background: #f7e9e9;
+            }
+
+            /*Эффект нажатия*/
+            &:active{
+                content: "";
+                background: #4823af;
+            }
+        }
+    }
+    /*end Секция 2 end*/
+
+    /*Секция 3*/
+    &-third{
+        
+        &-contents{
+            padding: 102px 0 104px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-content{
+            &:first-child{
+                margin-right: 30px;
+                margin-top: 7px;
+            }
+
+            &:last-child{
+                margin-left: 30px;
+                margin-top: 3px;
+            }
+        }
+        
+        &-svg{
+            display: block;
+            margin: 0 auto;
+            fill: #F16D7F;
+            margin-bottom: 28px;
+
+            &:hover{
+                fill: #1c0863;
+            }
+
+            &:active{
+                fill: #ad1010;
+            }
+        }
+
+        &-title{
+            display: block;
+            text-align: center;
+            font-size: 19.96px;
+            line-height: 24px;
+            color: #FBFBFB;
+            margin-bottom: 16px;
+        }
+
+        &-txt{
+            font-weight: 300;
+            font-size: 13.972px;
+            line-height: 17px;
+            text-align: center;
+            color: #FBFBFB;
+        }
+    }
+    /*end Секция 3 end*/
+
+    /*Секция 4*/
+    &-fourth{
+        min-height: 448px;
+        background:rgba(244, 244, 244, 0.7) url(../img/background-account.png);
+        background-blend-mode: lighten;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100%;
+
+        &-fl{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-wrp{
+            &:first-child{
+                max-width: 50%;
+                padding: 120px 200px 126px 0px;
+                box-sizing: border-box;
+                margin-right: 1px;
+            }
+
+            &:last-child{
+                padding: 150px 0px 156px 120px;
+                margin-left: 1px;
+                box-sizing: border-box;
+            }
+        }
+
+        &-avatar{
+            width: 96px;
+            min-height: 120px;
+            background-image: url(../img/background-woman-account.png);
+            background-repeat: no-repeat;
+            margin: 0 auto;
+        }
+
+        &-txt{
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #222224;
+        }
+
+        &-title{
+            display: block;
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 167.2%;
+            text-align: center;
+            color: #222224;
+
+            
+            &:nth-child(2){
+                margin-bottom: 32px;
+            }
+        }
+
+        &-form{
+            display: flex;
+            margin: 0 auto;
+        }
+
+        &-email{
+            display: block;
+            background: #E1E1E1;
+            font-size: 14px;
+            line-height: 17px;
+            align-items: center;
+            color: #222224;
+            opacity: 0.67;
+            padding: 15px 105px 15px 30px;
+            box-sizing: border-box;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border: none;
+        }
+
+        &-btn{
+            display: block;
+            font-size: 14px;
+            line-height: 17px;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            background: #F16D7F;
+            padding: 10px 30px 10px 20px; 
+            box-sizing: border-box;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border: none;
+
+            &:hover{
+                color: #1c0863;
+            }
+
+            &:active{
+                color: aquamarine;
+            }
+        }
+    }
+    /*end Секция 4 end*/
+}
+    /*end main end*/
 /* end === content-without-footer === end */
 
 
