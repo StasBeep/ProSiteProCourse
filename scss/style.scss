@@ -566,5 +566,69 @@ $fillmenusvg:#E8E8E8;
 
 /* === footer === */
 /* Подвал */
+.footer{
 
+    &-position{
+        padding: 24px 235px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-txt{
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+        margin-top: 6px;
+    }
+
+    &-part{
+
+        &-socials{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-icons{
+            display: block;
+            background:#FFFFFF;
+            margin-right: 7.3px;
+
+            &:first-child{
+                padding: 6px 10px 3px 10px;
+                box-sizing: border-box;
+            }
+
+            &:nth-child(2){
+                padding: 6px 7px 0px 7px;
+                box-sizing: border-box;
+            }
+
+            &:nth-child(3){
+                padding: 6px 8px 0px 8px;
+                box-sizing: border-box;
+            }
+
+            &:last-child{
+                padding: 7px 6px 0 7px;
+            }
+
+            &:hover{
+                background: #9F9F9F;
+            }
+        }
+
+        &-svg{
+            fill: #000000;
+
+            &:hover{
+                fill: #ad1010;
+            }
+
+            &:active{
+                fill:#f16d7f;
+            }
+        }
+    }
+}
 /* end === footer === end */

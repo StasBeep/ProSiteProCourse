@@ -594,5 +594,77 @@
 /* end === content-without-footer === end */
 /* === footer === */
 /* Подвал */
+.footer-position {
+  padding: 24px 235px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-txt {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+  margin-top: 6px;
+}
+
+.footer-part-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-part-icons {
+  display: block;
+  background: #FFFFFF;
+  margin-right: 7.3px;
+}
+
+.footer-part-icons:first-child {
+  padding: 6px 10px 3px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-part-icons:nth-child(2) {
+  padding: 6px 7px 0px 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-part-icons:nth-child(3) {
+  padding: 6px 8px 0px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-part-icons:last-child {
+  padding: 7px 6px 0 7px;
+}
+
+.footer-part-icons:hover {
+  background: #9F9F9F;
+}
+
+.footer-part-svg {
+  fill: #000000;
+}
+
+.footer-part-svg:hover {
+  fill: #ad1010;
+}
+
+.footer-part-svg:active {
+  fill: #f16d7f;
+}
+
 /* end === footer === end */
 /*# sourceMappingURL=style.css.map */
