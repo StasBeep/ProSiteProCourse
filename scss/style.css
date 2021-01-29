@@ -1,10 +1,20 @@
 @charset "UTF-8";
 /* === Переменные стилей === */
 /* === common styles === */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* end === common styles === end*/
 /* === wrapper === */
 /* Обёртки - отдельный блок */
 .wrapper {
+  /* Контейнер для страницы определение 
+    максимальной ширины содержимого + обнуление 
+    margin*/
+  max-width: 1600px;
+  margin: 0 auto;
   /* Обёртка для прижатия подвала к нижней части */
 }
 
@@ -20,6 +30,14 @@
           flex-direction: column;
 }
 
+.wrapper-container {
+  /* Контейнер для равных отступов от краёв контента*/
+  padding: 0 230px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1600px;
+}
+
 /* end === wrapper === end */
 /* === content-without-footer === */
 /* Основная часть без footer */
@@ -30,8 +48,623 @@
   /* Отношение блоков */
 }
 
+/*header*/
+.bgcolor {
+  background-color: #222222;
+}
+
+/*Фиксирование меню поверх блоков*/
+.fixed-menu {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.padd-container {
+  padding: 18px 0;
+}
+
+.disp-fl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*Положение по краям*/
+}
+
+.left-side {
+  /*Расположение по горизонтали*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*Движение вправо margin*/
+  /*движение вниз margin*/
+  /*Задание цвета декоративному изображению*/
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.left-side-marg-cont {
+  margin-right: 41px;
+}
+
+.left-side-marg-cont-svg {
+  margin-top: 10px;
+}
+
+.left-side-seach-svg {
+  fill: #E8E8E8;
+}
+
+.left-side-seach-svg:hover {
+  fill: red;
+}
+
+.left-side-seach-svg:active {
+  fill: #0f2999;
+}
+
+.right-side {
+  /*Рассположение по горизонтали*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-side-crawling-menu {
+  margin-top: 12px;
+  margin-right: 33px;
+}
+
+.right-side-account {
+  background: transparent;
+  /*Прозрачный задний фон*/
+  border: none;
+  /* Убирает рамку у button*/
+  margin-top: 8px;
+  margin-right: 33px;
+  /*Задание цвета декоративному изображению*/
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.right-side-account-svg {
+  fill: #E8E8E8;
+}
+
+.right-side-account-svg:hover {
+  fill: red;
+}
+
+.right-side-account-svg:active {
+  fill: #0f2999;
+}
+
+.right-side-cart {
+  background: transparent;
+  /*Прозрачный задний фон*/
+  border: none;
+  /* Убирает рамку у button*/
+  margin-top: 8px;
+  /*Задание цвета декоративному изображению*/
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.right-side-cart-svg {
+  fill: #E8E8E8;
+}
+
+.right-side-cart-svg:hover {
+  fill: red;
+}
+
+.right-side-cart-svg:active {
+  fill: #0f2999;
+}
+
+.bgcolorp {
+  background: #F1E4E6;
+}
+
+.padd-title {
+  padding: 374px 280px 381px 728px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../img/header-men.png);
+  background-repeat: no-repeat;
+  background-position-y: 107px;
+}
+
+.title-line {
+  display: block;
+  border-left: 12px solid #f16d7f;
+  padding-left: 16px;
+  line-height: 58px;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.color-pink {
+  color: pink;
+}
+
+/*end header end*/
+/* main */
+.additional-content {
+  /*секция 1*/
+  /*end Секция 1 end*/
+  /*Секция 2*/
+  /*end Секция 2 end*/
+  /*Секция 3*/
+  /*end Секция 3 end*/
+  /*Секция 4*/
+  /*end Секция 4 end*/
+}
+
+.additional-content-first {
+  padding-top: 65px;
+  padding-bottom: 96px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.additional-content-card {
+  /*Размеры карточек*/
+  min-height: 260px;
+  min-width: 360px;
+  padding-top: 105px;
+  padding-bottom: 105px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*Обращение к первому элементу карточек!
+         Обращение к карточкам*/
+  /*Эффект наведения с осветвлением*/
+}
+
+.additional-content-card-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.additional-content-card:first-child {
+  content: "";
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.65) url(../img/wooman-card.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+.additional-content-card:nth-child(2) {
+  content: "";
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.65) url(../img/men-card.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+.additional-content-card:last-child {
+  content: "";
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.65) url(../img/child-card.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+.additional-content-card:hover {
+  content: "";
+  background-color: #fff;
+}
+
+.additional-content-card-down {
+  margin-top: 30px;
+}
+
+.additional-content-card-under {
+  content: "";
+  min-height: 180px;
+  padding-top: 65px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.65) url(../img/things-card.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+.additional-content-card-under:hover {
+  content: "";
+  background-color: #fff;
+}
+
+.additional-content-txt:first-child {
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.additional-content-txt:last-child {
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: pink;
+}
+
+.additional-content-titlesec {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+.additional-content-parsec {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  margin-bottom: 58px;
+}
+
+.additional-content-sec {
+  /*Кнопка - это строчный элемент*/
+}
+
+.additional-content-sec-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.additional-content-sec-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #F8F8F8;
+  /*Эффект наведения на всю карточку*/
+}
+
+.additional-content-sec-card:first-child {
+  margin-right: 30px;
+}
+
+.additional-content-sec-card:last-child {
+  margin-left: 30px;
+}
+
+.additional-content-sec-card:hover {
+  content: "";
+  background-color: #c4a8a8;
+}
+
+.additional-content-sec-img {
+  /*Для того, чтобы фотографии сужались, а не закрывались*/
+  width: 100%;
+}
+
+.additional-content-sec-img-edit {
+  width: 141.94px;
+  height: 400px;
+  background-color: #F7E4E2;
+  padding: 9px 110px 11px 108px;
+}
+
+.additional-content-sec-contentcard {
+  padding: 25px 28px 20px 16px;
+}
+
+.additional-content-sec-name {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.additional-content-sec-description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin-bottom: 18px;
+}
+
+.additional-content-sec-price {
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+.additional-content-sec-button {
+  display: block;
+  /*Выравнивание по центру*/
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  background: white;
+  border: 1px solid  #F26376;
+  padding: 14.5px 38.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 18.5px;
+  margin-bottom: 95.5px;
+  /*Эффект наведения*/
+  /*Эффект нажатия*/
+}
+
+.additional-content-sec-button:hover {
+  content: "";
+  background: #f7e9e9;
+}
+
+.additional-content-sec-button:active {
+  content: "";
+  background: #4823af;
+}
+
+.additional-content-third-contents {
+  padding: 102px 0 104px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.additional-content-third-content:first-child {
+  margin-right: 30px;
+  margin-top: 7px;
+}
+
+.additional-content-third-content:last-child {
+  margin-left: 30px;
+  margin-top: 3px;
+}
+
+.additional-content-third-svg {
+  display: block;
+  margin: 0 auto;
+  fill: #F16D7F;
+  margin-bottom: 28px;
+}
+
+.additional-content-third-svg:hover {
+  fill: #1c0863;
+}
+
+.additional-content-third-svg:active {
+  fill: #ad1010;
+}
+
+.additional-content-third-title {
+  display: block;
+  text-align: center;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+  margin-bottom: 16px;
+}
+
+.additional-content-third-txt {
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+.additional-content-fourth {
+  min-height: 448px;
+  background: rgba(244, 244, 244, 0.7) url(../img/background-account.png);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
+
+.additional-content-fourth-fl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.additional-content-fourth-wrp:first-child {
+  max-width: 50%;
+  padding: 120px 200px 126px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 1px;
+}
+
+.additional-content-fourth-wrp:last-child {
+  padding: 150px 0px 156px 120px;
+  margin-left: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.additional-content-fourth-avatar {
+  width: 96px;
+  min-height: 120px;
+  background-image: url(../img/background-woman-account.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.additional-content-fourth-txt {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.additional-content-fourth-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+}
+
+.additional-content-fourth-title:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+.additional-content-fourth-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.additional-content-fourth-email {
+  display: block;
+  background: #E1E1E1;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #222224;
+  opacity: 0.67;
+  padding: 15px 105px 15px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: none;
+}
+
+.additional-content-fourth-btn {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F16D7F;
+  padding: 10px 30px 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: none;
+}
+
+.additional-content-fourth-btn:hover {
+  color: #1c0863;
+}
+
+.additional-content-fourth-btn:active {
+  color: aquamarine;
+}
+
+/*end main end*/
 /* end === content-without-footer === end */
 /* === footer === */
 /* Подвал */
+.footer-position {
+  padding: 24px 235px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-txt {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+  margin-top: 6px;
+}
+
+.footer-part-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-part-icons {
+  display: block;
+  background: #FFFFFF;
+  margin-right: 7.3px;
+}
+
+.footer-part-icons:first-child {
+  padding: 6px 10px 3px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-part-icons:nth-child(2) {
+  padding: 6px 7px 0px 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-part-icons:nth-child(3) {
+  padding: 6px 8px 0px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-part-icons:last-child {
+  padding: 7px 6px 0 7px;
+}
+
+.footer-part-icons:hover {
+  background: #9F9F9F;
+}
+
+.footer-part-svg {
+  fill: #000000;
+}
+
+.footer-part-svg:hover {
+  fill: #ad1010;
+}
+
+.footer-part-svg:active {
+  fill: #f16d7f;
+}
+
 /* end === footer === end */
 /*# sourceMappingURL=style.css.map */
