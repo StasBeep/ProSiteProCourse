@@ -315,6 +315,7 @@ $fillmenusvg:#E8E8E8;
             flex-direction: column;
             box-sizing: border-box;
             background: #F8F8F8;
+            position: relative;
 
             &:first-child{
                 margin-right: 30px;
@@ -325,9 +326,18 @@ $fillmenusvg:#E8E8E8;
             }
 
             /*Эффект наведения на всю карточку*/
-            &:hover{
+            &:hover .additional-content-sec-btn{
                 content:"";
-                background-color: rgb(196, 168, 168);
+                /*background-color: rgb(196, 168, 168);*/
+                display: flex;
+            }
+
+            &:hover .additional-content-sec-img{
+                filter: brightness(30%);
+            }
+
+            &:hover .additional-content-sec-img-edit{
+                filter: brightness(30%);
             }
         }
 
@@ -341,6 +351,37 @@ $fillmenusvg:#E8E8E8;
                 background-color: #F7E4E2;
                 padding: 9px 110px 11px 108px;
             }
+        }
+
+        &-btn{
+            display: none;
+            width: 138px;
+            height: 43px;
+            border: 1px solid #FFFFFF;
+            background: transparent;
+            position: absolute;
+            top: 188.5px;
+            right: 110.5px;
+            padding: 10px 15px 8px 13px;
+            box-sizing: border-box;
+
+            &:active{
+                border: 1px solid  #FFFFFF;
+            }
+        }
+
+        &-svg{
+            display: block;
+            fill:#FFFFFF;
+        }
+
+        &-tit{
+            display: block;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            margin-top: 4px;
+            margin-left: 9px;
         }
 
         &-contentcard{
