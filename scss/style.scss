@@ -792,9 +792,28 @@ $fillmenusvg:#E8E8E8;
         color: #EBEBEB;
     }
     /*end Кнопка после карточек end*/
-
     /*end Секция 1 (Карточки) end*/
-
     /*end main emd*/
 
+    /*footer*/
+    .footer{
+        &-part{
+            &-icons:nth-child(2){
+                background-color: #F16D7F;
+            }
+
+            &-icons:nth-child(2) svg{
+                fill: #FFFFFF;
+            }
+
+            /*Эффект наведения*/
+            &-icons:nth-child(2):hover{
+                background-color: #df5366;
+            }
+            &-icons:nth-child(2) svg:hover{
+                fill: #1c0863;
+            }
+        }
+    }
+    /*end footer end*/
 /*end Catalog end*/
