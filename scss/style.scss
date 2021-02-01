@@ -177,7 +177,7 @@ $fillmenusvg:#E8E8E8;
 }
   
 .color-pink{
-    color:pink;
+    color:#F16D7F;
 }
 
     /*end header end*/
@@ -673,3 +673,40 @@ $fillmenusvg:#E8E8E8;
     }
 }
 /* end === footer === end */
+
+
+/* Catalog */
+
+/* header */
+.padding-title{
+    padding: 143px 230px 60px 230px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headercat{
+
+    /*Заголовок header*/
+    &-title{
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    }
+
+    /*Хлебные крошки header*/
+    &-breadcrumbs{
+        display: block;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+        margin-top: 6px;
+    }
+}
+/*end header end*/
+
+
+/*end Catalog end*/

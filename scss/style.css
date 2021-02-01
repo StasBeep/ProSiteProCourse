@@ -188,7 +188,7 @@
 }
 
 .color-pink {
-  color: pink;
+  color: #F16D7F;
 }
 
 /*end header end*/
@@ -713,4 +713,42 @@
 }
 
 /* end === footer === end */
+/* Catalog */
+/* header */
+.padding-title {
+  padding: 143px 230px 60px 230px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headercat {
+  /*Заголовок header*/
+  /*Хлебные крошки header*/
+}
+
+.headercat-title {
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+.headercat-breadcrumbs {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  margin-top: 6px;
+}
+
+/*end header end*/
+/*end Catalog end*/
 /*# sourceMappingURL=style.css.map */
