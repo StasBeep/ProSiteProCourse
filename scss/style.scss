@@ -677,36 +677,36 @@ $fillmenusvg:#E8E8E8;
 
 /* Catalog */
 
-/* header */
-.padding-title{
-    padding: 143px 230px 60px 230px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-}
-
-.headercat{
-
-    /*Заголовок header*/
-    &-title{
-    font-size: 24px;
-    line-height: 29px;
-    color: #F16D7F;
-    text-transform: uppercase;
+    /* header */
+    .padding-title{
+        padding: 143px 230px 60px 230px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
     }
 
-    /*Хлебные крошки header*/
-    &-breadcrumbs{
-        display: block;
+    .headercat{
+
+        /*Заголовок header*/
+        &-title{
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
         text-transform: uppercase;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
-        color: #636363;
-        margin-top: 6px;
+        }
+
+        /*Хлебные крошки header*/
+        &-breadcrumbs{
+            display: block;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #636363;
+            margin-top: 6px;
+        }
     }
-}
-/*end header end*/
+    /*end header end*/
 
     /*main*/
 
@@ -716,16 +716,16 @@ $fillmenusvg:#E8E8E8;
     }
     /*Фильтры*/
     .list{
-        
+            
         &-filter{
             display: flex;
             list-style: none;
             margin-bottom: 64px;
-            
+                
             & li{
                 display: block;
             }
-            
+                
             &-li{
                 margin-right: 28px;
                 &:first-child{
@@ -739,7 +739,7 @@ $fillmenusvg:#E8E8E8;
                 max-height: 530px;
             }
 
-            
+                
             /* Убираем стандартный маркер Chrome */
             details summary::-webkit-details-marker {
                 display: none;
@@ -770,14 +770,29 @@ $fillmenusvg:#E8E8E8;
                 fill: #6F6E6E;
 
                 &-one{
-                    padding-left: 10px;
-                    padding-bottom: 0px;
+                padding-left: 10px;
+                padding-bottom: 0px;
                 }
             }
         }
     }
-
     /*end Фильтры end*/
+
+    /*Кнопка после карточек*/
+    .button-after-card{
+        display: block;
+        padding: 12px 15px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border: 1px solid #EBEBEB;
+        background-color:  white;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #EBEBEB;
+    }
+    /*end Кнопка после карточек end*/
+
     /*end Секция 1 (Карточки) end*/
 
     /*end main emd*/

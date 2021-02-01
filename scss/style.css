@@ -819,6 +819,22 @@
 }
 
 /*end Фильтры end*/
+/*Кнопка после карточек*/
+.button-after-card {
+  display: block;
+  padding: 12px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  border: 1px solid #EBEBEB;
+  background-color: white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #EBEBEB;
+}
+
+/*end Кнопка после карточек end*/
 /*end Секция 1 (Карточки) end*/
 /*end main emd*/
 /*end Catalog end*/
