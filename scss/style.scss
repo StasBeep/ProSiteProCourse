@@ -708,5 +708,78 @@ $fillmenusvg:#E8E8E8;
 }
 /*end header end*/
 
+    /*main*/
+
+    /*Секция 1 (Карточки)*/
+    .padd-card{
+        padding: 51px 0 96px 0;
+    }
+    /*Фильтры*/
+    .list{
+        
+        &-filter{
+            display: flex;
+            list-style: none;
+            margin-bottom: 64px;
+            
+            & li{
+                display: block;
+            }
+            
+            &-li{
+                margin-right: 28px;
+                &:first-child{
+                    margin-right: 320px;
+                }
+            }
+
+            &-menu{
+                border: none;
+                max-width: 360px;
+                max-height: 530px;
+            }
+
+            
+            /* Убираем стандартный маркер Chrome */
+            details summary::-webkit-details-marker {
+                display: none;
+            }
+
+            &-title{
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 17px;
+                color: #6F6E6E;
+
+                &-one{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000000;
+                }
+
+                details[open] summary{
+                    color: #EF5B70;
+                }
+            }
+
+            &-svg{
+                padding-left: 10px;
+                padding-bottom: 1.5px;
+                fill: #6F6E6E;
+
+                &-one{
+                    padding-left: 10px;
+                    padding-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    /*end Фильтры end*/
+    /*end Секция 1 (Карточки) end*/
+
+    /*end main emd*/
 
 /*end Catalog end*/
