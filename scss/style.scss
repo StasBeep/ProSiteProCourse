@@ -177,7 +177,7 @@ $fillmenusvg:#E8E8E8;
 }
   
 .color-pink{
-    color:pink;
+    color:#F16D7F;
 }
 
     /*end header end*/
@@ -673,3 +673,147 @@ $fillmenusvg:#E8E8E8;
     }
 }
 /* end === footer === end */
+
+
+/* Catalog */
+
+    /* header */
+    .padding-title{
+        padding: 143px 230px 60px 230px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .headercat{
+
+        /*Заголовок header*/
+        &-title{
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+        text-transform: uppercase;
+        }
+
+        /*Хлебные крошки header*/
+        &-breadcrumbs{
+            display: block;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #636363;
+            margin-top: 6px;
+        }
+    }
+    /*end header end*/
+
+    /*main*/
+
+    /*Секция 1 (Карточки)*/
+    .padd-card{
+        padding: 51px 0 96px 0;
+    }
+    /*Фильтры*/
+    .list{
+            
+        &-filter{
+            display: flex;
+            list-style: none;
+            margin-bottom: 64px;
+                
+            & li{
+                display: block;
+            }
+                
+            &-li{
+                margin-right: 28px;
+                &:first-child{
+                    margin-right: 320px;
+                }
+            }
+
+            &-menu{
+                border: none;
+                max-width: 360px;
+                max-height: 530px;
+            }
+
+                
+            /* Убираем стандартный маркер Chrome */
+            details summary::-webkit-details-marker {
+                display: none;
+            }
+
+            &-title{
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 17px;
+                color: #6F6E6E;
+
+                &-one{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000000;
+                }
+
+                details[open] summary{
+                    color: #EF5B70;
+                }
+            }
+
+            &-svg{
+                padding-left: 10px;
+                padding-bottom: 1.5px;
+                fill: #6F6E6E;
+
+                &-one{
+                padding-left: 10px;
+                padding-bottom: 0px;
+                }
+            }
+        }
+    }
+    /*end Фильтры end*/
+
+    /*Кнопка после карточек*/
+    .button-after-card{
+        display: block;
+        padding: 12px 15px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border: 1px solid #EBEBEB;
+        background-color:  white;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #EBEBEB;
+    }
+    /*end Кнопка после карточек end*/
+    /*end Секция 1 (Карточки) end*/
+    /*end main emd*/
+
+    /*footer*/
+    .footer{
+        &-part{
+            &-icons:nth-child(2){
+                background-color: #F16D7F;
+            }
+
+            &-icons:nth-child(2) svg{
+                fill: #FFFFFF;
+            }
+
+            /*Эффект наведения*/
+            &-icons:nth-child(2):hover{
+                background-color: #df5366;
+            }
+            &-icons:nth-child(2) svg:hover{
+                fill: #1c0863;
+            }
+        }
+    }
+    /*end footer end*/
+/*end Catalog end*/
