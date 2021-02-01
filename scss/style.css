@@ -188,7 +188,7 @@
 }
 
 .color-pink {
-  color: pink;
+  color: #F16D7F;
 }
 
 /*end header end*/
@@ -343,6 +343,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #F8F8F8;
+  position: relative;
   /*Эффект наведения на всю карточку*/
 }
 
@@ -354,9 +355,22 @@
   margin-left: 30px;
 }
 
-.additional-content-sec-card:hover {
+.additional-content-sec-card:hover .additional-content-sec-btn {
   content: "";
-  background-color: #c4a8a8;
+  /*background-color: rgb(196, 168, 168);*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.additional-content-sec-card:hover .additional-content-sec-img {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.additional-content-sec-card:hover .additional-content-sec-img-edit {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
 }
 
 .additional-content-sec-img {
@@ -369,6 +383,38 @@
   height: 400px;
   background-color: #F7E4E2;
   padding: 9px 110px 11px 108px;
+}
+
+.additional-content-sec-btn {
+  display: none;
+  width: 138px;
+  height: 43px;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  position: absolute;
+  top: 188.5px;
+  right: 110.5px;
+  padding: 10px 15px 8px 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.additional-content-sec-btn:active {
+  border: 1px solid  #FFFFFF;
+}
+
+.additional-content-sec-svg {
+  display: block;
+  fill: #FFFFFF;
+}
+
+.additional-content-sec-tit {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-top: 4px;
+  margin-left: 9px;
 }
 
 .additional-content-sec-contentcard {
@@ -667,4 +713,151 @@
 }
 
 /* end === footer === end */
+/* Catalog */
+/* header */
+.padding-title {
+  padding: 143px 230px 60px 230px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headercat {
+  /*Заголовок header*/
+  /*Хлебные крошки header*/
+}
+
+.headercat-title {
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+.headercat-breadcrumbs {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  margin-top: 6px;
+}
+
+/*end header end*/
+/*main*/
+/*Секция 1 (Карточки)*/
+.padd-card {
+  padding: 51px 0 96px 0;
+}
+
+/*Фильтры*/
+.list-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-bottom: 64px;
+  /* Убираем стандартный маркер Chrome */
+}
+
+.list-filter li {
+  display: block;
+}
+
+.list-filter-li {
+  margin-right: 28px;
+}
+
+.list-filter-li:first-child {
+  margin-right: 320px;
+}
+
+.list-filter-menu {
+  border: none;
+  max-width: 360px;
+  max-height: 530px;
+}
+
+.list-filter details summary::-webkit-details-marker {
+  display: none;
+}
+
+.list-filter-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.list-filter-title-one {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.list-filter-title details[open] summary {
+  color: #EF5B70;
+}
+
+.list-filter-svg {
+  padding-left: 10px;
+  padding-bottom: 1.5px;
+  fill: #6F6E6E;
+}
+
+.list-filter-svg-one {
+  padding-left: 10px;
+  padding-bottom: 0px;
+}
+
+/*end Фильтры end*/
+/*Кнопка после карточек*/
+.button-after-card {
+  display: block;
+  padding: 12px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  border: 1px solid #EBEBEB;
+  background-color: white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #EBEBEB;
+}
+
+/*end Кнопка после карточек end*/
+/*end Секция 1 (Карточки) end*/
+/*end main emd*/
+/*footer*/
+.footer-part {
+  /*Эффект наведения*/
+}
+
+.footer-part-icons:nth-child(2) {
+  background-color: #F16D7F;
+}
+
+.footer-part-icons:nth-child(2) svg {
+  fill: #FFFFFF;
+}
+
+.footer-part-icons:nth-child(2):hover {
+  background-color: #df5366;
+}
+
+.footer-part-icons:nth-child(2) svg:hover {
+  fill: #1c0863;
+}
+
+/*end footer end*/
+/*end Catalog end*/
 /*# sourceMappingURL=style.css.map */
