@@ -860,4 +860,174 @@
 
 /*end footer end*/
 /*end Catalog end*/
+/*Product*/
+/*main*/
+/*Карусель*/
+.bgcolorprod {
+  min-height: 777px;
+  background-color: #F7F7F7;
+}
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-btn {
+  width: 47px;
+  height: 47px;
+  background: rgba(42, 42, 42, 0.15);
+  border: none;
+}
+
+.carousel-btn-svg {
+  fill: #000000;
+}
+
+.carousel-btn:first-child {
+  position: absolute;
+  top: 365px;
+}
+
+.carousel-btn:nth-child(3) {
+  position: absolute;
+  top: 365px;
+  left: 1506px;
+}
+
+.carousel-btn:hover .carousel-btn-svg:hover {
+  fill: #F16D7F;
+}
+
+.carousel-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-description {
+  position: absolute;
+  margin: 0 230px;
+  padding: 65px 250px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #F7F7F7;
+}
+
+.carousel-description-title {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-align: center;
+}
+
+.carousel-description-title:nth-child(3) {
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+}
+
+.carousel-description-line {
+  margin: 12px auto;
+  width: 63px;
+  height: 3px;
+  background: #EF5B70;
+  border: none;
+}
+
+.carousel-description-line:nth-child(6) {
+  width: 641px;
+  height: 1px;
+  background-color: #EAEAEA;
+  border: none;
+  margin: 65px 0;
+}
+
+.carousel-description-paragraph {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  margin: 48px 55px 32px 55px;
+}
+
+.carousel-description-price {
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  text-align: center;
+}
+
+.carousel-description-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Убираем стандартный маркер Chrome */
+}
+
+.carousel-description-list details summary::-webkit-details-marker {
+  display: none;
+}
+
+.carousel-description-list-li:first-child {
+  margin-left: 115px;
+  margin-right: 23px;
+}
+
+.carousel-description-list-li:last-child {
+  margin-left: 23px;
+}
+
+.carousel-description-btn {
+  display: block;
+  margin: 49px auto 0;
+  /*Выравнивание по центру*/
+  font-size: 16px;
+  line-height: 19px;
+  color: #FF6A6A;
+  background: white;
+  border: 1px solid #FF6A6A;
+  padding: 14px 56.5px 8.5px 23.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel-description-btn-svg {
+  fill: #FF6A6A;
+  margin-right: 23px;
+}
+
+.carousel-description-btn-txt {
+  display: block;
+  margin-top: 2px;
+}
+
+.carousel-description-btn:hover {
+  background-color: #1c0863;
+}
+
+.carousel-description-btn:hover .carousel-description-btn-svg {
+  fill: orange;
+}
+
+.carousel-description-btn:hover .carousel-description-btn-txt {
+  color: orange;
+}
+
+/*end Карусель end*/
+.margin-card {
+  margin-top: 665px;
+}
+
+/*end main end*/
+/*end Product end*/
 /*# sourceMappingURL=style.css.map */
