@@ -7,6 +7,12 @@ $fillmenusvg:#E8E8E8;
     margin: 0;
     padding: 0;
 }
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
 /* end === common styles === end*/
 
 
@@ -308,21 +314,23 @@ $fillmenusvg:#E8E8E8;
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
+            flex-wrap: wrap;
         }
 
         &-card{
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
+            width: 360px;
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*box-sizing: border-box;*/
             background: #F8F8F8;
             position: relative;
 
             &:first-child{
-                margin-right: 30px;
+                /*margin-right: 30px;*/
             }
 
             &:last-child{
-                margin-left: 30px;
+                /*margin-left: 30px;*/
             }
 
             /*Эффект наведения на всю карточку*/
