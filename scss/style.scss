@@ -7,12 +7,6 @@ $fillmenusvg:#E8E8E8;
     margin: 0;
     padding: 0;
 }
-
-button, 
-button:active, 
-button:focus {
-    outline: none;
-}
 /* end === common styles === end*/
 
 
@@ -323,6 +317,8 @@ button:focus {
             /*flex-direction: column;*/
             /*box-sizing: border-box;*/
             background: #F8F8F8;
+            /* разрешение переносить блоки на следующую строку,
+             если не помещается в родительском блоке*/
             position: relative;
 
             &:first-child{
