@@ -692,6 +692,7 @@ button:focus {
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
+        list-style: none;
     }
 
     .headercat{
@@ -702,17 +703,24 @@ button:focus {
         line-height: 29px;
         color: #F16D7F;
         text-transform: uppercase;
+        text-decoration: none;
+        }
+
+        &-navlink{
+            display: flex;
         }
 
         /*Хлебные крошки header*/
         &-breadcrumbs{
             display: block;
             text-transform: uppercase;
+            text-decoration: none;
             font-weight: 300;
             font-size: 14px;
             line-height: 17px;
             color: #636363;
             margin-top: 6px;
+            margin-right: 5px;
         }
     }
     /*end header end*/
