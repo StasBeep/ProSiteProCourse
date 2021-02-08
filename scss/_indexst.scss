@@ -1,51 +1,3 @@
-/* === Переменные стилей === */
-$bgcolor:#222222;
-$fillmenusvg:#E8E8E8;
-
-/* === common styles === */
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/*Строки для того, чтобы не выскакивала рамка 
-при нажатии и наведении на кнопку (ссылку)*/
-button, 
-button:active, 
-button:focus {
-    outline: none;
-}
-
-/* end === common styles === end*/
-
-
-/* === wrapper === */
-/* Обёртки - отдельный блок */
-.wrapper{
-    /* Контейнер для страницы определение 
-    максимальной ширины содержимого + обнуление 
-    margin*/
-    max-width: 1600px;
-    margin: 0 auto;
-    
-    /* Обёртка для прижатия подвала к нижней части */
-    &-forcontent{
-        min-height: 100vh; /* 100 видимых высот */
-        display: flex;
-        flex-direction: column;
-    }
-
-    &-container{
-        /* Контейнер для равных отступов от краёв контента*/
-        padding: 0 230px;
-        box-sizing: border-box;
-        max-width: 1600px;
-    }
-}
-/* end === wrapper === end */
-
-
-
 /* === content-without-footer === */
 /* Основная часть без footer */
 .content-without-footer{
@@ -177,16 +129,16 @@ button:focus {
 }
 
 .title-line {
+    @include font900();
+    @include fontsizelineheight(48px, 58px);
     display:block;
     border-left: 12px solid #f16d7f;
     padding-left: 16px;
-    line-height: 58px;
     text-transform:uppercase;
-    font-size: 48px;
 }
   
 .color-pink{
-    color:#F16D7F;
+    color:$laitpink;
 }
 
     /*end header end*/
@@ -272,20 +224,21 @@ button:focus {
     
     &-txt{
 
+        /* TODO: Миксин */
+        @include font400();
+
         &:first-child{
+            @include fontsizelineheight(16px, 19px);
             display: block;
             text-transform: uppercase;
-            font-size: 16px;
-            line-height: 19px;
             text-align: center;
-            color: #FFFFFF;
+            color: $colorwh;
         }
 
         &:last-child{
+            @include fontsizelineheight(16px, 19px);
             display: block;
             text-transform: uppercase;
-            font-size: 16px;
-            line-height: 19px;
             text-align: center;
             color: pink;
         }
@@ -295,19 +248,19 @@ button:focus {
 
     /*Секция 2*/
     &-titlesec{
+        @include font400();
+        @include fontsizelineheight(30px, 36px);
         display: block;
         text-align: center;
-        font-size: 30px;
-        line-height: 36px;
-        color: #222222;
+        color: $bgcolor;
         margin-bottom: 8px;
     }
 
     &-parsec{
+        @include font400();
+        @include fontsizelineheight();
         text-align: center;
-        font-size: 14px;
-        line-height: 17px;
-        color: #9F9F9F;
+        color: $palegray;
         margin-bottom: 58px;
     }
 
@@ -385,10 +338,10 @@ button:focus {
         }
 
         &-tit{
+            @include font400();
+            @include fontsizelineheight();
             display: block;
-            font-size: 14px;
-            line-height: 17px;
-            color: #FFFFFF;
+            color: $colorwh;
             margin-top: 4px;
             margin-left: 9px;
         }
@@ -398,38 +351,38 @@ button:focus {
         }
 
         &-name{
+            @include font400();
+            @include fontsizelineheight(13px 16px);
             display: block;
             text-transform: uppercase;
-            font-size: 13px;
-            line-height: 16px;
-            color: #000000;
+            color: $darkbl;
             margin-bottom: 12px;
         }
 
         &-description{
+            @include font300();
+            @include fontsizelineheight();
             font-weight: 300;
-            font-size: 14px;
-            line-height: 17px;
-            color: #5D5D5D;
+            color:$gray5d;
             margin-bottom: 18px;
         }
 
         &-price{
-            font-size: 16px;
-            line-height: 19px;
-            color: #F16D7F;
+            @include font400();
+            @include fontsizelineheight(16px, 19px);
+            color: $laitpink;
         }
 
         /*Кнопка - это строчный элемент*/
         &-button{
+            @include font400();
+            @include fontsizelineheight(16px, 19px);
             display: block;
             /*Выравнивание по центру*/
             margin: 0 auto;
-            font-size: 16px;
-            line-height: 19px;
-            color: #F26376;
+            color: $srpink;
             background: white;
-            border: 1px solid  #F26376;
+            border: 1px solid  $srpink;
             padding: 14.5px 38.5px;
             box-sizing: border-box;
             margin-top: 18.5px;
@@ -487,20 +440,20 @@ button:focus {
         }
 
         &-title{
+            @include font400();
+            @include fontsizelineheight(19.96px, 24px);
             display: block;
             text-align: center;
-            font-size: 19.96px;
-            line-height: 24px;
-            color: #FBFBFB;
+            color: $colorwhfb;
             margin-bottom: 16px;
         }
 
         &-txt{
+            @include font300();
+            @include fontsizelineheight(13.972px, 17px);
             font-weight: 300;
-            font-size: 13.972px;
-            line-height: 17px;
             text-align: center;
-            color: #FBFBFB;
+            color: $colorwhfb;
         }
     }
     /*end Секция 3 end*/
@@ -543,19 +496,19 @@ button:focus {
         }
 
         &-txt{
-            font-size: 20px;
-            line-height: 24px;
+            @include font400();
+            @include fontsizelineheight(20px, 24px);
             text-align: center;
-            color: #222224;
+            color: $black224;
         }
 
         &-title{
+            @include font400();
+            @include fontsizelineheight(24px, 167.2%);
             display: block;
             text-transform: uppercase;
-            font-size: 24px;
-            line-height: 167.2%;
             text-align: center;
-            color: #222224;
+            color: $black224;
 
             
             &:nth-child(2){
@@ -569,12 +522,11 @@ button:focus {
         }
 
         &-email{
+            @include fontsizelineheight();
             display: block;
             background: #E1E1E1;
-            font-size: 14px;
-            line-height: 17px;
             align-items: center;
-            color: #222224;
+            color: $black224;
             opacity: 0.67;
             padding: 15px 105px 15px 30px;
             box-sizing: border-box;
@@ -584,12 +536,11 @@ button:focus {
         }
 
         &-btn{
+            @include fontsizelineheight();
             display: block;
-            font-size: 14px;
-            line-height: 17px;
             align-items: center;
             text-align: center;
-            color: #FFFFFF;
+            color: $colorwh;
             background: #F16D7F;
             padding: 10px 30px 10px 20px; 
             box-sizing: border-box;
@@ -626,9 +577,9 @@ button:focus {
     }
 
     &-txt{
-        font-size: 16px;
-        line-height: 19px;
-        color: #FBFBFB;
+        @include font400();
+        @include fontsizelineheight(16px, 19px);
+        color: $colorwhfb;
         margin-top: 6px;
     }
 
@@ -682,329 +633,3 @@ button:focus {
     }
 }
 /* end === footer === end */
-
-
-/* Catalog */
-
-    /* header */
-    .padding-title{
-        padding: 143px 230px 60px 230px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-    }
-
-    .headercat{
-
-        /*Заголовок header*/
-        &-title{
-        font-size: 24px;
-        line-height: 29px;
-        color: #F16D7F;
-        text-transform: uppercase;
-        text-decoration: none;
-        }
-
-        &-navlink{
-            display: flex;
-        }
-
-        /*Хлебные крошки header*/
-        &-breadcrumbs{
-            display: block;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 17px;
-            color: #636363;
-            margin-top: 6px;
-            margin-right: 5px;
-        }
-    }
-    /*end header end*/
-
-    /*main*/
-
-    /*Секция 1 (Карточки)*/
-    .padd-card{
-        padding: 51px 0 96px 0;
-    }
-    /*Фильтры*/
-    .list{
-            
-        &-filter{
-            display: flex;
-            list-style: none;
-            margin-bottom: 64px;
-                
-            & li{
-                display: block;
-            }
-                
-            &-li{
-                margin-right: 28px;
-                &:first-child{
-                    margin-right: 320px;
-                }
-            }
-
-            &-menu{
-                border: none;
-                max-width: 360px;
-                max-height: 530px;
-            }
-
-                
-            /* Убираем стандартный маркер Chrome */
-            details summary::-webkit-details-marker {
-                display: none;
-            }
-
-            &-title{
-                text-transform: uppercase;
-                font-size: 14px;
-                line-height: 17px;
-                color: #6F6E6E;
-
-                &-one{
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: #000000;
-                }
-
-                details[open] summary{
-                    color: #EF5B70;
-                }
-            }
-
-            &-svg{
-                padding-left: 10px;
-                padding-bottom: 1.5px;
-                fill: #6F6E6E;
-
-                &-one{
-                padding-left: 10px;
-                padding-bottom: 0px;
-                }
-            }
-        }
-    }
-    /*end Фильтры end*/
-
-    /*Кнопка после карточек*/
-    .button-after-card{
-        display: block;
-        padding: 12px 15px;
-        box-sizing: border-box;
-        margin: 0 auto;
-        border: 1px solid #EBEBEB;
-        background-color:  white;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        color: #EBEBEB;
-    }
-    /*end Кнопка после карточек end*/
-    /*end Секция 1 (Карточки) end*/
-    /*end main emd*/
-
-    /*footer*/
-    .footer{
-        &-part{
-            &-icons:nth-child(2){
-                background-color: #F16D7F;
-            }
-
-            &-icons:nth-child(2) svg{
-                fill: #FFFFFF;
-            }
-
-            /*Эффект наведения*/
-            &-icons:nth-child(2):hover{
-                background-color: #df5366;
-            }
-            &-icons:nth-child(2) svg:hover{
-                fill: #1c0863;
-            }
-        }
-    }
-    /*end footer end*/
-/*end Catalog end*/
-
-
-/*Product*/
-    /*main*/
-
-    /*Карусель*/
-    .bgcolorprod{
-        min-height: 777px;
-        background-color: #F7F7F7;
-    }
-
-    .carousel{
-        &-wrapper{
-            position: relative;            
-        }
-
-        &-btn{
-            width: 47px;
-            height: 47px;
-            background: rgba(42, 42, 42, 0.15);
-            border: none;
-
-                    
-            &-svg{
-                fill:#000000;
-            }
-
-            &:first-child{
-                position: absolute;
-                top: 365px;
-            }
-
-            &:nth-child(3){
-                position: absolute;
-                top: 365px;
-                left: 1506px;
-            }
-
-            &:hover &-svg:hover{
-                fill:#F16D7F;
-            }
-        }
-
-        &-img{
-            display: block;
-            margin: 0 auto;
-        }
-
-        &-description{
-            position: absolute;
-            margin: 0 230px;
-            padding: 65px 250px;
-            box-sizing: border-box;
-            background: #FFFFFF;
-            border: 1px solid #F7F7F7;
-
-            &-title{
-                display: block;
-                text-transform: uppercase;
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 17px;
-                color: #F16D7F;
-                text-align: center;
-                
-                &:nth-child(3){
-                    font-size: 18px;
-                    line-height: 22px;
-                    color: #4D4D4D;
-                }
-            }
-
-            &-line{
-                margin: 12px auto;
-                width: 63px;
-                height: 3px;
-                background: #EF5B70;
-                border: none;
-
-                &:nth-child(6){
-                    width: 641px;
-                    height: 1px;
-                    background-color: #EAEAEA;
-                    border: none;
-                    margin: 65px 0;
-                }
-            }
-
-            &-paragraph{
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 17px;
-                text-align: center;
-                color: #5E5E5E;
-                margin: 48px 55px 32px 55px;
-            }
-
-            &-price{
-                display: block;
-                font-weight: 300;
-                font-size: 24px;
-                line-height: 29px;
-                color: #EF5B70;
-                text-align: center;
-            }
-
-            &-list{
-                list-style: none;
-                display: flex;
-                
-                /* Убираем стандартный маркер Chrome */
-                details summary::-webkit-details-marker {
-                    display: none;
-                }
-
-                &-li{
-                    &:first-child{
-                        margin-left: 115px;
-                        margin-right: 23px;
-                    }
-
-                    &:last-child{
-                        margin-left: 23px;
-                    }
-                }
-            }
-
-            &-btn{
-                display: block;
-                margin: 49px auto 0;
-                /*Выравнивание по центру*/
-                font-size: 16px;
-                line-height: 19px;
-                color: #FF6A6A;
-                background: white;
-                border: 1px solid #FF6A6A;
-                padding: 14px 56.5px 8.5px 23.5px;
-                box-sizing: border-box;
-                display: flex;
-
-                &-svg{
-                    fill: #FF6A6A;
-                    margin-right: 23px;
-                }
-
-                &-txt{
-                    display: block;
-                    margin-top: 2px;
-                }
-
-                &:hover{
-                    background-color: #1c0863;
-
-                    & .carousel-description-btn-svg{
-                        fill: orange;
-                    }
-
-                    & .carousel-description-btn-txt{
-                        color: orange;
-                    }
-                }
-            }
-        }
-    }
-    /*end Карусель end*/
-
-    .margin{
-        &-card{
-            margin-top: 665px;
-        }
-    }
-
-    /*end main end*/
-/*end Product end*/
