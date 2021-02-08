@@ -6,6 +6,14 @@
   padding: 0;
 }
 
+/*Строки для того, чтобы не выскакивала рамка 
+при нажатии и наведении на кнопку (ссылку)*/
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
 /* end === common styles === end*/
 /* === wrapper === */
 /* Обёртки - отдельный блок */

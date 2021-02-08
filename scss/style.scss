@@ -7,6 +7,15 @@ $fillmenusvg:#E8E8E8;
     margin: 0;
     padding: 0;
 }
+
+/*Строки для того, чтобы не выскакивала рамка 
+при нажатии и наведении на кнопку (ссылку)*/
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
 /* end === common styles === end*/
 
 
