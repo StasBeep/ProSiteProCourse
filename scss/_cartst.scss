@@ -98,6 +98,12 @@
     box-sizing: border-box;
     background: $colorwh;
     border: 1px solid #A4A4A4;
+
+    &:hover{
+        background-color: $laitpink;
+        color: blue;
+        transform:scale(1.1);
+    }
 }
 /*end main end*/
 
