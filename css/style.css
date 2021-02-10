@@ -1248,6 +1248,34 @@ button:focus {
   fill: #575757;
 }
 
+.wrp-fl-marg {
+  margin-top: 32.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-clearcontinue {
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  min-width: 240px;
+  max-width: 241px;
+  display: block;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 17px 39px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #A4A4A4;
+}
+
 /*end main end*/
 /*end cart end*/
 /*# sourceMappingURL=style.css.map */

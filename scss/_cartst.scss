@@ -79,6 +79,26 @@
         }
     }
 }
+
+.wrp-fl-marg{
+    margin-top: 32.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-clearcontinue{
+    @include font300();
+    @include fontsizelineheight();
+    min-width: 240px;
+    max-width: 241px;
+    display: block;
+    text-transform: uppercase;
+    color: $darkbl;
+    padding: 17px 39px;
+    box-sizing: border-box;
+    background: $colorwh;
+    border: 1px solid #A4A4A4;
+}
 /*end main end*/
 
 /*end cart end*/
