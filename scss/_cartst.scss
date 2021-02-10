@@ -13,7 +13,72 @@
 /*end header end*/
 
 /* main */
+.products{
+    padding-top: 96px;
+    padding-bottom: 128.5px;
+    box-sizing: border-box;
+    /* ! Цвет background специфичный и под макет
+     не подходит*/
 
+    &-card{
+        list-style: none;
+
+        &-unit{
+            display: flex;
+            /*тени*/
+            box-shadow: 10px 10px  #E5E5E5;
+            margin-bottom: 40px;
+        }
+
+        &-description{
+            background: $colorwh;
+            list-style: none;
+            padding: 22px 97px 62px 32px;
+            box-sizing: border-box;
+            position: relative;
+
+            &-filter{
+                @include font400();
+                @include fontsizelineheight(22px, 26px);
+                color: #575757;
+
+                &:nth-child(1){
+                    @include fontsizelineheight(24px, 29px);
+                    text-transform: uppercase;
+                    color: $bgcolor;
+                }
+
+                &:nth-child(2){
+                    @include fontsizelineheight(24px, 29px);
+                    text-transform: uppercase;
+                    color: $bgcolor;
+                    margin-bottom: 42px;
+                }
+            }
+
+            &-inp{
+                @include fontsizelineheight(18px, 22px);
+                margin-left: 24px;
+                width: 43px;
+                text-align: center;
+                color: #656565;
+                border: 1px solid #EAEAEA;
+            }
+
+            &-exit{
+                border: none;
+                background: #FFFFFF;
+                position: absolute;
+                left: 330px;
+                bottom: 257px;
+
+                &-svg{
+                    fill:#575757;
+                }
+            }
+        }
+    }
+}
 /*end main end*/
 
 /*end cart end*/

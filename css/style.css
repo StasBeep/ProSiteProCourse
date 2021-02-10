@@ -47,6 +47,12 @@ button:focus {
 }
 
 /* end === wrapper === end */
+/* отступы */
+.marg-left {
+  margin-left: 6px;
+}
+
+/*end отступы end*/
 @font-face {
   font-family: lato;
   src: url(../fonts/lato-light.ttf);
@@ -1164,6 +1170,84 @@ button:focus {
 
 /*end header end*/
 /* main */
+.products {
+  padding-top: 96px;
+  padding-bottom: 128.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* ! Цвет background специфичный и под макет
+     не подходит*/
+}
+
+.products-card {
+  list-style: none;
+}
+
+.products-card-unit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*тени*/
+  -webkit-box-shadow: 10px 10px  #E5E5E5;
+          box-shadow: 10px 10px  #E5E5E5;
+  margin-bottom: 40px;
+}
+
+.products-card-description {
+  background: #FFFFFF;
+  list-style: none;
+  padding: 22px 97px 62px 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.products-card-description-filter {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.products-card-description-filter:nth-child(1) {
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.products-card-description-filter:nth-child(2) {
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 42px;
+}
+
+.products-card-description-inp {
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 24px;
+  width: 43px;
+  text-align: center;
+  color: #656565;
+  border: 1px solid #EAEAEA;
+}
+
+.products-card-description-exit {
+  border: none;
+  background: #FFFFFF;
+  position: absolute;
+  left: 330px;
+  bottom: 257px;
+}
+
+.products-card-description-exit-svg {
+  fill: #575757;
+}
+
 /*end main end*/
 /*end cart end*/
 /*# sourceMappingURL=style.css.map */
