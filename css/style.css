@@ -1149,4 +1149,21 @@ button:focus {
 
 /*end main end*/
 /*end Product end*/
+/* cart */
+/* header */
+.headercart-title {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*end header end*/
+/* main */
+/*end main end*/
+/*end cart end*/
 /*# sourceMappingURL=style.css.map */

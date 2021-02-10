@@ -1,0 +1,19 @@
+/* cart */
+
+/* header */
+.headercart{
+    &-title{
+        @include font400();
+        @include fontsizelineheight(24px, 29px);
+        color: $laitpink;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+/*end header end*/
+
+/* main */
+
+/*end main end*/
+
+/*end cart end*/
