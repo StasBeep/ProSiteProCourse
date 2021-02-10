@@ -1259,6 +1259,16 @@ button:focus {
   fill: #575757;
 }
 
+.products-card-right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .wrp-fl-marg {
   margin-top: 32.5px;
   display: -webkit-box;
@@ -1335,6 +1345,76 @@ button:focus {
   padding: 10px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.backf-btn:hover {
+  color: blue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.backf-data {
+  background-color: #F5F3F3;
+  padding: 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 57.5px;
+}
+
+.backf-titpay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #4A4A4A;
+}
+
+.backf-titpay-right {
+  display: block;
+  margin-left: 50px;
+}
+
+.backf-titpay:nth-child(2) {
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 21px;
+}
+
+.backf-hr {
+  border: 1px solid #E2E2E2;
+}
+
+.backf-pay {
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  width: 275px;
+  height: 50px;
+  margin-top: 17px;
+  background: #F16D7F;
+  text-transform: uppercase;
+  border: none;
+  color: #FFFFFF;
+}
+
+.backf-pay:hover {
+  color: blue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*end main end*/
