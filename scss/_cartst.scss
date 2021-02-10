@@ -19,9 +19,16 @@
     box-sizing: border-box;
     /* ! Цвет background специфичный и под макет
      не подходит*/
+    display: flex;
+    justify-content: space-between;
+    
+    &-left-side{
+        margin-right: 128px;
+    }
 
     &-card{
         list-style: none;
+        min-width: 652px;
 
         &-unit{
             display: flex;
@@ -69,7 +76,7 @@
                 border: none;
                 background: #FFFFFF;
                 position: absolute;
-                left: 330px;
+                left: 356px;
                 bottom: 257px;
 
                 &-svg{
@@ -103,6 +110,41 @@
         background-color: $laitpink;
         color: blue;
         transform:scale(1.1);
+    }
+}
+
+.backf{
+
+    &-title{
+        display: block;
+        @include font300();
+        @include fontsizelineheight(16px, 19px);
+        @include marginbotton(20.5px);
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+    &-inp{
+        @include font300();
+        @include fontsizelineheight(13px, 16px);
+        @include marginbotton(20.5px);
+        width: 358px;
+        height: 44px;
+        border: 1px solid #A4A4A4;
+        padding-left: 17px;
+        box-sizing: border-box;
+        color: #222222;
+    }
+
+    &-btn{
+        @include font300();
+        @include fontsizelineheight(11px, 13px);
+        color: #4A4A4A;
+        border: 1px solid #A4A4A4;
+        background-color: $colorwh;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        box-sizing: border-box;
     }
 }
 /*end main end*/

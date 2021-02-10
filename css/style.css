@@ -1177,10 +1177,21 @@ button:focus {
           box-sizing: border-box;
   /* ! Цвет background специфичный и под макет
      не подходит*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-left-side {
+  margin-right: 128px;
 }
 
 .products-card {
   list-style: none;
+  min-width: 652px;
 }
 
 .products-card-unit {
@@ -1240,7 +1251,7 @@ button:focus {
   border: none;
   background: #FFFFFF;
   position: absolute;
-  left: 330px;
+  left: 356px;
   bottom: 257px;
 }
 
@@ -1281,6 +1292,49 @@ button:focus {
   color: blue;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.backf-title {
+  display: block;
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20.5px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.backf-inp {
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 20.5px;
+  width: 358px;
+  height: 44px;
+  border: 1px solid #A4A4A4;
+  padding-left: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #222222;
+}
+
+.backf-btn {
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  border: 1px solid #A4A4A4;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*end main end*/
