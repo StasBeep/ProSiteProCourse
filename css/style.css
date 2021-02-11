@@ -458,7 +458,7 @@ button:focus {
 }
 
 .additional-content-sec-btn:active {
-  border: 1px solid  #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
 
 .additional-content-sec-svg {
@@ -836,6 +836,7 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
 }
 
 .headercat-breadcrumbs {
@@ -1199,8 +1200,8 @@ button:focus {
   display: -ms-flexbox;
   display: flex;
   /*тени*/
-  -webkit-box-shadow: 10px 10px  #E5E5E5;
-          box-shadow: 10px 10px  #E5E5E5;
+  -webkit-box-shadow: 10px 10px #E5E5E5;
+          box-shadow: 10px 10px #E5E5E5;
   margin-bottom: 40px;
 }
 

@@ -1,126 +1,134 @@
 /* === content-without-footer === */
 /* Основная часть без footer */
-.content-without-footer{
-    flex-grow:1; /* Отношение блоков */
+.content-without-footer {
+    flex-grow: 1;
+    /* Отношение блоков */
 }
-     
-    /*header*/
 
-.bgcolor{
+/*header*/
+
+.bgcolor {
     background-color: $bgcolor;
 }
 
 /*Фиксирование меню поверх блоков*/
-.fixed-menu{
+.fixed-menu {
     position: fixed;
     width: 100%;
     z-index: 10;
 }
 
-.padd-container{
+.padd-container {
     padding: 18px 0;
 }
 
-.disp-fl{
+.disp-fl {
     display: flex;
-    justify-content: space-between; /*Положение по краям*/
+    justify-content: space-between;
+    /*Положение по краям*/
 }
 
-.left-side{
+.left-side {
 
     /*Расположение по горизонтали*/
     display: flex;
 
     /*Движение вправо margin*/
-    &-marg-cont{
+    &-marg-cont {
         margin-right: 41px;
     }
 
     /*движение вниз margin*/
-    &-marg-cont-svg{
+    &-marg-cont-svg {
         margin-top: 10px;
     }
 
 
     /*Задание цвета декоративному изображению*/
-    &-seach-svg{
-        fill:$fillmenusvg;
+    &-seach-svg {
+        fill: $fillmenusvg;
     }
 
     /*Эффект наведения*/
-    &-seach-svg:hover{
-        fill:red;
+    &-seach-svg:hover {
+        fill: red;
     }
 
     /*Эффект нажатия*/
-    &-seach-svg:active{
-        fill:rgb(15, 41, 153);
+    &-seach-svg:active {
+        fill: rgb(15, 41, 153);
     }
 }
 
-.right-side{
-    
+.right-side {
+
     /*Рассположение по горизонтали*/
     display: flex;
 
-    
-    &-crawling-menu{
+
+    &-crawling-menu {
         margin-top: 12px;
         margin-right: 33px;
-    } 
-    
-    
-    &-account{
-        background: transparent;  /*Прозрачный задний фон*/
-        border: none; /* Убирает рамку у button*/
+    }
+
+
+    &-account {
+        background: transparent;
+        /*Прозрачный задний фон*/
+        border: none;
+        /* Убирает рамку у button*/
 
         margin-top: 8px;
         margin-right: 33px;
 
 
         /*Задание цвета декоративному изображению*/
-        &-svg{
-            fill:$fillmenusvg;
+        &-svg {
+            fill: $fillmenusvg;
         }
+
         /*Эффект наведения*/
-        &-svg:hover{
-            fill:red;
+        &-svg:hover {
+            fill: red;
         }
 
         /*Эффект нажатия*/
-        &-svg:active{
-            fill:rgb(15, 41, 153);
+        &-svg:active {
+            fill: rgb(15, 41, 153);
         }
     }
 
-    
-    &-cart{
-        background: transparent;  /*Прозрачный задний фон*/
-        border: none; /* Убирает рамку у button*/
+
+    &-cart {
+        background: transparent;
+        /*Прозрачный задний фон*/
+        border: none;
+        /* Убирает рамку у button*/
 
         margin-top: 8px;
 
         /*Задание цвета декоративному изображению*/
-        &-svg{
-            fill:$fillmenusvg;
+        &-svg {
+            fill: $fillmenusvg;
         }
+
         /*Эффект наведения*/
-        &-svg:hover{
-            fill:red;
+        &-svg:hover {
+            fill: red;
         }
 
         /*Эффект нажатия*/
-        &-svg:active{
-            fill:rgb(15, 41, 153);
+        &-svg:active {
+            fill: rgb(15, 41, 153);
         }
     }
 }
 
-.bgcolorp{
-    background:  #F1E4E6;
+.bgcolorp {
+    background: #F1E4E6;
 }
 
-.padd-title{
+.padd-title {
     padding: 374px 280px 381px 728px;
     box-sizing: border-box;
     background-image: url(../img/header-men.png);
@@ -131,31 +139,32 @@
 .title-line {
     @include font900();
     @include fontsizelineheight(48px, 58px);
-    display:block;
+    display: block;
     border-left: 12px solid #f16d7f;
     padding-left: 16px;
-    text-transform:uppercase;
-}
-  
-.color-pink{
-    color:$laitpink;
+    text-transform: uppercase;
 }
 
-    /*end header end*/
+.color-pink {
+    color: $laitpink;
+}
 
-    /* main */  
-.additional-content{
+/*end header end*/
+
+/* main */
+.additional-content {
+
     /*секция 1*/
-    &-first{
+    &-first {
         padding-top: 65px;
         padding-bottom: 96px;
         box-sizing: border-box;
     }
 
 
-    &-card{
+    &-card {
 
-        &-up{
+        &-up {
             display: flex;
             justify-content: space-between;
         }
@@ -170,7 +179,7 @@
 
         /*Обращение к первому элементу карточек!
          Обращение к карточкам*/
-        &:first-child{
+        &:first-child {
             content: "";
             background-size: cover;
             background: rgba(0, 0, 0, .65) url(../img/wooman-card.png);
@@ -178,33 +187,33 @@
             background-repeat: no-repeat;
         }
 
-        &:nth-child(2){
+        &:nth-child(2) {
             content: "";
             background-size: cover;
             background: rgba(0, 0, 0, .65) url(../img/men-card.png);
             background-blend-mode: darken;
             background-repeat: no-repeat;
         }
-    
-        &:last-child{
+
+        &:last-child {
             content: "";
             background-size: cover;
             background: rgba(0, 0, 0, .65) url(../img/child-card.png);
             background-blend-mode: darken;
             background-repeat: no-repeat;
         }
-        
+
         /*Эффект наведения с осветвлением*/
-        &:hover{
-            content:"";
+        &:hover {
+            content: "";
             background-color: #fff;
         }
 
-        &-down{
+        &-down {
             margin-top: 30px;
         }
 
-        &-under{
+        &-under {
             content: "";
             min-height: 180px;
             padding-top: 65px;
@@ -214,20 +223,20 @@
             background-blend-mode: darken;
             background-repeat: no-repeat;
 
-            &:hover{
-                content:"";
+            &:hover {
+                content: "";
                 background-color: #fff;
             }
         }
     }
 
-    
-    &-txt{
+
+    &-txt {
 
         /* TODO: Миксин */
         @include font400();
 
-        &:first-child{
+        &:first-child {
             @include fontsizelineheight(16px, 19px);
             display: block;
             text-transform: uppercase;
@@ -235,7 +244,7 @@
             color: $colorwh;
         }
 
-        &:last-child{
+        &:last-child {
             @include fontsizelineheight(16px, 19px);
             display: block;
             text-transform: uppercase;
@@ -243,11 +252,12 @@
             color: pink;
         }
     }
+
     /*end Секция 1 end*/
 
 
     /*Секция 2*/
-    &-titlesec{
+    &-titlesec {
         @include font400();
         @include fontsizelineheight(30px, 36px);
         display: block;
@@ -256,7 +266,7 @@
         margin-bottom: 8px;
     }
 
-    &-parsec{
+    &-parsec {
         @include font400();
         @include fontsizelineheight();
         text-align: center;
@@ -264,50 +274,50 @@
         margin-bottom: 58px;
     }
 
-    &-sec{
+    &-sec {
 
-        &-cards{
+        &-cards {
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
         }
 
-        &-card{
+        &-card {
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
             background: #F8F8F8;
             position: relative;
 
-            &:first-child{
+            &:first-child {
                 margin-right: 30px;
             }
 
-            &:last-child{
+            &:last-child {
                 margin-left: 30px;
             }
 
             /*Эффект наведения на всю карточку*/
-            &:hover .additional-content-sec-btn{
-                content:"";
+            &:hover .additional-content-sec-btn {
+                content: "";
                 /*background-color: rgb(196, 168, 168);*/
                 display: flex;
             }
 
-            &:hover .additional-content-sec-img{
+            &:hover .additional-content-sec-img {
                 filter: brightness(30%);
             }
 
-            &:hover .additional-content-sec-img-edit{
+            &:hover .additional-content-sec-img-edit {
                 filter: brightness(30%);
             }
         }
 
-        &-img{
+        &-img {
             /*Для того, чтобы фотографии сужались, а не закрывались*/
             width: 100%;
 
-            &-edit{
+            &-edit {
                 width: 141.94px;
                 height: 400px;
                 background-color: #F7E4E2;
@@ -315,7 +325,7 @@
             }
         }
 
-        &-btn{
+        &-btn {
             display: none;
             width: 138px;
             height: 43px;
@@ -327,17 +337,17 @@
             padding: 10px 15px 8px 13px;
             box-sizing: border-box;
 
-            &:active{
-                border: 1px solid  #FFFFFF;
+            &:active {
+                border: 1px solid #FFFFFF;
             }
         }
 
-        &-svg{
+        &-svg {
             display: block;
-            fill:#FFFFFF;
+            fill: #FFFFFF;
         }
 
-        &-tit{
+        &-tit {
             @include font400();
             @include fontsizelineheight();
             display: block;
@@ -346,11 +356,11 @@
             margin-left: 9px;
         }
 
-        &-contentcard{
+        &-contentcard {
             padding: 25px 28px 20px 16px;
         }
 
-        &-name{
+        &-name {
             @include font400();
             @include fontsizelineheight(13px 16px);
             display: block;
@@ -359,22 +369,22 @@
             margin-bottom: 12px;
         }
 
-        &-description{
+        &-description {
             @include font300();
             @include fontsizelineheight();
             font-weight: 300;
-            color:$gray5d;
+            color: $gray5d;
             margin-bottom: 18px;
         }
 
-        &-price{
+        &-price {
             @include font400();
             @include fontsizelineheight(16px, 19px);
             color: $laitpink;
         }
 
         /*Кнопка - это строчный элемент*/
-        &-button{
+        &-button {
             @include font400();
             @include fontsizelineheight(16px, 19px);
             display: block;
@@ -382,64 +392,65 @@
             margin: 0 auto;
             color: $srpink;
             background: white;
-            border: 1px solid  $srpink;
+            border: 1px solid $srpink;
             padding: 14.5px 38.5px;
             box-sizing: border-box;
             margin-top: 18.5px;
             margin-bottom: 95.5px;
 
             /*Эффект наведения*/
-            &:hover{
+            &:hover {
                 content: "";
                 background: #f7e9e9;
             }
 
             /*Эффект нажатия*/
-            &:active{
+            &:active {
                 content: "";
                 background: #4823af;
             }
         }
     }
+
     /*end Секция 2 end*/
 
     /*Секция 3*/
-    &-third{
-        
-        &-contents{
+    &-third {
+
+        &-contents {
             padding: 102px 0 104px 0;
             display: flex;
             justify-content: space-between;
         }
 
-        &-content{
-            &:first-child{
+        &-content {
+            &:first-child {
                 margin-right: 30px;
                 margin-top: 7px;
             }
 
-            &:last-child{
+            &:last-child {
                 margin-left: 30px;
                 margin-top: 3px;
             }
         }
-        
-        &-svg{
+
+        &-svg {
             display: block;
             margin: 0 auto;
             fill: #F16D7F;
             margin-bottom: 28px;
 
-            &:hover{
+            &:hover {
                 fill: #1c0863;
             }
 
-            &:active{
+            &:active {
                 fill: #ad1010;
             }
         }
 
-        &-title{
+        &-title {
             @include font400();
             @include fontsizelineheight(19.96px, 24px);
             display: block;
@@ -448,7 +459,7 @@
             margin-bottom: 16px;
         }
 
-        &-txt{
+        &-txt {
             @include font300();
             @include fontsizelineheight(13.972px, 17px);
             font-weight: 300;
@@ -456,38 +467,39 @@
             color: $colorwhfb;
         }
     }
+
     /*end Секция 3 end*/
 
     /*Секция 4*/
-    &-fourth{
+    &-fourth {
         min-height: 448px;
-        background:rgba(244, 244, 244, 0.7) url(../img/background-account.png);
+        background: rgba(244, 244, 244, 0.7) url(../img/background-account.png);
         background-blend-mode: lighten;
         background-repeat: no-repeat;
         background-size: cover;
         background-size: 100%;
 
-        &-fl{
+        &-fl {
             display: flex;
             justify-content: space-between;
         }
 
-        &-wrp{
-            &:first-child{
+        &-wrp {
+            &:first-child {
                 max-width: 50%;
                 padding: 120px 200px 126px 0px;
                 box-sizing: border-box;
                 margin-right: 1px;
             }
 
-            &:last-child{
+            &:last-child {
                 padding: 150px 0px 156px 120px;
                 margin-left: 1px;
                 box-sizing: border-box;
             }
         }
 
-        &-avatar{
+        &-avatar {
             width: 96px;
             min-height: 120px;
             background-image: url(../img/background-woman-account.png);
@@ -495,14 +507,14 @@
             margin: 0 auto;
         }
 
-        &-txt{
+        &-txt {
             @include font400();
             @include fontsizelineheight(20px, 24px);
             text-align: center;
             color: $black224;
         }
 
-        &-title{
+        &-title {
             @include font400();
             @include fontsizelineheight(24px, 167.2%);
             display: block;
@@ -510,18 +522,18 @@
             text-align: center;
             color: $black224;
 
-            
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 margin-bottom: 32px;
             }
         }
 
-        &-form{
+        &-form {
             display: flex;
             margin: 0 auto;
         }
 
-        &-email{
+        &-email {
             @include fontsizelineheight();
             display: block;
             background: #E1E1E1;
@@ -535,31 +547,33 @@
             border: none;
         }
 
-        &-btn{
+        &-btn {
             @include fontsizelineheight();
             display: block;
             align-items: center;
             text-align: center;
             color: $colorwh;
             background: #F16D7F;
-            padding: 10px 30px 10px 20px; 
+            padding: 10px 30px 10px 20px;
             box-sizing: border-box;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
             border: none;
 
-            &:hover{
+            &:hover {
                 color: #1c0863;
             }
 
-            &:active{
+            &:active {
                 color: aquamarine;
             }
         }
     }
+
     /*end Секция 4 end*/
 }
-    /*end main end*/
+
+/*end main end*/
 /* end === content-without-footer === end */
 
 
@@ -567,69 +581,70 @@
 
 /* === footer === */
 /* Подвал */
-.footer{
+.footer {
 
-    &-position{
+    &-position {
         padding: 24px 235px;
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
     }
 
-    &-txt{
+    &-txt {
         @include font400();
         @include fontsizelineheight(16px, 19px);
         color: $colorwhfb;
         margin-top: 6px;
     }
 
-    &-part{
+    &-part {
 
-        &-socials{
+        &-socials {
             display: flex;
             justify-content: space-between;
         }
 
-        &-icons{
+        &-icons {
             display: block;
-            background:#FFFFFF;
+            background: #FFFFFF;
             margin-right: 7.3px;
 
-            &:first-child{
+            &:first-child {
                 padding: 6px 10px 3px 10px;
                 box-sizing: border-box;
             }
 
-            &:nth-child(2){
+            &:nth-child(2) {
                 padding: 6px 7px 0px 7px;
                 box-sizing: border-box;
             }
 
-            &:nth-child(3){
+            &:nth-child(3) {
                 padding: 6px 8px 0px 8px;
                 box-sizing: border-box;
             }
 
-            &:last-child{
+            &:last-child {
                 padding: 7px 6px 0 7px;
             }
 
-            &:hover{
+            &:hover {
                 background: #9F9F9F;
             }
         }
 
-        &-svg{
+        &-svg {
             fill: #000000;
 
-            &:hover{
+            &:hover {
                 fill: #ad1010;
             }
 
-            &:active{
-                fill:#f16d7f;
+            &:active {
+                fill: #f16d7f;
             }
         }
     }
 }
+
 /* end === footer === end */

@@ -1,8 +1,8 @@
 /* cart */
 
 /* header */
-.headercart{
-    &-title{
+.headercart {
+    &-title {
         @include font400();
         @include fontsizelineheight(24px, 29px);
         color: $laitpink;
@@ -10,10 +10,11 @@
         text-decoration: none;
     }
 }
+
 /*end header end*/
 
 /* main */
-.products{
+.products {
     padding-top: 96px;
     padding-bottom: 128.5px;
     box-sizing: border-box;
@@ -21,41 +22,41 @@
      не подходит*/
     display: flex;
     justify-content: space-between;
-    
-    &-left-side{
+
+    &-left-side {
         margin-right: 128px;
     }
 
-    &-card{
+    &-card {
         list-style: none;
         min-width: 652px;
 
-        &-unit{
+        &-unit {
             display: flex;
             /*тени*/
-            box-shadow: 10px 10px  #E5E5E5;
+            box-shadow: 10px 10px #E5E5E5;
             margin-bottom: 40px;
         }
 
-        &-description{
+        &-description {
             background: $colorwh;
             list-style: none;
             padding: 22px 97px 62px 32px;
             box-sizing: border-box;
             position: relative;
 
-            &-filter{
+            &-filter {
                 @include font400();
                 @include fontsizelineheight(22px, 26px);
                 color: #575757;
 
-                &:nth-child(1){
+                &:nth-child(1) {
                     @include fontsizelineheight(24px, 29px);
                     text-transform: uppercase;
                     color: $bgcolor;
                 }
 
-                &:nth-child(2){
+                &:nth-child(2) {
                     @include fontsizelineheight(24px, 29px);
                     text-transform: uppercase;
                     color: $bgcolor;
@@ -63,7 +64,7 @@
                 }
             }
 
-            &-inp{
+            &-inp {
                 @include fontsizelineheight(18px, 22px);
                 margin-left: 24px;
                 width: 43px;
@@ -72,33 +73,33 @@
                 border: 1px solid #EAEAEA;
             }
 
-            &-exit{
+            &-exit {
                 border: none;
                 background: #FFFFFF;
                 position: absolute;
                 left: 356px;
                 bottom: 257px;
 
-                &-svg{
-                    fill:#575757;
+                &-svg {
+                    fill: #575757;
                 }
             }
         }
 
-        &-right-side{
+        &-right-side {
             display: flex;
             flex-direction: column;
         }
     }
 }
 
-.wrp-fl-marg{
+.wrp-fl-marg {
     margin-top: 32.5px;
     display: flex;
     justify-content: space-between;
 }
 
-.btn-clearcontinue{
+.btn-clearcontinue {
     @include font300();
     @include fontsizelineheight();
     min-width: 240px;
@@ -111,16 +112,16 @@
     background: $colorwh;
     border: 1px solid #A4A4A4;
 
-    &:hover{
+    &:hover {
         background-color: $laitpink;
         color: blue;
-        transform:scale(1.1);
+        transform: scale(1.1);
     }
 }
 
-.backf{
+.backf {
 
-    &-title{
+    &-title {
         display: block;
         @include font300();
         @include fontsizelineheight(16px, 19px);
@@ -129,7 +130,7 @@
         color: #222222;
     }
 
-    &-inp{
+    &-inp {
         @include font300();
         @include fontsizelineheight(13px, 16px);
         @include marginbotton(20.5px);
@@ -141,7 +142,7 @@
         color: #222222;
     }
 
-    &-btn{
+    &-btn {
         @include font300();
         @include fontsizelineheight(11px, 13px);
         color: #4A4A4A;
@@ -151,45 +152,46 @@
         padding: 10px 15px;
         box-sizing: border-box;
 
-        &:hover{
+        &:hover {
             color: blue;
-            transform:scale(1.1);
+            transform: scale(1.1);
         }
     }
 
-    &-data{
+    &-data {
         background-color: #F5F3F3;
         padding: 42px;
         box-sizing: border-box;
         margin-top: 57.5px;
     }
 
-    &-titpay{
+    &-titpay {
         display: flex;
         justify-content: flex-end;
         @include font400();
         @include fontsizelineheight(11px, 13px);
         text-transform: uppercase;
         margin-bottom: 12px;
-        color: #4A4A4A;;
+        color: #4A4A4A;
+        ;
 
-        &-right{
+        &-right {
             display: block;
             margin-left: 50px;
         }
 
-        &:nth-child(2){
+        &:nth-child(2) {
             @include font300();
             @include fontsizelineheight(16px, 19px);
             margin-bottom: 21px;
         }
     }
-    
-    &-hr{
+
+    &-hr {
         border: 1px solid #E2E2E2;
     }
 
-    &-pay{
+    &-pay {
         @include font300();
         @include fontsizelineheight(16px, 19px);
         width: 275px;
@@ -200,12 +202,13 @@
         border: none;
         color: #FFFFFF;
 
-        &:hover{
+        &:hover {
             color: blue;
-            transform:scale(1.1);
+            transform: scale(1.1);
         }
     }
 }
+
 /*end main end*/
 
 /*end cart end*/
