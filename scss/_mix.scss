@@ -1,28 +1,7 @@
-@mixin font300() {
+@mixin font-lato-normal-size-line($size-format: 400, $fonts:14px, $linehe: 17px) {
     font-family: lato;
-    font-weight: 300;
+    font-weight: $size-format;
     font-style: normal;
-}
-
-@mixin font400() {
-    font-family: lato;
-    font-weight: 400;
-    font-style: normal;
-}
-
-@mixin font700 {
-    font-family: lato;
-    font-weight: 700;
-    font-style: normal;
-}
-
-@mixin font900 {
-    font-family: lato;
-    font-weight: 900;
-    font-style: normal;
-}
-
-@mixin fontsizelineheight($fonts:14px, $linehe: 17px) {
     font-size: $fonts;
     line-height: $linehe;
 }

@@ -13,8 +13,7 @@
 
     /*Заголовок header*/
     &-title {
-        @include font400();
-        @include fontsizelineheight(24px, 29px);
+        @include font-lato-normal-size-line(400, 24px, 29px);
         color: $laitpink;
         text-transform: uppercase;
         text-decoration: none;
@@ -27,8 +26,7 @@
 
     /*Хлебные крошки header*/
     &-breadcrumbs {
-        @include font700();
-        @include fontsizelineheight();
+        @include font-lato-normal-size-line(700, 14px, 17px);
         display: block;
         text-transform: uppercase;
         text-decoration: none;
@@ -81,14 +79,12 @@
         }
 
         &-title {
-            @include font400();
-            @include fontsizelineheight();
+            @include font-lato-normal-size-line(400, 14px, 17px);
             text-transform: uppercase;
             color: #6F6E6E;
 
             &-one {
-                @include font400();
-                @include fontsizelineheight();
+                @include font-lato-normal-size-line(400, 14px, 17px);
                 text-transform: uppercase;
                 font-weight: 600;
                 color: $darkbl;
@@ -116,7 +112,7 @@
 
 /*Кнопка после карточек*/
 .button-after-card {
-    @include fontsizelineheight(16px, 19px);
+    @include font-lato-normal-size-line(400, 16px, 19px);
     display: block;
     padding: 12px 15px;
     box-sizing: border-box;

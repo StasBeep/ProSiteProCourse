@@ -137,8 +137,7 @@
 }
 
 .title-line {
-    @include font900();
-    @include fontsizelineheight(48px, 58px);
+    @include font-lato-normal-size-line(900, 48px, 58px);
     display: block;
     border-left: 12px solid #f16d7f;
     padding-left: 16px;
@@ -233,11 +232,8 @@
 
     &-txt {
 
-        /* TODO: Миксин */
-        @include font400();
-
         &:first-child {
-            @include fontsizelineheight(16px, 19px);
+            @include font-lato-normal-size-line(400, 16px, 19px);
             display: block;
             text-transform: uppercase;
             text-align: center;
@@ -245,7 +241,7 @@
         }
 
         &:last-child {
-            @include fontsizelineheight(16px, 19px);
+            @include font-lato-normal-size-line(400, 16px, 19px);
             display: block;
             text-transform: uppercase;
             text-align: center;
@@ -258,8 +254,7 @@
 
     /*Секция 2*/
     &-titlesec {
-        @include font400();
-        @include fontsizelineheight(30px, 36px);
+        @include font-lato-normal-size-line(400, 30px, 36px);
         display: block;
         text-align: center;
         color: $bgcolor;
@@ -267,8 +262,7 @@
     }
 
     &-parsec {
-        @include font400();
-        @include fontsizelineheight();
+        @include font-lato-normal-size-line(400, 14px, 17px);
         text-align: center;
         color: $palegray;
         margin-bottom: 58px;
@@ -348,8 +342,7 @@
         }
 
         &-tit {
-            @include font400();
-            @include fontsizelineheight();
+            @include font-lato-normal-size-line(400, 14px, 17px);
             display: block;
             color: $colorwh;
             margin-top: 4px;
@@ -361,8 +354,7 @@
         }
 
         &-name {
-            @include font400();
-            @include fontsizelineheight(13px 16px);
+            @include font-lato-normal-size-line(400, 13px, 16px);
             display: block;
             text-transform: uppercase;
             color: $darkbl;
@@ -370,23 +362,20 @@
         }
 
         &-description {
-            @include font300();
-            @include fontsizelineheight();
+            @include font-lato-normal-size-line(300, 14px, 17px);
             font-weight: 300;
             color: $gray5d;
             margin-bottom: 18px;
         }
 
         &-price {
-            @include font400();
-            @include fontsizelineheight(16px, 19px);
+            @include font-lato-normal-size-line(400, 16px, 19px);
             color: $laitpink;
         }
 
         /*Кнопка - это строчный элемент*/
         &-button {
-            @include font400();
-            @include fontsizelineheight(16px, 19px);
+            @include font-lato-normal-size-line(400, 16px, 19px);
             display: block;
             /*Выравнивание по центру*/
             margin: 0 auto;
@@ -451,8 +440,7 @@
         }
 
         &-title {
-            @include font400();
-            @include fontsizelineheight(19.96px, 24px);
+            @include font-lato-normal-size-line(400, 20px, 24px);
             display: block;
             text-align: center;
             color: $colorwhfb;
@@ -460,8 +448,7 @@
         }
 
         &-txt {
-            @include font300();
-            @include fontsizelineheight(13.972px, 17px);
+            @include font-lato-normal-size-line(300, 14px, 17px);
             font-weight: 300;
             text-align: center;
             color: $colorwhfb;
@@ -508,15 +495,13 @@
         }
 
         &-txt {
-            @include font400();
-            @include fontsizelineheight(20px, 24px);
+            @include font-lato-normal-size-line(400, 20px, 24px);
             text-align: center;
             color: $black224;
         }
 
         &-title {
-            @include font400();
-            @include fontsizelineheight(24px, 167.2%);
+            @include font-lato-normal-size-line(400, 24px, 167.2%);
             display: block;
             text-transform: uppercase;
             text-align: center;
@@ -534,7 +519,7 @@
         }
 
         &-email {
-            @include fontsizelineheight();
+            @include font-lato-normal-size-line(400, 14px, 17px);
             display: block;
             background: #E1E1E1;
             align-items: center;
@@ -548,7 +533,7 @@
         }
 
         &-btn {
-            @include fontsizelineheight();
+            @include font-lato-normal-size-line(400, 14px, 17px);
             display: block;
             align-items: center;
             text-align: center;
@@ -591,8 +576,7 @@
     }
 
     &-txt {
-        @include font400();
-        @include fontsizelineheight(16px, 19px);
+        @include font-lato-normal-size-line(400, 16px, 19px);
         color: $colorwhfb;
         margin-top: 6px;
     }

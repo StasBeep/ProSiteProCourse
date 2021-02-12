@@ -328,14 +328,10 @@ button:focus {
   background-color: #fff;
 }
 
-.additional-content-txt {
-  /* TODO: Миксин */
+.additional-content-txt:first-child {
   font-family: lato;
   font-weight: 400;
   font-style: normal;
-}
-
-.additional-content-txt:first-child {
   font-size: 16px;
   line-height: 19px;
   display: block;
@@ -345,6 +341,9 @@ button:focus {
 }
 
 .additional-content-txt:last-child {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 19px;
   display: block;
@@ -486,8 +485,8 @@ button:focus {
   font-family: lato;
   font-weight: 400;
   font-style: normal;
-  font-size: 13px 16px;
-  line-height: 17px;
+  font-size: 13px;
+  line-height: 16px;
   display: block;
   text-transform: uppercase;
   color: #000000;
@@ -584,7 +583,7 @@ button:focus {
   font-family: lato;
   font-weight: 400;
   font-style: normal;
-  font-size: 19.96px;
+  font-size: 20px;
   line-height: 24px;
   display: block;
   text-align: center;
@@ -596,7 +595,7 @@ button:focus {
   font-family: lato;
   font-weight: 300;
   font-style: normal;
-  font-size: 13.972px;
+  font-size: 14px;
   line-height: 17px;
   font-weight: 300;
   text-align: center;
@@ -678,6 +677,9 @@ button:focus {
 }
 
 .additional-content-fourth-email {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 17px;
   display: block;
@@ -696,6 +698,9 @@ button:focus {
 }
 
 .additional-content-fourth-btn {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 17px;
   display: block;
@@ -932,6 +937,9 @@ button:focus {
 /*end Фильтры end*/
 /*Кнопка после карточек*/
 .button-after-card {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 19px;
   display: block;
@@ -1108,6 +1116,9 @@ button:focus {
 }
 
 .carousel-description-btn {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 19px;
   display: block;
@@ -1133,6 +1144,8 @@ button:focus {
   font-family: lato;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
   display: block;
   margin-top: 2px;
 }
@@ -1227,6 +1240,9 @@ button:focus {
 }
 
 .products-card-description-filter:nth-child(1) {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 24px;
   line-height: 29px;
   text-transform: uppercase;
@@ -1234,6 +1250,9 @@ button:focus {
 }
 
 .products-card-description-filter:nth-child(2) {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 24px;
   line-height: 29px;
   text-transform: uppercase;
@@ -1242,6 +1261,9 @@ button:focus {
 }
 
 .products-card-description-inp {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 18px;
   line-height: 22px;
   margin-left: 24px;
