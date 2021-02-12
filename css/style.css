@@ -47,6 +47,12 @@ button:focus {
 }
 
 /* end === wrapper === end */
+/* отступы */
+.marg-left {
+  margin-left: 6px;
+}
+
+/*end отступы end*/
 @font-face {
   font-family: lato;
   src: url(../fonts/lato-light.ttf);
@@ -322,14 +328,10 @@ button:focus {
   background-color: #fff;
 }
 
-.additional-content-txt {
-  /* TODO: Миксин */
+.additional-content-txt:first-child {
   font-family: lato;
   font-weight: 400;
   font-style: normal;
-}
-
-.additional-content-txt:first-child {
   font-size: 16px;
   line-height: 19px;
   display: block;
@@ -339,6 +341,9 @@ button:focus {
 }
 
 .additional-content-txt:last-child {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 19px;
   display: block;
@@ -452,7 +457,7 @@ button:focus {
 }
 
 .additional-content-sec-btn:active {
-  border: 1px solid  #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
 
 .additional-content-sec-svg {
@@ -480,8 +485,8 @@ button:focus {
   font-family: lato;
   font-weight: 400;
   font-style: normal;
-  font-size: 13px 16px;
-  line-height: 17px;
+  font-size: 13px;
+  line-height: 16px;
   display: block;
   text-transform: uppercase;
   color: #000000;
@@ -578,7 +583,7 @@ button:focus {
   font-family: lato;
   font-weight: 400;
   font-style: normal;
-  font-size: 19.96px;
+  font-size: 20px;
   line-height: 24px;
   display: block;
   text-align: center;
@@ -590,7 +595,7 @@ button:focus {
   font-family: lato;
   font-weight: 300;
   font-style: normal;
-  font-size: 13.972px;
+  font-size: 14px;
   line-height: 17px;
   font-weight: 300;
   text-align: center;
@@ -672,6 +677,9 @@ button:focus {
 }
 
 .additional-content-fourth-email {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 17px;
   display: block;
@@ -690,6 +698,9 @@ button:focus {
 }
 
 .additional-content-fourth-btn {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 17px;
   display: block;
@@ -830,6 +841,7 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
 }
 
 .headercat-breadcrumbs {
@@ -925,6 +937,9 @@ button:focus {
 /*end Фильтры end*/
 /*Кнопка после карточек*/
 .button-after-card {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 19px;
   display: block;
@@ -1101,6 +1116,9 @@ button:focus {
 }
 
 .carousel-description-btn {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 19px;
   display: block;
@@ -1126,6 +1144,8 @@ button:focus {
   font-family: lato;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
   display: block;
   margin-top: 2px;
 }
@@ -1149,4 +1169,280 @@ button:focus {
 
 /*end main end*/
 /*end Product end*/
+/* cart */
+.cart {
+  /* header */
+  /*end header end*/
+}
+
+.cart-header-title {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* main */
+.products {
+  padding-top: 96px;
+  padding-bottom: 128.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* ! Цвет background специфичный и под макет
+     не подходит*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-left-side {
+  margin-right: 128px;
+}
+
+.products-card {
+  list-style: none;
+  min-width: 652px;
+}
+
+.products-card-unit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*тени*/
+  -webkit-box-shadow: 10px 10px #E5E5E5;
+          box-shadow: 10px 10px #E5E5E5;
+  margin-bottom: 40px;
+}
+
+.products-card-description {
+  background: #FFFFFF;
+  list-style: none;
+  padding: 22px 97px 62px 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.products-card-description-filter {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.products-card-description-filter:nth-child(1) {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.products-card-description-filter:nth-child(2) {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 42px;
+}
+
+.products-card-description-inp {
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 24px;
+  width: 43px;
+  text-align: center;
+  color: #656565;
+  border: 1px solid #EAEAEA;
+}
+
+.products-card-description-exit {
+  border: none;
+  background: #FFFFFF;
+  position: absolute;
+  left: 356px;
+  bottom: 257px;
+}
+
+.products-card-description-exit-svg {
+  fill: #575757;
+}
+
+.products-right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.products-backf-title {
+  display: block;
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20.5px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.products-backf-inp {
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 20.5px;
+  width: 358px;
+  height: 44px;
+  border: 1px solid #A4A4A4;
+  padding-left: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #222222;
+}
+
+.products-backf-btn {
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  border: 1px solid #A4A4A4;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.products-backf-btn:hover {
+  color: blue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.products-backf-data {
+  background-color: #F5F3F3;
+  padding: 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 57.5px;
+}
+
+.products-backf-titpay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #4A4A4A;
+}
+
+.products-backf-titpay-right {
+  display: block;
+  margin-left: 50px;
+}
+
+.products-backf-titpay:nth-child(2) {
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 21px;
+}
+
+.products-backf-hr {
+  border: 1px solid #E2E2E2;
+}
+
+.products-backf-pay {
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  width: 275px;
+  height: 50px;
+  margin-top: 17px;
+  background: #F16D7F;
+  text-transform: uppercase;
+  border: none;
+  color: #FFFFFF;
+}
+
+.products-backf-pay:hover {
+  color: blue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.wrp-fl-marg {
+  margin-top: 32.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-clearcontinue {
+  font-family: lato;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  min-width: 240px;
+  max-width: 241px;
+  display: block;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 17px 39px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #A4A4A4;
+}
+
+.btn-clearcontinue:hover {
+  background-color: #F16D7F;
+  color: blue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*end main end*/
+/*end cart end*/
 /*# sourceMappingURL=style.css.map */

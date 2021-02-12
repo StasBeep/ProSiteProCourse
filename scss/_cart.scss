@@ -1,0 +1,206 @@
+/* cart */
+
+.cart {
+
+    /* header */
+    &-header-title {
+        @include font-lato-normal-size-line(400, 24px, 29px);
+        color: $lait-pink;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    /*end header end*/
+}
+
+
+/* main */
+.products {
+    padding-top: 96px;
+    padding-bottom: 128.5px;
+    box-sizing: border-box;
+    /* ! Цвет background специфичный и под макет
+     не подходит*/
+    display: flex;
+    justify-content: space-between;
+
+    &-left-side {
+        margin-right: 128px;
+    }
+
+    &-card {
+        list-style: none;
+        min-width: 652px;
+
+        &-unit {
+            display: flex;
+            /*тени*/
+            box-shadow: 10px 10px #E5E5E5;
+            margin-bottom: 40px;
+        }
+
+        &-description {
+            background: $white-fff;
+            list-style: none;
+            padding: 22px 97px 62px 32px;
+            box-sizing: border-box;
+            position: relative;
+
+            &-filter {
+                @include font-lato-normal-size-line(400, 22px, 26px);
+                color: $gray-57;
+
+                &:nth-child(1) {
+                    @include font-lato-normal-size-line(400, 24px, 29px);
+                    text-transform: uppercase;
+                    color: $black-22;
+                }
+
+                &:nth-child(2) {
+                    @include font-lato-normal-size-line(400, 24px, 29px);
+                    text-transform: uppercase;
+                    color: $black-22;
+                    margin-bottom: 42px;
+                }
+            }
+
+            &-inp {
+                @include font-lato-normal-size-line(400, 18px, 22px);
+                margin-left: 24px;
+                width: 43px;
+                text-align: center;
+                color: $gray-65;
+                border: 1px solid $white-ea;
+            }
+
+            &-exit {
+                border: none;
+                background: $white-fff;
+                position: absolute;
+                left: 356px;
+                bottom: 257px;
+
+                &-svg {
+                    fill: $gray-57;
+                }
+            }
+        }
+    }
+
+    &-right-side {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-backf {
+
+        &-title {
+            display: block;
+            @include font-lato-normal-size-line(300, 16px, 19px);
+            @include marginbotton(20.5px);
+            text-transform: uppercase;
+            color: $black-22;
+        }
+    
+        &-inp {
+            @include font-lato-normal-size-line(300, 13px, 16px);
+            @include marginbotton(20.5px);
+            width: 358px;
+            height: 44px;
+            border: 1px solid $gray-a4;
+            padding-left: 17px;
+            box-sizing: border-box;
+            color: $black-22;
+        }
+    
+        &-btn {
+            @include font-lato-normal-size-line(300, 11px, 13px);
+            color: $gray-4a;
+            border: 1px solid $gray-a4;
+            background-color: $white-fff;
+            text-transform: uppercase;
+            padding: 10px 15px;
+            box-sizing: border-box;
+    
+            &:hover {
+                color: blue;
+                transform: scale(1.1);
+            }
+        }
+    
+        &-data {
+            background-color: #F5F3F3;
+            padding: 42px;
+            box-sizing: border-box;
+            margin-top: 57.5px;
+        }
+    
+        &-titpay {
+            display: flex;
+            justify-content: flex-end;
+            @include font-lato-normal-size-line(400, 11px, 13px);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            color: $gray-4a;
+            ;
+    
+            &-right {
+                display: block;
+                margin-left: 50px;
+            }
+    
+            &:nth-child(2) {
+                @include font-lato-normal-size-line(300, 16px, 19px);
+                margin-bottom: 21px;
+            }
+        }
+    
+        &-hr {
+            border: 1px solid $gray-4a;
+        }
+    
+        &-pay {
+            @include font-lato-normal-size-line(300, 16px, 19px);
+            width: 275px;
+            height: 50px;
+            margin-top: 17px;
+            background: $pink-f16;
+            text-transform: uppercase;
+            border: none;
+            color: $white-fff;
+    
+            &:hover {
+                color: blue;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.wrp-fl-marg {
+    margin-top: 32.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-clear-continue {
+    @include font-lato-normal-size-line(300, 14px, 17px);
+    min-width: 240px;
+    max-width: 241px;
+    display: block;
+    text-transform: uppercase;
+    color: $black-00;
+    padding: 17px 39px;
+    box-sizing: border-box;
+    background: $white-fff;
+    border: 1px solid $gray-a4;
+
+    &:hover {
+        background-color: $lait-pink;
+        color: blue;
+        transform: scale(1.1);
+    }
+}
+
+/*end main end*/
+
+/*end cart end*/

@@ -1,27 +1,47 @@
 /* === Переменные стилей === */
-$bgcolor:#222222;
-$darkbl:#000000;
-$black224:#222224;
-$fillmenusvg:#E8E8E8;
-$laitpink: #F16D7F;
-$srpink:#F26376;
-$colorwh:#FFFFFF;
-$colorwhfb:#FBFBFB;
-$palegray:#9F9F9F;
-$gray5d:#5D5D5D;
+$black-22:#222222;
+$black-00:#000000;
+$black-224:#222224;
 
+$white-f1e:#F1E4E6;
+$fillmenusvg:#E8E8E8;
+$white-fff:#FFFFFF;
+$white-fb:#FBFBFB;
+$white-f7e: #F7E4E2;
+$white-f7e9:#f7e9e9;
+$white-e1:#E1E1E1;
+$white-eb:#EBEBEB;
+$white-ea:#EAEAEA;
+
+$lait-pink: #F16D7F;
+$sr-pink:#F26376;
+$pink-f16:#f16d7f;
+$fresh-pink:#EF5B70;
+$pink-ff6a:#FF6A6A;
+
+$pale-gray:#9F9F9F;
+$gray-5d:#5D5D5D;
+$gray-63:#636363;
+$gray-4d:#4D4D4D;
+$gray-5e:#5E5E5E;
+$gray-57:#575757;
+$gray-65:#656565;
+$gray-a4:#A4A4A4;
+$gray-4a:#4A4A4A;
+
+$dark-blue-1c0:#1c0863;
 
 
 /* === common styles === */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /*Строки для того, чтобы не выскакивала рамка 
 при нажатии и наведении на кнопку (ссылку)*/
-button, 
-button:active, 
+button,
+button:active,
 button:focus {
     outline: none;
 }
@@ -31,25 +51,34 @@ button:focus {
 
 /* === wrapper === */
 /* Обёртки - отдельный блок */
-.wrapper{
+.wrapper {
     /* Контейнер для страницы определение 
     максимальной ширины содержимого + обнуление 
     margin*/
     max-width: 1600px;
     margin: 0 auto;
-    
+
     /* Обёртка для прижатия подвала к нижней части */
-    &-forcontent{
-        min-height: 100vh; /* 100 видимых высот */
+    &-forcontent {
+        min-height: 100vh;
+        /* 100 видимых высот */
         display: flex;
         flex-direction: column;
     }
 
-    &-container{
+    &-container {
         /* Контейнер для равных отступов от краёв контента*/
         padding: 0 230px;
         box-sizing: border-box;
         max-width: 1600px;
     }
 }
+
 /* end === wrapper === end */
+
+/* отступы */
+.marg-left {
+    margin-left: 6px;
+}
+
+/*end отступы end*/

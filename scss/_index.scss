@@ -1,126 +1,134 @@
 /* === content-without-footer === */
 /* Основная часть без footer */
-.content-without-footer{
-    flex-grow:1; /* Отношение блоков */
+.content-without-footer {
+    flex-grow: 1;
+    /* Отношение блоков */
 }
-     
-    /*header*/
 
-.bgcolor{
-    background-color: $bgcolor;
+/*header*/
+
+.bgcolor {
+    background-color: $black-22;
 }
 
 /*Фиксирование меню поверх блоков*/
-.fixed-menu{
+.fixed-menu {
     position: fixed;
     width: 100%;
     z-index: 10;
 }
 
-.padd-container{
+.padd-container {
     padding: 18px 0;
 }
 
-.disp-fl{
+.disp-fl {
     display: flex;
-    justify-content: space-between; /*Положение по краям*/
+    justify-content: space-between;
+    /*Положение по краям*/
 }
 
-.left-side{
+.left-side {
 
     /*Расположение по горизонтали*/
     display: flex;
 
     /*Движение вправо margin*/
-    &-marg-cont{
+    &-marg-cont {
         margin-right: 41px;
     }
 
     /*движение вниз margin*/
-    &-marg-cont-svg{
+    &-marg-cont-svg {
         margin-top: 10px;
     }
 
 
     /*Задание цвета декоративному изображению*/
-    &-seach-svg{
-        fill:$fillmenusvg;
+    &-seach-svg {
+        fill: $fillmenusvg;
     }
 
     /*Эффект наведения*/
-    &-seach-svg:hover{
-        fill:red;
+    &-seach-svg:hover {
+        fill: red;
     }
 
     /*Эффект нажатия*/
-    &-seach-svg:active{
-        fill:rgb(15, 41, 153);
+    &-seach-svg:active {
+        fill: rgb(15, 41, 153);
     }
 }
 
-.right-side{
-    
+.right-side {
+
     /*Рассположение по горизонтали*/
     display: flex;
 
-    
-    &-crawling-menu{
+
+    &-crawling-menu {
         margin-top: 12px;
         margin-right: 33px;
-    } 
-    
-    
-    &-account{
-        background: transparent;  /*Прозрачный задний фон*/
-        border: none; /* Убирает рамку у button*/
+    }
+
+
+    &-account {
+        background: transparent;
+        /*Прозрачный задний фон*/
+        border: none;
+        /* Убирает рамку у button*/
 
         margin-top: 8px;
         margin-right: 33px;
 
 
         /*Задание цвета декоративному изображению*/
-        &-svg{
-            fill:$fillmenusvg;
+        &-svg {
+            fill: $fillmenusvg;
         }
+
         /*Эффект наведения*/
-        &-svg:hover{
-            fill:red;
+        &-svg:hover {
+            fill: red;
         }
 
         /*Эффект нажатия*/
-        &-svg:active{
-            fill:rgb(15, 41, 153);
+        &-svg:active {
+            fill: rgb(15, 41, 153);
         }
     }
 
-    
-    &-cart{
-        background: transparent;  /*Прозрачный задний фон*/
-        border: none; /* Убирает рамку у button*/
+
+    &-cart {
+        background: transparent;
+        /*Прозрачный задний фон*/
+        border: none;
+        /* Убирает рамку у button*/
 
         margin-top: 8px;
 
         /*Задание цвета декоративному изображению*/
-        &-svg{
-            fill:$fillmenusvg;
+        &-svg {
+            fill: $fillmenusvg;
         }
+
         /*Эффект наведения*/
-        &-svg:hover{
-            fill:red;
+        &-svg:hover {
+            fill: red;
         }
 
         /*Эффект нажатия*/
-        &-svg:active{
-            fill:rgb(15, 41, 153);
+        &-svg:active {
+            fill: rgb(15, 41, 153);
         }
     }
 }
 
-.bgcolorp{
-    background:  #F1E4E6;
+.bgcolorp {
+    background: $white-f1e;
 }
 
-.padd-title{
+.padd-title {
     padding: 374px 280px 381px 728px;
     box-sizing: border-box;
     background-image: url(../img/header-men.png);
@@ -129,33 +137,33 @@
 }
 
 .title-line {
-    @include font900();
-    @include fontsizelineheight(48px, 58px);
-    display:block;
-    border-left: 12px solid #f16d7f;
+    @include font-lato-normal-size-line(900, 48px, 58px);
+    display: block;
+    border-left: 12px solid $pink-f16;
     padding-left: 16px;
-    text-transform:uppercase;
-}
-  
-.color-pink{
-    color:$laitpink;
+    text-transform: uppercase;
 }
 
-    /*end header end*/
+.color-pink {
+    color: $lait-pink;
+}
 
-    /* main */  
-.additional-content{
+/*end header end*/
+
+/* main */
+.additional-content {
+
     /*секция 1*/
-    &-first{
+    &-first {
         padding-top: 65px;
         padding-bottom: 96px;
         box-sizing: border-box;
     }
 
 
-    &-card{
+    &-card {
 
-        &-up{
+        &-up {
             display: flex;
             justify-content: space-between;
         }
@@ -170,7 +178,7 @@
 
         /*Обращение к первому элементу карточек!
          Обращение к карточкам*/
-        &:first-child{
+        &:first-child {
             content: "";
             background-size: cover;
             background: rgba(0, 0, 0, .65) url(../img/wooman-card.png);
@@ -178,33 +186,33 @@
             background-repeat: no-repeat;
         }
 
-        &:nth-child(2){
+        &:nth-child(2) {
             content: "";
             background-size: cover;
             background: rgba(0, 0, 0, .65) url(../img/men-card.png);
             background-blend-mode: darken;
             background-repeat: no-repeat;
         }
-    
-        &:last-child{
+
+        &:last-child {
             content: "";
             background-size: cover;
             background: rgba(0, 0, 0, .65) url(../img/child-card.png);
             background-blend-mode: darken;
             background-repeat: no-repeat;
         }
-        
+
         /*Эффект наведения с осветвлением*/
-        &:hover{
-            content:"";
+        &:hover {
+            content: "";
             background-color: #fff;
         }
 
-        &-down{
+        &-down {
             margin-top: 30px;
         }
 
-        &-under{
+        &-under {
             content: "";
             min-height: 180px;
             padding-top: 65px;
@@ -214,112 +222,108 @@
             background-blend-mode: darken;
             background-repeat: no-repeat;
 
-            &:hover{
-                content:"";
+            &:hover {
+                content: "";
                 background-color: #fff;
             }
         }
     }
 
-    
-    &-txt{
 
-        /* TODO: Миксин */
-        @include font400();
+    &-txt {
 
-        &:first-child{
-            @include fontsizelineheight(16px, 19px);
+        &:first-child {
+            @include font-lato-normal-size-line(400, 16px, 19px);
             display: block;
             text-transform: uppercase;
             text-align: center;
-            color: $colorwh;
+            color: $white-fff;
         }
 
-        &:last-child{
-            @include fontsizelineheight(16px, 19px);
+        &:last-child {
+            @include font-lato-normal-size-line(400, 16px, 19px);
             display: block;
             text-transform: uppercase;
             text-align: center;
             color: pink;
         }
     }
+
     /*end Секция 1 end*/
 
 
     /*Секция 2*/
-    &-titlesec{
-        @include font400();
-        @include fontsizelineheight(30px, 36px);
+    &-titlesec {
+        @include font-lato-normal-size-line(400, 30px, 36px);
         display: block;
         text-align: center;
-        color: $bgcolor;
+        color: $black-22;
         margin-bottom: 8px;
     }
 
-    &-parsec{
-        @include font400();
-        @include fontsizelineheight();
+    &-parsec {
+        @include font-lato-normal-size-line(400, 14px, 17px);
         text-align: center;
-        color: $palegray;
+        color: $pale-gray;
         margin-bottom: 58px;
     }
 
-    &-sec{
+    &-sec {
 
-        &-cards{
+        &-cards {
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
         }
 
-        &-card{
+        &-card {
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
             background: #F8F8F8;
             position: relative;
 
-            &:first-child{
+            &:first-child {
                 margin-right: 30px;
             }
 
-            &:last-child{
+            &:last-child {
                 margin-left: 30px;
             }
 
             /*Эффект наведения на всю карточку*/
-            &:hover .additional-content-sec-btn{
-                content:"";
+            &:hover .additional-content-sec-btn {
+                content: "";
                 /*background-color: rgb(196, 168, 168);*/
                 display: flex;
             }
 
-            &:hover .additional-content-sec-img{
+            &:hover .additional-content-sec-img {
                 filter: brightness(30%);
             }
 
-            &:hover .additional-content-sec-img-edit{
+            &:hover .additional-content-sec-img-edit {
                 filter: brightness(30%);
             }
         }
 
-        &-img{
+        &-img {
             /*Для того, чтобы фотографии сужались, а не закрывались*/
             width: 100%;
 
-            &-edit{
+            &-edit {
                 width: 141.94px;
                 height: 400px;
-                background-color: #F7E4E2;
+                background-color: $white-f7e;
                 padding: 9px 110px 11px 108px;
             }
         }
 
-        &-btn{
+        &-btn {
             display: none;
             width: 138px;
             height: 43px;
-            border: 1px solid #FFFFFF;
+            border: 1px solid $white-fff;
             background: transparent;
             position: absolute;
             top: 188.5px;
@@ -327,167 +331,162 @@
             padding: 10px 15px 8px 13px;
             box-sizing: border-box;
 
-            &:active{
-                border: 1px solid  #FFFFFF;
+            &:active {
+                border: 1px solid $white-fff;
             }
         }
 
-        &-svg{
+        &-svg {
             display: block;
-            fill:#FFFFFF;
+            fill: $white-fff;
         }
 
-        &-tit{
-            @include font400();
-            @include fontsizelineheight();
+        &-tit {
+            @include font-lato-normal-size-line(400, 14px, 17px);
             display: block;
-            color: $colorwh;
+            color: $white-fff;
             margin-top: 4px;
             margin-left: 9px;
         }
 
-        &-contentcard{
+        &-contentcard {
             padding: 25px 28px 20px 16px;
         }
 
-        &-name{
-            @include font400();
-            @include fontsizelineheight(13px 16px);
+        &-name {
+            @include font-lato-normal-size-line(400, 13px, 16px);
             display: block;
             text-transform: uppercase;
-            color: $darkbl;
+            color: $black-00;
             margin-bottom: 12px;
         }
 
-        &-description{
-            @include font300();
-            @include fontsizelineheight();
+        &-description {
+            @include font-lato-normal-size-line(300, 14px, 17px);
             font-weight: 300;
-            color:$gray5d;
+            color: $gray-5d;
             margin-bottom: 18px;
         }
 
-        &-price{
-            @include font400();
-            @include fontsizelineheight(16px, 19px);
-            color: $laitpink;
+        &-price {
+            @include font-lato-normal-size-line(400, 16px, 19px);
+            color: $lait-pink;
         }
 
         /*Кнопка - это строчный элемент*/
-        &-button{
-            @include font400();
-            @include fontsizelineheight(16px, 19px);
+        &-button {
+            @include font-lato-normal-size-line(400, 16px, 19px);
             display: block;
             /*Выравнивание по центру*/
             margin: 0 auto;
-            color: $srpink;
+            color: $sr-pink;
             background: white;
-            border: 1px solid  $srpink;
+            border: 1px solid $sr-pink;
             padding: 14.5px 38.5px;
             box-sizing: border-box;
             margin-top: 18.5px;
             margin-bottom: 95.5px;
 
             /*Эффект наведения*/
-            &:hover{
+            &:hover {
                 content: "";
-                background: #f7e9e9;
+                background: $white-f7e9;
             }
 
             /*Эффект нажатия*/
-            &:active{
+            &:active {
                 content: "";
                 background: #4823af;
             }
         }
     }
+
     /*end Секция 2 end*/
 
     /*Секция 3*/
-    &-third{
-        
-        &-contents{
+    &-third {
+
+        &-contents {
             padding: 102px 0 104px 0;
             display: flex;
             justify-content: space-between;
         }
 
-        &-content{
-            &:first-child{
+        &-content {
+            &:first-child {
                 margin-right: 30px;
                 margin-top: 7px;
             }
 
-            &:last-child{
+            &:last-child {
                 margin-left: 30px;
                 margin-top: 3px;
             }
         }
-        
-        &-svg{
+
+        &-svg {
             display: block;
             margin: 0 auto;
-            fill: #F16D7F;
+            fill: $lait-pink;
             margin-bottom: 28px;
 
-            &:hover{
+            &:hover {
                 fill: #1c0863;
             }
 
-            &:active{
+            &:active {
                 fill: #ad1010;
             }
         }
 
-        &-title{
-            @include font400();
-            @include fontsizelineheight(19.96px, 24px);
+        &-title {
+            @include font-lato-normal-size-line(400, 20px, 24px);
             display: block;
             text-align: center;
-            color: $colorwhfb;
+            color: $white-fb;
             margin-bottom: 16px;
         }
 
-        &-txt{
-            @include font300();
-            @include fontsizelineheight(13.972px, 17px);
+        &-txt {
+            @include font-lato-normal-size-line(300, 14px, 17px);
             font-weight: 300;
             text-align: center;
-            color: $colorwhfb;
+            color: $white-fb;
         }
     }
+
     /*end Секция 3 end*/
 
     /*Секция 4*/
-    &-fourth{
+    &-fourth {
         min-height: 448px;
-        background:rgba(244, 244, 244, 0.7) url(../img/background-account.png);
+        background: rgba(244, 244, 244, 0.7) url(../img/background-account.png);
         background-blend-mode: lighten;
         background-repeat: no-repeat;
         background-size: cover;
         background-size: 100%;
 
-        &-fl{
+        &-fl {
             display: flex;
             justify-content: space-between;
         }
 
-        &-wrp{
-            &:first-child{
+        &-wrp {
+            &:first-child {
                 max-width: 50%;
                 padding: 120px 200px 126px 0px;
                 box-sizing: border-box;
                 margin-right: 1px;
             }
 
-            &:last-child{
+            &:last-child {
                 padding: 150px 0px 156px 120px;
                 margin-left: 1px;
                 box-sizing: border-box;
             }
         }
 
-        &-avatar{
+        &-avatar {
             width: 96px;
             min-height: 120px;
             background-image: url(../img/background-woman-account.png);
@@ -495,38 +494,36 @@
             margin: 0 auto;
         }
 
-        &-txt{
-            @include font400();
-            @include fontsizelineheight(20px, 24px);
+        &-txt {
+            @include font-lato-normal-size-line(400, 20px, 24px);
             text-align: center;
             color: $black224;
         }
 
-        &-title{
-            @include font400();
-            @include fontsizelineheight(24px, 167.2%);
+        &-title {
+            @include font-lato-normal-size-line(400, 24px, 167.2%);
             display: block;
             text-transform: uppercase;
             text-align: center;
-            color: $black224;
+            color: $black-224;
 
-            
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 margin-bottom: 32px;
             }
         }
 
-        &-form{
+        &-form {
             display: flex;
             margin: 0 auto;
         }
 
-        &-email{
-            @include fontsizelineheight();
+        &-email {
+            @include font-lato-normal-size-line(400, 14px, 17px);
             display: block;
-            background: #E1E1E1;
+            background: $white-e1;
             align-items: center;
-            color: $black224;
+            color: $black-224;
             opacity: 0.67;
             padding: 15px 105px 15px 30px;
             box-sizing: border-box;
@@ -535,31 +532,33 @@
             border: none;
         }
 
-        &-btn{
-            @include fontsizelineheight();
+        &-btn {
+            @include font-lato-normal-size-line(400, 14px, 17px);
             display: block;
             align-items: center;
             text-align: center;
-            color: $colorwh;
-            background: #F16D7F;
-            padding: 10px 30px 10px 20px; 
+            color: $white-fff;
+            background: $lait-pink;
+            padding: 10px 30px 10px 20px;
             box-sizing: border-box;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
             border: none;
 
-            &:hover{
-                color: #1c0863;
+            &:hover {
+                color: $dark-blue-1c0;
             }
 
-            &:active{
+            &:active {
                 color: aquamarine;
             }
         }
     }
+
     /*end Секция 4 end*/
 }
-    /*end main end*/
+
+/*end main end*/
 /* end === content-without-footer === end */
 
 
@@ -567,69 +566,69 @@
 
 /* === footer === */
 /* Подвал */
-.footer{
+.footer {
 
-    &-position{
+    &-position {
         padding: 24px 235px;
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
     }
 
-    &-txt{
-        @include font400();
-        @include fontsizelineheight(16px, 19px);
-        color: $colorwhfb;
+    &-txt {
+        @include font-lato-normal-size-line(400, 16px, 19px);
+        color: $white-fb;
         margin-top: 6px;
     }
 
-    &-part{
+    &-part {
 
-        &-socials{
+        &-socials {
             display: flex;
             justify-content: space-between;
         }
 
-        &-icons{
+        &-icons {
             display: block;
-            background:#FFFFFF;
+            background: $white-fff;
             margin-right: 7.3px;
 
-            &:first-child{
+            &:first-child {
                 padding: 6px 10px 3px 10px;
                 box-sizing: border-box;
             }
 
-            &:nth-child(2){
+            &:nth-child(2) {
                 padding: 6px 7px 0px 7px;
                 box-sizing: border-box;
             }
 
-            &:nth-child(3){
+            &:nth-child(3) {
                 padding: 6px 8px 0px 8px;
                 box-sizing: border-box;
             }
 
-            &:last-child{
+            &:last-child {
                 padding: 7px 6px 0 7px;
             }
 
-            &:hover{
-                background: #9F9F9F;
+            &:hover {
+                background: $pale-gray;
             }
         }
 
-        &-svg{
+        &-svg {
             fill: #000000;
 
-            &:hover{
+            &:hover {
                 fill: #ad1010;
             }
 
-            &:active{
-                fill:#f16d7f;
+            &:active {
+                fill: $lait-pink;
             }
         }
     }
 }
+
 /* end === footer === end */

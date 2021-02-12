@@ -1,0 +1,170 @@
+/*Product*/
+/*main*/
+
+/*Карусель*/
+.bgcolorprod {
+    min-height: 777px;
+    background-color: $white-f7e;
+}
+
+.carousel {
+    &-wrapper {
+        position: relative;
+    }
+
+    &-btn {
+        width: 47px;
+        height: 47px;
+        background: rgba(42, 42, 42, 0.15);
+        border: none;
+
+
+        &-svg {
+            fill: $black-00;
+        }
+
+        &:first-child {
+            position: absolute;
+            top: 365px;
+        }
+
+        &:nth-child(3) {
+            position: absolute;
+            top: 365px;
+            left: 1506px;
+        }
+
+        &:hover &-svg:hover {
+            fill: $pink-f16;
+        }
+    }
+
+    &-img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &-description {
+        position: absolute;
+        margin: 0 230px;
+        padding: 65px 250px;
+        box-sizing: border-box;
+        background: $white-fff;
+        border: 1px solid $white-f7e;
+
+        &-title {
+            @include font-lato-normal-size-line(300, 14px, 17px);
+            display: block;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: $lait-pink;
+            text-align: center;
+
+            &:nth-child(3) {
+                @include font-lato-normal-size-line(300, 18px, 22px);
+                color: $gray-4d;
+            }
+        }
+
+        &-line {
+            margin: 12px auto;
+            width: 63px;
+            height: 3px;
+            background: $fresh-pink;
+            border: none;
+
+            &:nth-child(6) {
+                width: 641px;
+                height: 1px;
+                background-color: $white-fb;
+                border: none;
+                margin: 65px 0;
+            }
+        }
+
+        &-paragraph {
+            @include font-lato-normal-size-line(300, 14px, 17px);
+            font-weight: 300;
+            text-align: center;
+            color: $gray-5e;
+            margin: 48px 55px 32px 55px;
+        }
+
+        &-price {
+            @include font-lato-normal-size-line(300, 24px, 29px);
+            display: block;
+            font-weight: 300;
+            color: $fresh-pink;
+            text-align: center;
+        }
+
+        &-list {
+            list-style: none;
+            display: flex;
+
+            /* Убираем стандартный маркер Chrome */
+            details summary::-webkit-details-marker {
+                display: none;
+            }
+
+            &-li {
+                &:first-child {
+                    margin-left: 115px;
+                    margin-right: 23px;
+                }
+
+                &:last-child {
+                    margin-left: 23px;
+                }
+            }
+        }
+
+        &-btn {
+            @include font-lato-normal-size-line(400, 16px, 19px);
+            display: block;
+            margin: 49px auto 0;
+            /*Выравнивание по центру*/
+            color: $pink-ff6a;
+            background: white;
+            border: 1px solid $pink-ff6a;
+            padding: 14px 56.5px 8.5px 23.5px;
+            box-sizing: border-box;
+            display: flex;
+
+            &-svg {
+                fill: $pink-ff6a;
+                margin-right: 23px;
+            }
+
+            &-txt {
+                @include font-lato-normal-size-line(400, 16px, 19px);
+                display: block;
+                margin-top: 2px;
+            }
+
+            &:hover {
+                background-color: $dark-blue-1c0;
+
+                & .carousel-description-btn-svg {
+                    fill: orange;
+                }
+
+                & .carousel-description-btn-txt {
+
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+
+/*end Карусель end*/
+
+.margin {
+    &-card {
+        margin-top: 665px;
+    }
+}
+
+/*end main end*/
+/*end Product end*/
