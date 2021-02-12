@@ -14,7 +14,7 @@
     /*Заголовок header*/
     &-title {
         @include font-lato-normal-size-line(400, 24px, 29px);
-        color: $laitpink;
+        color: $lait-pink;
         text-transform: uppercase;
         text-decoration: none;
     }
@@ -31,7 +31,7 @@
         text-transform: uppercase;
         text-decoration: none;
         font-weight: 300;
-        color: #636363;
+        color: $gray-63;
         margin-top: 6px;
         margin-right: 5px;
     }
@@ -81,13 +81,13 @@
         &-title {
             @include font-lato-normal-size-line(400, 14px, 17px);
             text-transform: uppercase;
-            color: #6F6E6E;
+            color: $gray-63;
 
             &-one {
                 @include font-lato-normal-size-line(400, 14px, 17px);
                 text-transform: uppercase;
                 font-weight: 600;
-                color: $darkbl;
+                color: $black-22;
             }
 
             details[open] summary {
@@ -117,10 +117,10 @@
     padding: 12px 15px;
     box-sizing: border-box;
     margin: 0 auto;
-    border: 1px solid #EBEBEB;
+    border: 1px solid $white-eb;
     background-color: white;
     font-weight: 300;
-    color: #EBEBEB;
+    color: $white-eb;
 }
 
 /*end Кнопка после карточек end*/
@@ -131,20 +131,20 @@
 .footer {
     &-part {
         &-icons:nth-child(2) {
-            background-color: $laitpink;
+            background-color: $lait-pink;
         }
 
         &-icons:nth-child(2) svg {
-            fill: #FFFFFF;
+            fill: $white-fff;
         }
 
         /*Эффект наведения*/
         &-icons:nth-child(2):hover {
-            background-color: #df5366;
+            background-color: $lait-pink;
         }
 
         &-icons:nth-child(2) svg:hover {
-            fill: #1c0863;
+            fill: $dark-blue-1c0;
         }
     }
 }

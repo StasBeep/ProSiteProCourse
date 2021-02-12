@@ -8,7 +8,7 @@
 /*header*/
 
 .bgcolor {
-    background-color: $bgcolor;
+    background-color: $black-22;
 }
 
 /*Фиксирование меню поверх блоков*/
@@ -125,7 +125,7 @@
 }
 
 .bgcolorp {
-    background: #F1E4E6;
+    background: $white-f1e;
 }
 
 .padd-title {
@@ -139,13 +139,13 @@
 .title-line {
     @include font-lato-normal-size-line(900, 48px, 58px);
     display: block;
-    border-left: 12px solid #f16d7f;
+    border-left: 12px solid $pink-f16;
     padding-left: 16px;
     text-transform: uppercase;
 }
 
 .color-pink {
-    color: $laitpink;
+    color: $lait-pink;
 }
 
 /*end header end*/
@@ -237,7 +237,7 @@
             display: block;
             text-transform: uppercase;
             text-align: center;
-            color: $colorwh;
+            color: $white-fff;
         }
 
         &:last-child {
@@ -257,14 +257,14 @@
         @include font-lato-normal-size-line(400, 30px, 36px);
         display: block;
         text-align: center;
-        color: $bgcolor;
+        color: $black-22;
         margin-bottom: 8px;
     }
 
     &-parsec {
         @include font-lato-normal-size-line(400, 14px, 17px);
         text-align: center;
-        color: $palegray;
+        color: $pale-gray;
         margin-bottom: 58px;
     }
 
@@ -314,7 +314,7 @@
             &-edit {
                 width: 141.94px;
                 height: 400px;
-                background-color: #F7E4E2;
+                background-color: $white-f7e;
                 padding: 9px 110px 11px 108px;
             }
         }
@@ -323,7 +323,7 @@
             display: none;
             width: 138px;
             height: 43px;
-            border: 1px solid #FFFFFF;
+            border: 1px solid $white-fff;
             background: transparent;
             position: absolute;
             top: 188.5px;
@@ -332,19 +332,19 @@
             box-sizing: border-box;
 
             &:active {
-                border: 1px solid #FFFFFF;
+                border: 1px solid $white-fff;
             }
         }
 
         &-svg {
             display: block;
-            fill: #FFFFFF;
+            fill: $white-fff;
         }
 
         &-tit {
             @include font-lato-normal-size-line(400, 14px, 17px);
             display: block;
-            color: $colorwh;
+            color: $white-fff;
             margin-top: 4px;
             margin-left: 9px;
         }
@@ -357,20 +357,20 @@
             @include font-lato-normal-size-line(400, 13px, 16px);
             display: block;
             text-transform: uppercase;
-            color: $darkbl;
+            color: $black-00;
             margin-bottom: 12px;
         }
 
         &-description {
             @include font-lato-normal-size-line(300, 14px, 17px);
             font-weight: 300;
-            color: $gray5d;
+            color: $gray-5d;
             margin-bottom: 18px;
         }
 
         &-price {
             @include font-lato-normal-size-line(400, 16px, 19px);
-            color: $laitpink;
+            color: $lait-pink;
         }
 
         /*Кнопка - это строчный элемент*/
@@ -379,9 +379,9 @@
             display: block;
             /*Выравнивание по центру*/
             margin: 0 auto;
-            color: $srpink;
+            color: $sr-pink;
             background: white;
-            border: 1px solid $srpink;
+            border: 1px solid $sr-pink;
             padding: 14.5px 38.5px;
             box-sizing: border-box;
             margin-top: 18.5px;
@@ -390,7 +390,7 @@
             /*Эффект наведения*/
             &:hover {
                 content: "";
-                background: #f7e9e9;
+                background: $white-f7e9;
             }
 
             /*Эффект нажатия*/
@@ -427,7 +427,7 @@
         &-svg {
             display: block;
             margin: 0 auto;
-            fill: #F16D7F;
+            fill: $lait-pink;
             margin-bottom: 28px;
 
             &:hover {
@@ -443,7 +443,7 @@
             @include font-lato-normal-size-line(400, 20px, 24px);
             display: block;
             text-align: center;
-            color: $colorwhfb;
+            color: $white-fb;
             margin-bottom: 16px;
         }
 
@@ -451,7 +451,7 @@
             @include font-lato-normal-size-line(300, 14px, 17px);
             font-weight: 300;
             text-align: center;
-            color: $colorwhfb;
+            color: $white-fb;
         }
     }
 
@@ -505,7 +505,7 @@
             display: block;
             text-transform: uppercase;
             text-align: center;
-            color: $black224;
+            color: $black-224;
 
 
             &:nth-child(2) {
@@ -521,9 +521,9 @@
         &-email {
             @include font-lato-normal-size-line(400, 14px, 17px);
             display: block;
-            background: #E1E1E1;
+            background: $white-e1;
             align-items: center;
-            color: $black224;
+            color: $black-224;
             opacity: 0.67;
             padding: 15px 105px 15px 30px;
             box-sizing: border-box;
@@ -537,8 +537,8 @@
             display: block;
             align-items: center;
             text-align: center;
-            color: $colorwh;
-            background: #F16D7F;
+            color: $white-fff;
+            background: $lait-pink;
             padding: 10px 30px 10px 20px;
             box-sizing: border-box;
             border-top-right-radius: 25px;
@@ -546,7 +546,7 @@
             border: none;
 
             &:hover {
-                color: #1c0863;
+                color: $dark-blue-1c0;
             }
 
             &:active {
@@ -577,7 +577,7 @@
 
     &-txt {
         @include font-lato-normal-size-line(400, 16px, 19px);
-        color: $colorwhfb;
+        color: $white-fb;
         margin-top: 6px;
     }
 
@@ -590,7 +590,7 @@
 
         &-icons {
             display: block;
-            background: #FFFFFF;
+            background: $white-fff;
             margin-right: 7.3px;
 
             &:first-child {
@@ -613,7 +613,7 @@
             }
 
             &:hover {
-                background: #9F9F9F;
+                background: $pale-gray;
             }
         }
 
@@ -625,7 +625,7 @@
             }
 
             &:active {
-                fill: #f16d7f;
+                fill: $lait-pink;
             }
         }
     }

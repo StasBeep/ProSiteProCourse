@@ -4,7 +4,7 @@
 /*Карусель*/
 .bgcolorprod {
     min-height: 777px;
-    background-color: #F7F7F7;
+    background-color: $white-f7e;
 }
 
 .carousel {
@@ -20,7 +20,7 @@
 
 
         &-svg {
-            fill: #000000;
+            fill: $black-00;
         }
 
         &:first-child {
@@ -35,7 +35,7 @@
         }
 
         &:hover &-svg:hover {
-            fill: #F16D7F;
+            fill: $pink-f16;
         }
     }
 
@@ -49,20 +49,20 @@
         margin: 0 230px;
         padding: 65px 250px;
         box-sizing: border-box;
-        background: #FFFFFF;
-        border: 1px solid #F7F7F7;
+        background: $white-fff;
+        border: 1px solid $white-f7e;
 
         &-title {
             @include font-lato-normal-size-line(300, 14px, 17px);
             display: block;
             text-transform: uppercase;
             font-weight: 300;
-            color: $laitpink;
+            color: $lait-pink;
             text-align: center;
 
             &:nth-child(3) {
                 @include font-lato-normal-size-line(300, 18px, 22px);
-                color: #4D4D4D;
+                color: $gray-4d;
             }
         }
 
@@ -70,13 +70,13 @@
             margin: 12px auto;
             width: 63px;
             height: 3px;
-            background: #EF5B70;
+            background: $fresh-pink;
             border: none;
 
             &:nth-child(6) {
                 width: 641px;
                 height: 1px;
-                background-color: #EAEAEA;
+                background-color: $white-fb;
                 border: none;
                 margin: 65px 0;
             }
@@ -86,7 +86,7 @@
             @include font-lato-normal-size-line(300, 14px, 17px);
             font-weight: 300;
             text-align: center;
-            color: #5E5E5E;
+            color: $gray-5e;
             margin: 48px 55px 32px 55px;
         }
 
@@ -94,7 +94,7 @@
             @include font-lato-normal-size-line(300, 24px, 29px);
             display: block;
             font-weight: 300;
-            color: #EF5B70;
+            color: $fresh-pink;
             text-align: center;
         }
 
@@ -124,15 +124,15 @@
             display: block;
             margin: 49px auto 0;
             /*Выравнивание по центру*/
-            color: #FF6A6A;
+            color: $pink-ff6a;
             background: white;
-            border: 1px solid #FF6A6A;
+            border: 1px solid $pink-ff6a;
             padding: 14px 56.5px 8.5px 23.5px;
             box-sizing: border-box;
             display: flex;
 
             &-svg {
-                fill: #FF6A6A;
+                fill: $pink-ff6a;
                 margin-right: 23px;
             }
 
@@ -143,7 +143,7 @@
             }
 
             &:hover {
-                background-color: #1c0863;
+                background-color: $dark-blue-1c0;
 
                 & .carousel-description-btn-svg {
                     fill: orange;
