@@ -3,163 +3,240 @@ $bgcolor:#222222;
 $fillmenusvg:#E8E8E8;
 
 /* === common styles === */
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* end === common styles === end*/
 
 
 /* === wrapper === */
 /* Обёртки - отдельный блок */
-.wrapper{
+.wrapper {
     /* Контейнер для страницы определение 
     максимальной ширины содержимого + обнуление 
     margin*/
     max-width: 1600px;
     margin: 0 auto;
-    
+
     /* Обёртка для прижатия подвала к нижней части */
-    &-forcontent{
-        min-height: 100vh; /* 100 видимых высот */
+    &-forcontent {
+        min-height: 100vh;
+        /* 100 видимых высот */
         display: flex;
         flex-direction: column;
     }
 
-    &-container{
+    &-container {
         /* Контейнер для равных отступов от краёв контента*/
         padding: 0 230px;
         box-sizing: border-box;
         max-width: 1600px;
     }
 }
+
 /* end === wrapper === end */
 
 
 
 /* === content-without-footer === */
 /* Основная часть без footer */
-.content-without-footer{
-    flex-grow:1; /* Отношение блоков */
+.content-without-footer {
+    flex-grow: 1;
+    /* Отношение блоков */
 }
-     
-    /*header*/
 
-.bgcolor{
+/*header*/
+
+.bgcolor {
     background-color: $bgcolor;
 }
 
 /*Фиксирование меню поверх блоков*/
-.fixed-menu{
+.fixed-menu {
     position: fixed;
     width: 100%;
     z-index: 10;
 }
 
-.padd-container{
+.padd-container {
     padding: 18px 0;
 }
 
-.disp-fl{
+.disp-fl {
     display: flex;
-    justify-content: space-between; /*Положение по краям*/
+    justify-content: space-between;
+    /*Положение по краям*/
 }
 
-.left-side{
+.left-side {
 
     /*Расположение по горизонтали*/
     display: flex;
 
     /*Движение вправо margin*/
-    &-marg-cont{
+    &-marg-cont {
         margin-right: 41px;
     }
 
     /*движение вниз margin*/
-    &-marg-cont-svg{
+    &-marg-cont-svg {
         margin-top: 10px;
     }
 
 
     /*Задание цвета декоративному изображению*/
-    &-seach-svg{
-        fill:$fillmenusvg;
+    &-seach-svg {
+        fill: $fillmenusvg;
     }
 
     /*Эффект наведения*/
-    &-seach-svg:hover{
-        fill:red;
+    &-seach-svg:hover {
+        fill: red;
     }
 
     /*Эффект нажатия*/
-    &-seach-svg:active{
-        fill:rgb(15, 41, 153);
+    &-seach-svg:active {
+        fill: rgb(15, 41, 153);
     }
 }
 
-.right-side{
-    
+.right-side {
+
     /*Рассположение по горизонтали*/
     display: flex;
 
-    
-    &-crawling-menu{
+    &-crawling {
+
+        /* убирает квадратик */
+        &-menu {
+            display: none;
+
+            &:checked~.right-side-crawling-btn .right-side-crawling-icon::after,
+            &:checked~.right-side-crawling-btn .right-side-crawling-icon::before {
+                top: 0;
+            }
+
+            &:checked~.right-side-crawling-btn .right-side-crawling-icon {
+                background-color: transparent;
+            }
+
+            &:checked~.right-side-crawling-btn .right-side-crawling-icon::after {
+                transform: rotate(45deg);
+            }
+
+            &:checked~.right-side-crawling-btn .right-side-crawling-icon::before {
+                transform: rotate(-45deg);
+            }
+        }
+
+        &-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 30px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        &-icon {
+            display: block;
+            position: relative;
+            background-color: #ffffff;
+            width: 90%;
+            height: 4px;
+            transition: 0.4s;
+            margin-top: 30px;
+
+            /* верхняя и нижняя палочка */
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                background: white;
+                width: 100%;
+                height: 4px;
+                transition: 0.4s;
+            }
+
+            &::before {
+                top: 10px;
+            }
+
+            &::after {
+                top: -10px;
+            }
+        }
+    }
+
+    &-crawling-menu {
         margin-top: 12px;
         margin-right: 33px;
-    } 
-    
-    
-    &-account{
-        background: transparent;  /*Прозрачный задний фон*/
-        border: none; /* Убирает рамку у button*/
+    }
 
-        margin-top: 8px;
-        margin-right: 33px;
+
+    &-account {
+        background: transparent;
+        /*Прозрачный задний фон*/
+        border: none;
+        /* Убирает рамку у button*/
+
+        margin-top: 15px;
+        margin-right: 25px;
+        margin-left: 25px;
 
 
         /*Задание цвета декоративному изображению*/
-        &-svg{
-            fill:$fillmenusvg;
+        &-svg {
+            fill: $fillmenusvg;
         }
+
         /*Эффект наведения*/
-        &-svg:hover{
-            fill:red;
+        &-svg:hover {
+            fill: red;
         }
 
         /*Эффект нажатия*/
-        &-svg:active{
-            fill:rgb(15, 41, 153);
+        &-svg:active {
+            fill: rgb(15, 41, 153);
         }
     }
 
-    
-    &-cart{
-        background: transparent;  /*Прозрачный задний фон*/
-        border: none; /* Убирает рамку у button*/
+
+    &-cart {
+        background: transparent;
+        /*Прозрачный задний фон*/
+        border: none;
+        /* Убирает рамку у button*/
 
         margin-top: 8px;
 
         /*Задание цвета декоративному изображению*/
-        &-svg{
-            fill:$fillmenusvg;
+        &-svg {
+            fill: $fillmenusvg;
         }
+
         /*Эффект наведения*/
-        &-svg:hover{
-            fill:red;
+        &-svg:hover {
+            fill: red;
         }
 
         /*Эффект нажатия*/
-        &-svg:active{
-            fill:rgb(15, 41, 153);
+        &-svg:active {
+            fill: rgb(15, 41, 153);
         }
     }
 }
 
-.bgcolorp{
-    background:  #F1E4E6;
+.bgcolorp {
+    background: #F1E4E6;
 }
 
-.padd-title{
+.padd-title {
     padding: 374px 280px 381px 728px;
     box-sizing: border-box;
     background-image: url(../img/header-men.png);
@@ -168,19 +245,19 @@ $fillmenusvg:#E8E8E8;
 }
 
 .title-line {
-    display:block;
+    display: block;
     border-left: 12px solid #f16d7f;
     padding-left: 16px;
     line-height: 58px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-size: 48px;
 }
-  
-.color-pink{
-    color:pink;
+
+.color-pink {
+    color: pink;
 }
 
-    /*end header end*/
+/*end header end*/
 
 /* end === content-without-footer === end */
 

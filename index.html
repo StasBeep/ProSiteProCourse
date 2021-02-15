@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shop</title>
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -38,10 +38,13 @@
                         </div>
                         <!--Правая часть меню-->
                         <div class="right-side">
-                            <!--Выползающее меню (смотреть позже)-->
-                            <button class="right-side-crawling-menu">
-                                <span></span>
-                            </button>
+                            <!--!Выползающее меню (будет реализовано через JS), сейчас на CSS-->
+                            <input type="checkbox" id="crawling-menu" class="right-side-crawling-menu">
+                            <!--TODO: связь checkbox с иконкой, реализованных через псевдоэлементы-->
+                            <label for="crawling-menu" class="right-side-crawling-btn">
+                                <!--TODO: icon-->
+                                <div class="right-side-crawling-icon"></div>
+                            </label>
                             <!--Личный кабинет-->
                             <button class="right-side-account">
                                 <svg class="right-side-account-svg" width="29" height="29" viewBox="0 0 29 29"

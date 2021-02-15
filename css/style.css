@@ -113,6 +113,82 @@
   display: flex;
 }
 
+.right-side-crawling {
+  /* убирает квадратик */
+}
+
+.right-side-crawling-menu {
+  display: none;
+}
+
+.right-side-crawling-menu:checked ~ .right-side-crawling-btn .right-side-crawling-icon::after,
+.right-side-crawling-menu:checked ~ .right-side-crawling-btn .right-side-crawling-icon::before {
+  top: 0;
+}
+
+.right-side-crawling-menu:checked ~ .right-side-crawling-btn .right-side-crawling-icon {
+  background-color: transparent;
+}
+
+.right-side-crawling-menu:checked ~ .right-side-crawling-btn .right-side-crawling-icon::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.right-side-crawling-menu:checked ~ .right-side-crawling-btn .right-side-crawling-icon::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.right-side-crawling-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.right-side-crawling-icon {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  width: 90%;
+  height: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 30px;
+  /* верхняя и нижняя палочка */
+}
+
+.right-side-crawling-icon::before, .right-side-crawling-icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.right-side-crawling-icon::before {
+  top: 10px;
+}
+
+.right-side-crawling-icon::after {
+  top: -10px;
+}
+
 .right-side-crawling-menu {
   margin-top: 12px;
   margin-right: 33px;
@@ -123,8 +199,9 @@
   /*Прозрачный задний фон*/
   border: none;
   /* Убирает рамку у button*/
-  margin-top: 8px;
-  margin-right: 33px;
+  margin-top: 15px;
+  margin-right: 25px;
+  margin-left: 25px;
   /*Задание цвета декоративному изображению*/
   /*Эффект наведения*/
   /*Эффект нажатия*/
