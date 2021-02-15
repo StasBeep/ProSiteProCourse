@@ -185,18 +185,20 @@
         left: 120px;
 
         &-title {
+            @include font-lato-normal-size-line(700, 14px, 17px);
             display: block;
             text-transform: uppercase;
-            color: #000000;
+            color: $black-00;
             margin-bottom: 24px;
         }
 
         &-name {
+            @include font-lato-normal-size-line(400, 14px, 17px);
             display: block;
             margin-bottom: 12px;
             text-decoration: none;
             text-transform: uppercase;
-            color: #F16D7F;
+            color: $lait-pink;
 
         }
 
@@ -213,7 +215,9 @@
             }
 
             &-li a {
+                @include font-lato-normal-size-line();
                 text-decoration: none;
+                color: $gray-6f;
             }
         }
     }
