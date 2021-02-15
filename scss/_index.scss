@@ -39,24 +39,54 @@
     }
 
     /*движение вниз margin*/
-    &-marg-cont-svg {
-        margin-top: 10px;
-    }
+    &-search {
 
+        &-form {
+            margin-top: 10px;
+            position: relative;
 
-    /*Задание цвета декоративному изображению*/
-    &-seach-svg {
-        fill: $fillmenusvg;
-    }
+            &-inp {
+                /*@include*/
+                width: 0;
+                min-height: 0;
+                padding: 5px;
+                outline: none;
+                box-sizing: border-box;
+                background-color: transparent;
+                border: none;
+                position: absolute;
+                color: #ffffff;
+                text-transform: capitalize;
+                left: 35px;
+                top: -1px;
 
-    /*Эффект наведения*/
-    &-seach-svg:hover {
-        fill: red;
-    }
+                &:focus {
+                    width: 150px;
+                    min-height: 20px;
+                    transition: width 1s ease;
+                    border: 2px solid #fff;
+                }
 
-    /*Эффект нажатия*/
-    &-seach-svg:active {
-        fill: rgb(15, 41, 153);
+                &:focus~.left-side-search-label .left-side-search-svg {
+                    fill: gold;
+                }
+            }
+        }
+
+        /*Задание цвета декоративному изображению*/
+        &-svg {
+            fill: $fillmenusvg;
+        }
+
+        /*Эффект наведения*/
+        &-svg:hover {
+            fill: red;
+        }
+
+        /*Эффект нажатия*/
+        &-svg:active {
+            fill: rgb(15, 41, 153);
+        }
     }
 }
 
@@ -64,11 +94,128 @@
 
     /*Рассположение по горизонтали*/
     display: flex;
+    position: relative;
 
+    &-crawling {
 
-    &-crawling-menu {
-        margin-top: 12px;
-        margin-right: 33px;
+        /* убирает квадратик */
+        &-menu {
+            display: none;
+            margin-top: 12px;
+            margin-right: 33px;
+
+            &:checked~.right-side-crawling-btn .right-side-crawling-icon::after,
+            &:checked~.right-side-crawling-btn .right-side-crawling-icon::before {
+                top: 0;
+            }
+
+            &:checked~.right-side-crawling-btn .right-side-crawling-icon {
+                background-color: transparent;
+            }
+
+            &:checked~.right-side-crawling-btn .right-side-crawling-icon::after {
+                transform: rotate(45deg);
+            }
+
+            &:checked~.right-side-crawling-btn .right-side-crawling-icon::before {
+                transform: rotate(-45deg);
+            }
+
+            &:checked~.right-side-menu {
+                display: block;
+            }
+
+            /*&:checked .bgcolor{
+                background-color: red;
+            }*/
+        }
+
+        &-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 30px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        &-icon {
+            display: block;
+            position: relative;
+            background-color: #ffffff;
+            width: 90%;
+            height: 4px;
+            transition: 0.4s;
+            margin-top: 30px;
+
+            /* верхняя и нижняя палочка */
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                background: white;
+                width: 100%;
+                height: 4px;
+                transition: 0.4s;
+            }
+
+            &::before {
+                top: 10px;
+            }
+
+            &::after {
+                top: -10px;
+            }
+        }
+    }
+
+    &-menu {
+        display: none;
+        width: 232px;
+        max-height: 764px;
+        background-color: #ffffff;
+        position: absolute;
+        padding-left: 33px;
+        padding-top: 37px;
+        box-sizing: border-box;
+        top: 66px;
+        left: 120px;
+
+        &-title {
+            display: block;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 24px;
+        }
+
+        &-name {
+            display: block;
+            margin-bottom: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #F16D7F;
+
+        }
+
+        &-list {
+            margin-left: 22px;
+            list-style: none;
+
+            &-li {
+                margin-bottom: 12px;
+
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &-li a {
+                text-decoration: none;
+            }
+        }
     }
 
 
@@ -78,8 +225,9 @@
         border: none;
         /* Убирает рамку у button*/
 
-        margin-top: 8px;
-        margin-right: 33px;
+        margin-top: 15px;
+        margin-right: 25px;
+        margin-left: 25px;
 
 
         /*Задание цвета декоративному изображению*/
@@ -314,7 +462,7 @@
             &-edit {
                 width: 141.94px;
                 height: 400px;
-                background-color: $white-f7e;
+                background-color: $white-f7;
                 padding: 9px 110px 11px 108px;
             }
         }
@@ -497,7 +645,7 @@
         &-txt {
             @include font-lato-normal-size-line(400, 20px, 24px);
             text-align: center;
-            color: $black224;
+            color: $black-224;
         }
 
         &-title {
