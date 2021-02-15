@@ -141,6 +141,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .right-side-crawling {
@@ -149,6 +150,11 @@
 
 .right-side-crawling-menu {
   display: none;
+  margin-top: 12px;
+  margin-right: 33px;
+  /*&:checked .bgcolor{
+                background-color: red;
+            }*/
 }
 
 .right-side-crawling-menu:checked ~ .right-side-crawling-btn .right-side-crawling-icon::after,
@@ -168,6 +174,10 @@
 .right-side-crawling-menu:checked ~ .right-side-crawling-btn .right-side-crawling-icon::before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.right-side-crawling-menu:checked ~ .right-side-menu {
+  display: block;
 }
 
 .right-side-crawling-btn {
@@ -219,9 +229,50 @@
   top: -10px;
 }
 
-.right-side-crawling-menu {
-  margin-top: 12px;
-  margin-right: 33px;
+.right-side-menu {
+  display: none;
+  width: 232px;
+  max-height: 764px;
+  background-color: #ffffff;
+  position: absolute;
+  padding-left: 33px;
+  padding-top: 37px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 66px;
+  left: 120px;
+}
+
+.right-side-menu-title {
+  display: block;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.right-side-menu-name {
+  display: block;
+  margin-bottom: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F16D7F;
+}
+
+.right-side-menu-list {
+  margin-left: 22px;
+  list-style: none;
+}
+
+.right-side-menu-list-li {
+  margin-bottom: 12px;
+}
+
+.right-side-menu-list-li:last-child {
+  margin-bottom: 20px;
+}
+
+.right-side-menu-list-li a {
+  text-decoration: none;
 }
 
 .right-side-account {

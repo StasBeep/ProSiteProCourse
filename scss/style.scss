@@ -107,7 +107,7 @@ $fillmenusvg:#E8E8E8;
                 border: 2px solid #fff;
             }
 
-            &:focus~ .left-side-search-label .left-side-search-svg{
+            &:focus~.left-side-search-label .left-side-search-svg {
                 fill: gold;
             }
         }
@@ -134,12 +134,15 @@ $fillmenusvg:#E8E8E8;
 
     /*Рассположение по горизонтали*/
     display: flex;
+    position: relative;
 
     &-crawling {
 
         /* убирает квадратик */
         &-menu {
             display: none;
+            margin-top: 12px;
+            margin-right: 33px;
 
             &:checked~.right-side-crawling-btn .right-side-crawling-icon::after,
             &:checked~.right-side-crawling-btn .right-side-crawling-icon::before {
@@ -157,6 +160,14 @@ $fillmenusvg:#E8E8E8;
             &:checked~.right-side-crawling-btn .right-side-crawling-icon::before {
                 transform: rotate(-45deg);
             }
+
+            &:checked~.right-side-menu{
+                display: block;
+            }
+
+            /*&:checked .bgcolor{
+                background-color: red;
+            }*/
         }
 
         &-btn {
@@ -201,11 +212,51 @@ $fillmenusvg:#E8E8E8;
         }
     }
 
-    &-crawling-menu {
-        margin-top: 12px;
-        margin-right: 33px;
-    }
+    &-menu {
+        display: none;
+        width: 232px;
+        max-height: 764px;
+        background-color: #ffffff;
+        position: absolute;
+        padding-left: 33px;
+        padding-top: 37px;
+        box-sizing: border-box;
+        top: 66px;
+        left: 120px;
 
+        &-title{
+            display: block;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 24px;
+        }
+
+        &-name{
+            display: block;
+            margin-bottom: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #F16D7F;
+
+        }
+
+        &-list{
+            margin-left: 22px;
+            list-style: none;
+
+            &-li{
+                margin-bottom: 12px;
+
+                &:last-child{
+                    margin-bottom: 20px;
+                }
+            }
+
+            &-li a{
+                text-decoration: none;
+            }
+        }
+    }
 
     &-account {
         background: transparent;
