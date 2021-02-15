@@ -564,9 +564,12 @@ button:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .additional-content-sec-card {
+  max-width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,15 +581,8 @@ button:focus {
           box-sizing: border-box;
   background: #F8F8F8;
   position: relative;
+  margin-bottom: 30px;
   /*Эффект наведения на всю карточку*/
-}
-
-.additional-content-sec-card:first-child {
-  margin-right: 30px;
-}
-
-.additional-content-sec-card:last-child {
-  margin-left: 30px;
 }
 
 .additional-content-sec-card:hover .additional-content-sec-btn {
@@ -785,7 +781,6 @@ button:focus {
   background-blend-mode: lighten;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100%;
 }
 
 .additional-content-fourth-fl {
@@ -983,6 +978,113 @@ button:focus {
 }
 
 /* end === footer === end */
+/* ================= 768px ================= */
+@media (max-width: 768px) {
+  .wrapper-container {
+    padding: 0 16px;
+  }
+  .fixed-menu {
+    max-width: 768px;
+  }
+  .disp-fl {
+    padding: 0 32px;
+  }
+  .right-side-menu {
+    left: -44px;
+  }
+  .padd-title {
+    padding: 200px 0px 151px 297px;
+    background-size: 50%;
+    background-position-y: 91px;
+    background-position-x: -42px;
+  }
+  .title-line {
+    font-family: lato;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 53px;
+  }
+  .additional-content-first {
+    padding-top: 20px;
+    padding-bottom: 154px;
+  }
+  .additional-content-card {
+    min-height: 168px;
+    min-width: 232px;
+  }
+  .additional-content-card:first-child {
+    background-position: -83px 4px;
+  }
+  .additional-content-card:nth-child(2) {
+    background-position: -40px;
+  }
+  .additional-content-card:last-child {
+    background-position: -68px;
+  }
+  .additional-content-card-under {
+    min-height: 117px;
+    padding-top: 32px;
+  }
+  .additional-content-txt:first-child {
+    font-family: lato;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .additional-content-txt:last-child {
+    font-family: lato;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .additional-content-sec-card {
+    margin-bottom: 17px;
+  }
+  .additional-content-sec-button {
+    margin-bottom: 65px;
+  }
+  .additional-content-third-contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 48px 210px 64px;
+  }
+  .additional-content-third-content:first-child {
+    margin: 0 0 48px 0;
+  }
+  .additional-content-third-content:last-child {
+    margin: 48px 0 0 0;
+  }
+  .additional-content-fourth-fl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .additional-content-fourth-wrp:first-child {
+    padding: 0;
+    margin: 53px auto 48px;
+  }
+  .additional-content-fourth-wrp:last-child {
+    padding: 0;
+    margin: 0 auto 140px;
+  }
+  .additional-content-fourth-title {
+    font-family: lato;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .footer-position {
+    padding: 24px 32px;
+  }
+}
+
 /* Catalog */
 /* header */
 .padding-title {

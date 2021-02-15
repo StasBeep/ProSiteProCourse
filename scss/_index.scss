@@ -426,22 +426,17 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
+            flex-wrap: wrap;
         }
 
         &-card {
+            max-width: 360px;
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
             background: #F8F8F8;
             position: relative;
-
-            &:first-child {
-                margin-right: 30px;
-            }
-
-            &:last-child {
-                margin-left: 30px;
-            }
+            margin-bottom: 30px;
 
             /*Эффект наведения на всю карточку*/
             &:hover .additional-content-sec-btn {
@@ -616,7 +611,6 @@
         background-blend-mode: lighten;
         background-repeat: no-repeat;
         background-size: cover;
-        background-size: 100%;
 
         &-fl {
             display: flex;
@@ -784,3 +778,129 @@
 }
 
 /* end === footer === end */
+
+
+
+/* ================= 768px ================= */
+@media (max-width:768px) {
+    .wrapper {
+        &-container {
+            padding: 0 16px;
+        }
+    }
+
+    .fixed-menu {
+        max-width: 768px;
+    }
+
+    .disp-fl {
+        padding: 0 32px;
+    }
+
+    .right-side-menu {
+        left: -44px;
+    }
+
+    .padd-title {
+        padding: 200px 0px 151px 297px;
+        background-size: 50%;
+        background-position-y: 91px;
+        background-position-x: -42px;
+    }
+
+    .title-line {
+        @include font-lato-normal-size-line(900, 35px, 53px);
+    }
+
+    .additional-content {
+        &-first {
+            padding-top: 20px;
+            padding-bottom: 154px;
+        }
+
+        &-card {
+            min-height: 168px;
+            min-width: 232px;
+
+            &:first-child {
+                background-position: -83px 4px;
+            }
+
+            &:nth-child(2) {
+                background-position: -40px;
+            }
+
+            &:last-child {
+                background-position: -68px;
+            }
+
+            &-under {
+                min-height: 117px;
+                padding-top: 32px;
+            }
+        }
+
+        &-txt {
+            &:first-child {
+                @include font-lato-normal-size-line(400, 16px, 20px);
+            }
+
+            &:last-child {
+                @include font-lato-normal-size-line(700, 24px, 29px);
+            }
+        }
+
+        &-sec {
+            &-card {
+                margin-bottom: 17px;
+            }
+
+            &-button {
+                margin-bottom: 65px;
+            }
+        }
+
+        &-third {
+            &-contents {
+                flex-direction: column;
+                padding: 48px 210px 64px;
+            }
+
+            &-content {
+                &:first-child {
+                    margin: 0 0 48px 0;
+                }
+
+                &:last-child {
+                    margin: 48px 0 0 0;
+                }
+            }
+        }
+
+        &-fourth {
+            &-fl {
+                flex-direction: column;
+            }
+
+            &-wrp {
+                &:first-child {
+                    padding: 0;
+                    margin: 53px auto 48px;
+                }
+
+                &:last-child {
+                    padding: 0;
+                    margin: 0 auto 140px;
+                }
+            }
+
+            &-title {
+                @include font-lato-normal-size-line(400, 18px, 30px);
+            }
+        }
+    }
+
+    .footer-position {
+        padding: 24px 32px;
+    }
+}
