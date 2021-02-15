@@ -81,23 +81,51 @@ $fillmenusvg:#E8E8E8;
     }
 
     /*движение вниз margin*/
-    &-marg-cont-svg {
+    &-search-form {
         margin-top: 10px;
+        position: relative;
+
+        &-inp {
+            /*@include*/
+            width: 0;
+            min-height: 0;
+            padding: 5px;
+            outline: none;
+            box-sizing: border-box;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            color: #ffffff;
+            text-transform: capitalize;
+            left: 35px;
+            top: -1px;
+
+            &:focus {
+                width: 150px;
+                min-height: 20px;
+                transition: width 1s ease;
+                border: 2px solid #fff;
+            }
+
+            &:focus~ .left-side-search-label .left-side-search-svg{
+                fill: gold;
+            }
+        }
     }
 
 
     /*Задание цвета декоративному изображению*/
-    &-seach-svg {
+    &-search-svg {
         fill: $fillmenusvg;
     }
 
     /*Эффект наведения*/
-    &-seach-svg:hover {
+    &-search-svg:hover {
         fill: red;
     }
 
     /*Эффект нажатия*/
-    &-seach-svg:active {
+    &-search-svg:active {
         fill: rgb(15, 41, 153);
     }
 }
