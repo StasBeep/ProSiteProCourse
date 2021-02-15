@@ -96,14 +96,14 @@
         &-title {
             display: block;
             @include font-lato-normal-size-line(300, 16px, 19px);
-            @include marginbotton(20.5px);
+            @include margin-botton(20.5px);
             text-transform: uppercase;
             color: $black-22;
         }
     
         &-inp {
             @include font-lato-normal-size-line(300, 13px, 16px);
-            @include marginbotton(20.5px);
+            @include margin-botton(20.5px);
             width: 358px;
             height: 44px;
             border: 1px solid $gray-a4;
@@ -155,7 +155,7 @@
         }
     
         &-hr {
-            border: 1px solid $gray-4a;
+            border: 1px solid $white-e2;
         }
     
         &-pay {

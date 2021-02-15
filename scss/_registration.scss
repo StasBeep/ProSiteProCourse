@@ -1,14 +1,14 @@
 /* registration */
 
 /* main */
-.registr {
+.registration {
     padding-top: 64px;
     padding-bottom: 96px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 
-    &-form{
+    &-form {
         max-width: 360px;
         margin-right: 128px;
     }
@@ -16,14 +16,14 @@
     &-definition {
         display: block;
         @include font-lato-normal-size-line(300, 16px, 19px);
-        @include marginbotton(20px);
+        @include margin-botton(20px);
         color: $black-22;
     }
 
     &-input {
         display: block;
         @include font-lato-normal-size-line(300, 13px, 16px);
-        @include marginbotton(20px);
+        @include margin-botton(20px);
         width: 360px;
         height: 45px;
         color: $gray-b1;
@@ -34,32 +34,33 @@
         box-sizing: border-box;
 
         &:nth-child(3) {
-            @include marginbotton(35px);
+            @include margin-botton(35px);
         }
     }
 
     &-radio {
         display: flex;
-        @include marginbotton(33px);
+        @include margin-botton(33px);
 
         &-txt {
             display: block;
             @include font-lato-normal-size-line(300, 11px, 13px);
             color: $black-00;
+            margin-left: 10px;
 
-            &:nth-child(2){
+            &:nth-child(2) {
                 margin-right: 20px;
             }
         }
     }
 
-    &-txt{
+    &-txt {
         @include font-lato-normal-size-line(300, 13px, 16px);
-        @include marginbotton(39px);
+        @include margin-botton(39px);
         color: $gray-b1;
     }
 
-    &-btn{
+    &-btn {
         @include font-lato-normal-size-line(400, 14px, 17px);
         color: $white-fff;
         text-transform: uppercase;
@@ -68,44 +69,44 @@
         background-color: $lait-pink;
         border: none;
 
-        &-svg{
+        &-svg {
             fill: $white-fff;
             margin-left: 20px;
         }
 
-        &:hover{
+        &:hover {
             background-color: $dark-blue-1c0;
             color: orange;
             transform: scale(1.1);
 
-            & .registr-btn-svg{
+            & .registr-btn-svg {
                 fill: orange;
             }
         }
     }
 
-    &-information{
+    &-information {
 
-        &-title{
+        &-title {
             display: block;
             @include font-lato-normal-size-line(300, 24px, 29px);
-            @include marginbotton(22px);
+            @include margin-botton(22px);
             color: $black-00;
 
-            &:nth-child(1){
+            &:nth-child(1) {
                 text-transform: uppercase;
             }
         }
 
-        &-list{
+        &-list {
             list-style: none;
 
-            &-unit{
+            &-unit {
                 @include font-lato-normal-size-line(300, 24px, 29px);
                 color: $black-00;
                 margin-bottom: 16px;
 
-                &::before{
+                &::before {
                     content: url(../img/галочка.svg);
                     margin-right: 23px;
                 }
@@ -114,12 +115,12 @@
     }
 }
 
-#registr-radio-btn{
+#registr-radio-btn {
     border: 1px solid $gray-a4;
     margin-right: 10px;
 }
 
-#registr-radio-btn2{
+#registr-radio-btn2 {
     border: 1px solid $gray-a4;
     margin-right: 10px;
 }
