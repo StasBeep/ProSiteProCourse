@@ -4,7 +4,7 @@
 /*Карусель*/
 .bgcolorprod {
     min-height: 777px;
-    background-color: $white-f7e;
+    background-color: $white-f7;
 }
 
 .carousel {
@@ -50,7 +50,7 @@
         padding: 65px 250px;
         box-sizing: border-box;
         background: $white-fff;
-        border: 1px solid $white-f7e;
+        border: 1px solid $white-f7;
 
         &-title {
             @include font-lato-normal-size-line(300, 14px, 17px);

@@ -1,0 +1,130 @@
+/* registration */
+
+/* main */
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    &-form {
+        max-width: 360px;
+        margin-right: 128px;
+    }
+
+    &-definition {
+        display: block;
+        @include font-lato-normal-size-line(300, 16px, 19px);
+        @include margin-botton(20px);
+        color: $black-22;
+    }
+
+    &-input {
+        display: block;
+        @include font-lato-normal-size-line(300, 13px, 16px);
+        @include margin-botton(20px);
+        width: 360px;
+        height: 45px;
+        color: $gray-b1;
+        padding-top: 13px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        border: 1px solid $gray-a4;
+        box-sizing: border-box;
+
+        &:nth-child(3) {
+            @include margin-botton(35px);
+        }
+    }
+
+    &-radio {
+        display: flex;
+        @include margin-botton(33px);
+
+        &-txt {
+            display: block;
+            @include font-lato-normal-size-line(300, 11px, 13px);
+            color: $black-00;
+            margin-left: 10px;
+
+            &:nth-child(2) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &-txt {
+        @include font-lato-normal-size-line(300, 13px, 16px);
+        @include margin-botton(39px);
+        color: $gray-b1;
+    }
+
+    &-btn {
+        @include font-lato-normal-size-line(400, 14px, 17px);
+        color: $white-fff;
+        text-transform: uppercase;
+        padding: 16px 29px;
+        box-sizing: border-box;
+        background-color: $lait-pink;
+        border: none;
+
+        &-svg {
+            fill: $white-fff;
+            margin-left: 20px;
+        }
+
+        &:hover {
+            background-color: $dark-blue-1c0;
+            color: orange;
+            transform: scale(1.1);
+
+            & .registr-btn-svg {
+                fill: orange;
+            }
+        }
+    }
+
+    &-information {
+
+        &-title {
+            display: block;
+            @include font-lato-normal-size-line(300, 24px, 29px);
+            @include margin-botton(22px);
+            color: $black-00;
+
+            &:nth-child(1) {
+                text-transform: uppercase;
+            }
+        }
+
+        &-list {
+            list-style: none;
+
+            &-unit {
+                @include font-lato-normal-size-line(300, 24px, 29px);
+                color: $black-00;
+                margin-bottom: 16px;
+
+                &::before {
+                    content: url(../img/галочка.svg);
+                    margin-right: 23px;
+                }
+            }
+        }
+    }
+}
+
+#registr-radio-btn {
+    border: 1px solid $gray-a4;
+    margin-right: 10px;
+}
+
+#registr-radio-btn2 {
+    border: 1px solid $gray-a4;
+    margin-right: 10px;
+}
+
+/*end main end*/
+
+/*end registration end*/
