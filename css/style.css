@@ -1085,6 +1085,103 @@ button:focus {
   }
 }
 
+@media (max-width: 375px) {
+  .disp-fl {
+    padding: 0 16px;
+  }
+  .right-side {
+    margin: 0px 16px 20px 0;
+  }
+  .right-side-menu {
+    top: 69px;
+    left: -182px;
+  }
+  .right-side-account {
+    display: none;
+  }
+  .right-side-cart {
+    display: none;
+  }
+  .padd-title {
+    padding: 183px 56px 100px;
+    background-image: none;
+  }
+  .title-line {
+    font-family: lato;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .additional-content-first {
+    padding-bottom: 64px;
+  }
+  .additional-content-card {
+    min-width: 343px;
+    min-height: 247px;
+    margin-bottom: 32px;
+  }
+  .additional-content-card-up {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .additional-content-card:first-child {
+    background-position: 0;
+  }
+  .additional-content-card:nth-child(2) {
+    background-position: 0;
+  }
+  .additional-content-card:last-child {
+    background-position: 0;
+  }
+  .additional-content-card-down {
+    margin-top: 0;
+  }
+  .additional-content-card-under {
+    min-height: 111px;
+  }
+  .additional-content-third-contents {
+    padding: 48px 16px 81px;
+  }
+  .additional-content-fourth-txt {
+    font-family: lato;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 23px;
+  }
+  .additional-content-fourth-wrp {
+    margin-bottom: 109px;
+  }
+  .additional-content-fourth-wrp:first-child {
+    max-width: 100%;
+  }
+  .additional-content-fourth-email {
+    padding-right: 35px;
+  }
+  .footer-position {
+    padding: 43px 62px 9px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-txt {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  .footer-part-socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
 /* Catalog */
 /* header */
 .padding-title {
