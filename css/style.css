@@ -2205,4 +2205,52 @@ button:focus {
 
 /*end main end*/
 /*end registration end*/
+/* === 768px === */
+@media (max-width: 768px) {
+  .registration-form {
+    margin-right: 22px;
+  }
+  .registration-information {
+    padding-top: 7px;
+  }
+  .registration-information-title {
+    font-family: lato;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-information-title:nth-child(1) {
+    font-family: lato;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-information-list-unit {
+    font-family: lato;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+/*end === 768px === */
+/* === 375px === */
+@media (max-width: 375px) {
+  .registration {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 8px 100px;
+  }
+  .registration-form {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+/*end === 375px === end*/
 /*# sourceMappingURL=style.css.map */
