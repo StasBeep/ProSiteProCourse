@@ -185,18 +185,20 @@
         left: 120px;
 
         &-title {
+            @include font-lato-normal-size-line(700, 14px, 17px);
             display: block;
             text-transform: uppercase;
-            color: #000000;
+            color: $black-00;
             margin-bottom: 24px;
         }
 
         &-name {
+            @include font-lato-normal-size-line(400, 14px, 17px);
             display: block;
             margin-bottom: 12px;
             text-decoration: none;
             text-transform: uppercase;
-            color: #F16D7F;
+            color: $lait-pink;
 
         }
 
@@ -213,7 +215,9 @@
             }
 
             &-li a {
+                @include font-lato-normal-size-line();
                 text-decoration: none;
+                color: $gray-6f;
             }
         }
     }
@@ -422,22 +426,17 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
+            flex-wrap: wrap;
         }
 
         &-card {
+            max-width: 360px;
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
             background: #F8F8F8;
             position: relative;
-
-            &:first-child {
-                margin-right: 30px;
-            }
-
-            &:last-child {
-                margin-left: 30px;
-            }
+            margin-bottom: 30px;
 
             /*Эффект наведения на всю карточку*/
             &:hover .additional-content-sec-btn {
@@ -612,7 +611,6 @@
         background-blend-mode: lighten;
         background-repeat: no-repeat;
         background-size: cover;
-        background-size: 100%;
 
         &-fl {
             display: flex;
