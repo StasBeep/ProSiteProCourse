@@ -1940,6 +1940,108 @@ button:focus {
 
 /*end main end*/
 /*end cart end*/
+/* === 768px === */
+@media (max-width: 768px) {
+  .products {
+    padding-top: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .products-left-side {
+    margin-right: 0;
+    margin-bottom: 65px;
+  }
+  .products-card-description-exit {
+    left: 427px;
+  }
+  .products-right-side {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .products-backf-data {
+    margin-top: 37.5px;
+  }
+  .wrp-fl-marg {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+/*end === 768px === end*/
+/* === 375px === */
+@media (max-width: 375px) {
+  .products {
+    padding-top: 40px;
+    padding-bottom: 96px;
+  }
+  .products-card {
+    min-width: 340px;
+  }
+  .products-card-img {
+    max-width: 144px;
+    max-height: 188px;
+  }
+  .products-card-description {
+    padding: 17px 1px 31px 14px;
+  }
+  .products-card-description-filter {
+    font-family: lato;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .products-card-description-filter:nth-child(1) {
+    font-family: lato;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .products-card-description-filter:nth-child(2) {
+    font-family: lato;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 26px;
+  }
+  .products-card-description-exit {
+    left: 175px;
+    bottom: 150px;
+  }
+  .products-right-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: -6px;
+  }
+  .wrp-fl-marg {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .btn-clear-continue {
+    font-family: lato;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    min-width: 174px;
+    padding: 17px 9px;
+  }
+  .btn-clear-continue:first-child {
+    margin-right: 9px;
+    margin-left: -5px;
+  }
+}
+
+/*end === 375px === end*/
 /* registration */
 /* main */
 .registration {
