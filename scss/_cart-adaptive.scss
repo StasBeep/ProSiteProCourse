@@ -1,15 +1,15 @@
 /* === 768px === */
-@media (max-width:768px){
+@media (max-width:768px) {
     .products {
         padding-top: 60px;
         flex-direction: column;
 
-        &-left-side{
+        &-left-side {
             margin-right: 0;
             margin-bottom: 65px;
         }
 
-        &-card-description-exit{
+        &-card-description-exit {
             left: 427px;
         }
 
@@ -17,73 +17,75 @@
             flex-direction: row;
         }
 
-        &-backf-data{
+        &-backf-data {
             margin-top: 37.5px;
         }
     }
 
-    .wrp-fl-marg{
+    .wrp-fl-marg {
         justify-content: space-around;
     }
 }
+
 /*end === 768px === end*/
 
 /* === 375px === */
-@media (max-width:375px){
-    .products{
+@media (max-width:375px) {
+    .products {
         padding-top: 40px;
         padding-bottom: 96px;
 
-        &-card{
+        &-card {
             min-width: 340px;
 
-            &-img{
+            &-img {
                 max-width: 144px;
                 max-height: 188px;
             }
 
-            &-description{
+            &-description {
                 padding: 17px 1px 31px 14px;
 
-                &-filter{
+                &-filter {
                     @include font-lato-normal-size-line();
 
-                    &:nth-child(1){
+                    &:nth-child(1) {
                         @include font-lato-normal-size-line(400, 16px, 19px);
                     }
 
-                    &:nth-child(2){
+                    &:nth-child(2) {
                         @include font-lato-normal-size-line(400, 16px, 19px);
                         margin-bottom: 26px;
                     }
                 }
 
-                &-exit{
+                &-exit {
                     left: 175px;
                     bottom: 150px;
                 }
             }
         }
 
-        &-right-side{
+        &-right-side {
             flex-direction: column;
             margin-left: -6px;
         }
     }
 
-    .wrp-fl-marg{
+    .wrp-fl-marg {
         justify-content: space-between;
     }
 
-    .btn-clear-continue{
+    .btn-clear-continue {
         @include font-lato-normal-size-line (400, 12px, 14px);
         min-width: 174px;
         padding: 17px 9px;
 
-        &:first-child{
+        &:first-child {
             margin-right: 9px;
             margin-left: -5px;
         }
     }
 }
+
 /*end === 375px === end*/

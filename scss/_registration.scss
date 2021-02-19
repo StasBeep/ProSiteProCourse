@@ -17,7 +17,7 @@
         display: block;
         @include font-lato-normal-size-line(300, 16px, 19px);
         @include margin-botton(20px);
-        color: $black-22;
+        color: $black-and-brown;
     }
 
     &-input {
@@ -26,11 +26,11 @@
         @include margin-botton(20px);
         width: 360px;
         height: 45px;
-        color: $gray-b1;
+        color: $white-aluminum;
         padding-top: 13px;
         padding-bottom: 16px;
         padding-left: 16px;
-        border: 1px solid $gray-a4;
+        border: 1px solid $white-aluminum;
         box-sizing: border-box;
 
         &:nth-child(3) {
@@ -45,7 +45,7 @@
         &-txt {
             display: block;
             @include font-lato-normal-size-line(300, 11px, 13px);
-            color: $black-00;
+            color: $black;
             margin-left: 10px;
 
             &:nth-child(2) {
@@ -57,12 +57,12 @@
     &-txt {
         @include font-lato-normal-size-line(300, 13px, 16px);
         @include margin-botton(39px);
-        color: $gray-b1;
+        color: $white-aluminum;
     }
 
     &-btn {
         @include font-lato-normal-size-line(400, 14px, 17px);
-        color: $white-fff;
+        color: $white;
         text-transform: uppercase;
         padding: 16px 29px;
         box-sizing: border-box;
@@ -70,12 +70,12 @@
         border: none;
 
         &-svg {
-            fill: $white-fff;
+            fill: $white;
             margin-left: 20px;
         }
 
         &:hover {
-            background-color: $dark-blue-1c0;
+            background-color: $dark-blue;
             color: orange;
             transform: scale(1.1);
 
@@ -91,7 +91,7 @@
             display: block;
             @include font-lato-normal-size-line(300, 24px, 29px);
             @include margin-botton(22px);
-            color: $black-00;
+            color: $black;
 
             &:nth-child(1) {
                 text-transform: uppercase;
@@ -103,7 +103,7 @@
 
             &-unit {
                 @include font-lato-normal-size-line(300, 24px, 29px);
-                color: $black-00;
+                color: $black;
                 margin-bottom: 16px;
 
                 &::before {
@@ -116,12 +116,12 @@
 }
 
 #registr-radio-btn {
-    border: 1px solid $gray-a4;
+    border: 1px solid $white-aluminum;
     margin-right: 10px;
 }
 
 #registr-radio-btn2 {
-    border: 1px solid $gray-a4;
+    border: 1px solid $white-aluminum;
     margin-right: 10px;
 }
 

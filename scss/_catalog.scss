@@ -6,7 +6,6 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    list-style: none;
 }
 
 .headercat {
@@ -14,7 +13,7 @@
     /*Заголовок header*/
     &-title {
         @include font-lato-normal-size-line(400, 24px, 29px);
-        color: $lait-pink;
+        color: $light-pink;
         text-transform: uppercase;
         text-decoration: none;
     }
@@ -31,7 +30,7 @@
         text-transform: uppercase;
         text-decoration: none;
         font-weight: 300;
-        color: $gray-63;
+        color: $dark-gray;
         margin-top: 6px;
         margin-right: 5px;
     }
@@ -81,24 +80,24 @@
         &-title {
             @include font-lato-normal-size-line(400, 14px, 17px);
             text-transform: uppercase;
-            color: $gray-63;
+            color: $dark-gray;
 
             &-one {
                 @include font-lato-normal-size-line(400, 14px, 17px);
                 text-transform: uppercase;
                 font-weight: 600;
-                color: $black-22;
+                color: $black-and-brown;
             }
 
             details[open] summary {
-                color: #EF5B70;
+                color: $fresh-pink;
             }
         }
 
         &-svg {
             padding-left: 10px;
             padding-bottom: 1.5px;
-            fill: #6F6E6E;
+            fill: $gray-fresh;
 
             &-one {
                 padding-left: 10px;
@@ -117,10 +116,10 @@
     padding: 12px 15px;
     box-sizing: border-box;
     margin: 0 auto;
-    border: 1px solid $white-eb;
+    border: 1px solid $smoky-white-light;
     background-color: white;
     font-weight: 300;
-    color: $white-eb;
+    color: $smoky-white-light;
 }
 
 /*end Кнопка после карточек end*/
@@ -131,20 +130,20 @@
 .footer {
     &-part {
         &-icons:nth-child(2) {
-            background-color: $lait-pink;
+            background-color: $light-pink;
         }
 
         &-icons:nth-child(2) svg {
-            fill: $white-fff;
+            fill: $white;
         }
 
         /*Эффект наведения*/
         &-icons:nth-child(2):hover {
-            background-color: $lait-pink;
+            background-color: $light-pink;
         }
 
         &-icons:nth-child(2) svg:hover {
-            fill: $dark-blue-1c0;
+            fill: $dark-blue;
         }
     }
 }

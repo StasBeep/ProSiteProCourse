@@ -709,7 +709,7 @@ button:focus {
 
 .additional-content-sec-button:hover {
   content: "";
-  background: #f7e9e9;
+  background: #F7F7F7;
 }
 
 .additional-content-sec-button:active {
@@ -1194,7 +1194,6 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style: none;
 }
 
 .headercat {
@@ -1765,7 +1764,7 @@ button:focus {
   width: 43px;
   text-align: center;
   color: #656565;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #EBEBEB;
 }
 
 .products-card-description-exit {
@@ -1879,7 +1878,7 @@ button:focus {
 }
 
 .products-backf-hr {
-  border: 1px solid #E2E2E2;
+  border: 1px solid #EBEBEB;
 }
 
 .products-backf-pay {

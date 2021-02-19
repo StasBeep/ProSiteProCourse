@@ -31,7 +31,7 @@
     .carousel-description {
         padding: 65px 25px;
 
-        &-paragraph{
+        &-paragraph {
             margin: 48px 0 32px;
         }
 
@@ -39,12 +39,13 @@
             max-width: 175px;
             margin: 32px 70px 50px;
         }
+
         &-list-li:first-child {
             margin-left: 5px;
             margin-right: 8px;
         }
 
-        &-list-li:last-child{
+        &-list-li:last-child {
             margin-left: 6px;
         }
     }
