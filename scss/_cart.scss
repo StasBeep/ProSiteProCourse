@@ -9,6 +9,7 @@
         text-transform: uppercase;
         text-decoration: none;
     }
+
     /*end header end*/
 }
 
@@ -39,7 +40,7 @@
         }
 
         &-description {
-            background: $white-fff;
+            background: $white;
             list-style: none;
             padding: 22px 97px 62px 32px;
             box-sizing: border-box;
@@ -47,18 +48,18 @@
 
             &-filter {
                 @include font-lato-normal-size-line(400, 22px, 26px);
-                color: $gray-57;
+                color: $gray;
 
                 &:nth-child(1) {
                     @include font-lato-normal-size-line(400, 24px, 29px);
                     text-transform: uppercase;
-                    color: $black-22;
+                    color: $black-and-brown;
                 }
 
                 &:nth-child(2) {
                     @include font-lato-normal-size-line(400, 24px, 29px);
                     text-transform: uppercase;
-                    color: $black-22;
+                    color: $black-and-brown;
                     margin-bottom: 42px;
                 }
             }
@@ -68,19 +69,19 @@
                 margin-left: 24px;
                 width: 43px;
                 text-align: center;
-                color: $gray-65;
-                border: 1px solid $white-ea;
+                color: $gray;
+                border: 1px solid $smoky-white-light;
             }
 
             &-exit {
                 border: none;
-                background: $white-fff;
+                background: $white;
                 position: absolute;
                 left: 356px;
                 bottom: 257px;
 
                 &-svg {
-                    fill: $gray-57;
+                    fill: $gray;
                 }
             }
         }
@@ -98,76 +99,76 @@
             @include font-lato-normal-size-line(300, 16px, 19px);
             @include margin-botton(20.5px);
             text-transform: uppercase;
-            color: $black-22;
+            color: $black-and-brown;
         }
-    
+
         &-inp {
             @include font-lato-normal-size-line(300, 13px, 16px);
             @include margin-botton(20.5px);
             width: 358px;
             height: 44px;
-            border: 1px solid $gray-a4;
+            border: 1px solid $white-aluminum;
             padding-left: 17px;
             box-sizing: border-box;
-            color: $black-22;
+            color: $black-and-brown;
         }
-    
+
         &-btn {
             @include font-lato-normal-size-line(300, 11px, 13px);
-            color: $gray-4a;
-            border: 1px solid $gray-a4;
-            background-color: $white-fff;
+            color: $gray-gray;
+            border: 1px solid $white-aluminum;
+            background-color: $white;
             text-transform: uppercase;
             padding: 10px 15px;
             box-sizing: border-box;
-    
+
             &:hover {
                 color: blue;
                 transform: scale(1.1);
             }
         }
-    
+
         &-data {
             background-color: #F5F3F3;
             padding: 42px;
             box-sizing: border-box;
             margin-top: 57.5px;
         }
-    
+
         &-titpay {
             display: flex;
             justify-content: flex-end;
             @include font-lato-normal-size-line(400, 11px, 13px);
             text-transform: uppercase;
             margin-bottom: 12px;
-            color: $gray-4a;
+            color: $gray-gray;
             ;
-    
+
             &-right {
                 display: block;
                 margin-left: 50px;
             }
-    
+
             &:nth-child(2) {
                 @include font-lato-normal-size-line(300, 16px, 19px);
                 margin-bottom: 21px;
             }
         }
-    
+
         &-hr {
-            border: 1px solid $white-e2;
+            border: 1px solid $smoky-white-light;
         }
-    
+
         &-pay {
             @include font-lato-normal-size-line(300, 16px, 19px);
             width: 275px;
             height: 50px;
             margin-top: 17px;
-            background: $pink-f16;
+            background: $light-pink;
             text-transform: uppercase;
             border: none;
-            color: $white-fff;
-    
+            color: $white;
+
             &:hover {
                 color: blue;
                 transform: scale(1.1);
@@ -188,11 +189,11 @@
     max-width: 241px;
     display: block;
     text-transform: uppercase;
-    color: $black-00;
+    color: $black;
     padding: 17px 39px;
     box-sizing: border-box;
-    background: $white-fff;
-    border: 1px solid $gray-a4;
+    background: $white;
+    border: 1px solid $white-aluminum;
 
     &:hover {
         background-color: $lait-pink;

@@ -1,0 +1,43 @@
+/* === 768px === */
+@media (max-width:768px) {
+    .registration {
+        &-form {
+            margin-right: 22px;
+        }
+
+        &-information {
+            padding-top: 7px;
+
+            &-title {
+                @include font-lato-normal-size-line(300, 16px, 19px);
+
+                &:nth-child(1) {
+                    @include font-lato-normal-size-line(300, 16px, 19px);
+                }
+            }
+
+            &-list {
+                &-unit {
+                    @include font-lato-normal-size-line(300, 16px, 19px);
+                }
+            }
+        }
+    }
+}
+
+/*end === 768px === */
+
+/* === 375px === */
+@media (max-width:375px) {
+    .registration {
+        flex-direction: column;
+        padding: 40px 8px 100px;
+
+        &-form {
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+/*end === 375px === end*/
