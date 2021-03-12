@@ -5,7 +5,7 @@
     /* header */
     &-header-title {
         @include font-lato-normal-size-line(400, 24px, 29px);
-        color: $lait-pink;
+        color: $light-pink;
         text-transform: uppercase;
         text-decoration: none;
     }
@@ -20,7 +20,7 @@
     padding-bottom: 128.5px;
     box-sizing: border-box;
     /* ! Цвет background специфичный и под макет
-     не подходит*/
+    не подходит*/
     display: flex;
     justify-content: space-between;
 
@@ -196,7 +196,7 @@
     border: 1px solid $white-aluminum;
 
     &:hover {
-        background-color: $lait-pink;
+        background-color: $light-pink;
         color: blue;
         transform: scale(1.1);
     }

@@ -291,7 +291,7 @@
 .title-line {
     @include font-lato-normal-size-line(900, 48px, 58px);
     display: block;
-    border-left: 12px solid $pink-f16;
+    border-left: 12px solid $light-pink;
     padding-left: 16px;
     text-transform: uppercase;
 }
